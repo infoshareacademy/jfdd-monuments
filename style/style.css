@@ -58,6 +58,7 @@ h2 {
     background-color: #fff;
 }
 
+
 .contact_form {
     display: inline-block;
     width: 660px;
@@ -71,7 +72,7 @@ h2 {
     width: 633px;
     height: 65px;
     background-color: white;
-    border: 1px solid #24baa0;
+    border: 1px solid #e42314;
     font-family: "ralewaylight";
     font-size: 33px;
 }
@@ -82,7 +83,7 @@ h2 {
     width: 633px;
     height: 191px;
     background-color: white;
-    border: 1px solid #24baa0;
+    border: 1px solid #e42314;
     font-family: ralewaylight;
     font-size: 33px;
     resize: none;
