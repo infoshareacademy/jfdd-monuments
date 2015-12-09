@@ -1,4 +1,56 @@
 
+/*FUNKCJONALNOŚCI */
+
+.funkcjonalnosci {
+    padding: 40px 200px 0 200px;
+    height: 592px;
+    background-color: #ffffff;
+}
+
+.funkcjonalnosci p{
+
+    text-align: center;
+}
+.funkcjonalnosci h1{
+    text-align: center;
+}
+
+
+.topdiv {
+    display: inline-block;
+    width: 334px;
+    height: 420px;
+    vertical-align: 100px;
+}
+
+.bottomdiv {
+    display: inline-block;
+    width: 334px;
+    height: 200px;
+    border: 1px solid red;
+    vertical-align: 58px;
+
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.hline {
+    height: 2px;
+    width: 314px;
+    margin: 45px 0 25px 0;
+}
+
+.vline {
+    vertical-align: 55px;
+    width: 2px;
+
+}
+
+
 /*CONTACT*/
 
 .contact {
