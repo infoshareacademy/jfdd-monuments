@@ -1,6 +1,4 @@
 
-
-
 /*CONTACT*/
 
 .contact {
@@ -54,9 +52,6 @@
 }
 
 
-footer {
-    height: 80px;
-}
 .cta {
     float: right;
     padding: 20px;
@@ -85,4 +80,10 @@ footer {
 .login-register input:not([type="submit"]) {
     background-color: gainsboro;
     float: right;
+}
+
+/*FOOTER */
+
+footer {
+    height: 80px;
 }
