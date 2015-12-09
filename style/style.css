@@ -1,5 +1,73 @@
 
-footer img{
+
+
+/*CONTACT*/
+
+.contact {
+    height: 560px;
+    background-color: #fff;
+}
+
+.contact_form {
+    display: inline-block;
+    width: 660px;
+    float: left;
+    vertical-align: top;
+}
+
+.contact_form input {
+    margin-bottom: 45px;
+    padding-left: 10px;
+    width: 633px;
+    height: 65px;
+    background-color: white;
+    border: 1px solid #24baa0;
+    font-family: "ralewaylight";
+    font-size: 33px;
+}
+
+.contact_form textarea {
+    margin-right: 20px;
+    padding-left: 10px;
+    width: 633px;
+    height: 191px;
+    background-color: white;
+    border: 1px solid #24baa0;
+    font-family: ralewaylight;
+    font-size: 33px;
+    resize: none;
+
+}
+
+.contact_submit {
+    display: inline-block;
+
+}
+#contact_submit img {
+    margin-bottom: 40px;
+}
+#contact_submit p {
+    font-family: ralewaylight;
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding-top: 8px;
+}
+
+
+/*#button_send {*/
+    /*width: 343px;*/
+    /*height: 72px;*/
+    /*background-color: #24baa0;*/
+    /*border-radius: 10px;*/
+    /*text-transform: uppercase;*/
+    /*color: white;*/
+    /*font-family: ralewaybold;*/
+    /*font-size: 33px;*/
+    /*text-align: center;*/
+    /*padding-top: 15px;*/
+/*}*/
+
+footer {
     height: 80px;
 }
 .cta {
