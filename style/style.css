@@ -2,4 +2,32 @@
 footer img{
     height: 80px;
 }
+.cta {
+    float: right;
+    padding: 20px;
+    background: #e42314;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.cta:hover {
+    background-color: crimson;
+}
 
+.wrapper {
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.half {
+    width: 40%;
+    margin: 0 3%;
+    float: left;
+}
+
+.login-register input:not([type="submit"]) {
+    background-color: gainsboro;
+    float: right;
+}
