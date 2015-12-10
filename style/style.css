@@ -6,8 +6,19 @@ body {
 
 #logo {
     position: absolute;
-    left: 45px;
+    left: 40px;
     top: 23px;
+}
+
+#logo2 {
+    background-color: rgba(255, 153, 69, 0.62);
+    position: absolute;
+    width: 210px;
+    height: 330px;
+    left: 55px;
+    top: 40px;
+    color: white;
+    z-index: 100;
 }
 
 #motto {
