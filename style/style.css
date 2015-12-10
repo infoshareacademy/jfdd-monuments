@@ -3,7 +3,7 @@
     margin-left: 0px;
 }
 
-.main-wrapper {
+.cala_strona {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -13,18 +13,12 @@
 /* NAGŁÓWEK */
 
 #logo2 {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    text-decoration: none;
     opacity: 0.65;
     position: absolute;
     left: 0x;
     top: 40px;
     width: 210px;
     height: 330px;
-    color: white;
     z-index: 100;
 }
 
@@ -42,7 +36,7 @@
 
 /* FUNKCJONALNOŚCI */
 
-#zacheta {
+.zacheta {
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
@@ -55,14 +49,6 @@
     padding: 40px 200px 0 200px;
     height: 592px;
     background-color: #ffffff;
-}
-
-.funkcjonalnosci p{
-
-    text-align: center;
-}
-.funkcjonalnosci h1{
-    text-align: center;
 }
 
 .nasz-header {
@@ -158,22 +144,23 @@ h2 {
 }
 
 
-.cta {
-    float: right;
-    padding: 20px;
-    opacity: 0.65;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    position: absolute;
-    left: 955px;
-    top: 40px;
-}
-.cta:hover {
-    background-color: burlywood ;
-}
+/*.cta {*/
+    /*float: right;*/
+    /*padding: 20px;*/
+    /*opacity: 0.65;*/
+    /*color: #ffffff;*/
+    /*text-transform: uppercase;*/
+    /*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
+    /*font-weight: 700;*/
+    /*text-decoration: none;*/
+    /*position: absolute;*/
+    /*left: 955px;*/
+    /*top: 40px;*/
+/*}*/
+
+/*.cta:hover {*/
+    /*background-color: burlywood ;*/
+/*}*/
 
 .wrapper {
     max-width: 1200px;
