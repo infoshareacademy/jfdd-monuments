@@ -3,6 +3,13 @@
     margin-left: 0px;
 }
 
+.main-wrapper {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* NAGŁÓWEK */
 
 #logo2 {
@@ -58,6 +65,9 @@
     text-align: center;
 }
 
+.nasz-header {
+    position: relative;
+}
 
 .topdiv {
     display: inline-block;
