@@ -1,6 +1,22 @@
+body {
+    width: 1200px;
+}
+
 /* NAGŁÓWEK */
 
+#logo {
+    position: absolute;
+    left: 45px;
+    top: 23px;
+}
 
+#motto {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 310px;
+    top: 335px;
+}
 
 /* FUNKCJONALNOŚCI */
 
