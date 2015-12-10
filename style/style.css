@@ -34,7 +34,6 @@
     top: 315px;
 }
 
-/* FUNKCJONALNOŚCI */
 
 .zacheta {
     text-transform: uppercase;
@@ -45,49 +44,25 @@
     color: #000000;
 }
 
+/* FUNKCJONALNOŚCI */
+
 .funkcjonalnosci {
-    padding: 40px 200px 0 200px;
-    height: 592px;
-    background-color: #ffffff;
+    /*padding: 40px 200px 0 200px;*/
+    /*height: 592px;*/
+    /*background-color: #ffffff;*/
+    border: 2px solid blue;
 }
 
-.nasz-header {
-    position: relative;
-}
+.funkcjonalnosci img {
 
-.topdiv {
-    display: inline-block;
-    width: 334px;
-    height: 420px;
-    vertical-align: 100px;
-}
+    width: 150px;
 
-.bottomdiv {
-    display: inline-block;
-    width: 334px;
-    height: 200px;
+}
+.mapa{
     border: 1px solid red;
-    vertical-align: 58px;
-
 }
 
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-}
 
-.hline {
-    height: 2px;
-    width: 314px;
-    margin: 45px 0 25px 0;
-}
-
-.vline {
-    vertical-align: 55px;
-    width: 2px;
-
-}
 
 
 /*CONTACT*/
