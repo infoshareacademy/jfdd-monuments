@@ -34,35 +34,71 @@
     top: 315px;
 }
 
+<!-- TODO linie na main -->
+.main {
+    border-right: 1px;
+    border-left: 1px;
+    border-color: black;
+    width: 1200px;
+}
+
+
+/* FUNKCJONALNOŚCI */
 
 .zacheta {
     text-transform: uppercase;
+    text-align: justify;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
     text-decoration: none;
     font-size: 20px;
     color: #000000;
+    width: 900px;
 }
-
-/* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
-    /*padding: 40px 200px 0 200px;*/
-    /*height: 592px;*/
-    /*background-color: #ffffff;*/
-    border: 2px solid blue;
+    padding: 40px 200px 0 200px;
+    height: 592px;
+    background-color: #ffffff;
 }
 
-.funkcjonalnosci img {
-
-    width: 150px;
-
+.nasz-header {
+    position: relative;
 }
-.mapa{
+
+.topdiv {
+    display: inline-block;
+    width: 334px;
+    height: 420px;
+    vertical-align: 100px;
+}
+
+.bottomdiv {
+    display: inline-block;
+    width: 334px;
+    height: 200px;
     border: 1px solid red;
+    vertical-align: 58px;
+
 }
 
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
 
+.hline {
+    height: 2px;
+    width: 314px;
+    margin: 45px 0 25px 0;
+}
+
+.vline {
+    vertical-align: 55px;
+    width: 2px;
+
+}
 
 
 /*CONTACT*/
