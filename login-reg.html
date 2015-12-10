@@ -18,7 +18,7 @@
 
 <div class="wrapper">
     <form class="half login-register" method="post" action="<!-- dokąd wysłać dane z formularza (PHP) -->">
-        <p style="font-size: 25px">&nbsp &nbsp Logowanie:</p>
+        <p id="nagl">&nbsp &nbsp Logowanie:</p>
         <p>
             <label for="login_user_name">Nazwa użytkownika</label>
             <input type="text" name="login_user_name" id="login_user_name" placeholder="nazwa użytkownika">
@@ -34,7 +34,7 @@
     </form>
 
     <form class="half login-register" style="background-color: mistyrose">
-        <p style="font-size: 25px">&nbsp &nbsp Rejestracja:</p>
+        <p id="nagl"">&nbsp &nbsp Rejestracja:</p>
         <p>
             <label for="register_name">&nbsp &nbsp Nazwa użytkownika</label>
             <input type="text" name="register_name" id="register_name" placeholder="Twoja nazwa" required>
@@ -47,6 +47,12 @@
             <label for="register_phone">&nbsp &nbsp Twój numer telefonu</label>
             <input type="text" name="register_phone" id="register_phone" placeholder="Numer telefonu w postaci ciągu 9 cyfr" title="Numer telefonu w postaci ciągu 9 cyfr" required pattern="^[0-9]{9}$">
         </p>
+        <p class="przyklad">
+            &nbsp&nbspPrzykładowy numer stacjonarny: 4858312345 <br>
+            &nbsp&nbspPrzykładowy nr tel.komorkowego: 600123456 <br>
+
+        </p>
+
         <p>
             <input type="submit" class="cta" value="Zarejestruj mnie">
         </p>
