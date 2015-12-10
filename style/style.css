@@ -1,12 +1,12 @@
 /* NAGŁÓWEK */
 
-/*
-#logo {
-    position: absolute;
-    left: 0px;
-    top: 23px;
+.naglowek {
+    margin-top: 0px;
+    margin-left: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    padding: 0px;
 }
-*/
 
 #logo2 {
     color: #ffffff;
