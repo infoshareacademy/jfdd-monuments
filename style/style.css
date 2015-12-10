@@ -165,6 +165,15 @@ h2 {
     float: right;
 }
 
+.przyklad {
+    font-size: 14px;
+    font-style: italic;
+}
+#nagl {
+    font-size: 25px;
+}
+}
+
 /*FOOTER */
 
 footer {
