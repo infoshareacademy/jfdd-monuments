@@ -20,6 +20,7 @@
     width: 210px;
     height: 330px;
     z-index: 100;
+    box-shadow: black 4px 0px 5px,
 }
 
 #motto {
@@ -27,12 +28,14 @@
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    text-decoration: none;
     font-size: 40px;
     position: absolute;
     left: 320px;
     top: 315px;
+    text-shadow: black 1px 1px 0px, black 2px 2px 0px, black 3px 3px 0px,black 4px 4px 0px,black 5px 5px 0px,black 6px 6px 0px,black 7px 7px 0px;
 }
+
+
 
 <!-- TODO linie na main -->
 .main {
@@ -42,19 +45,24 @@
     width: 1200px;
 }
 
-
-/* FUNKCJONALNOŚCI */
+/* Zacheta */
 
 .zacheta {
     text-transform: uppercase;
-    text-align: justify;
+    text-align: left;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    text-decoration: none;
+    font-weight: 300;
     font-size: 20px;
     color: #000000;
     width: 900px;
+    margin-top: 30px;
 }
+
+.zacheta p:first-child, .zacheta p:nth-child(2) {
+    font-weight: 700;
+}
+
+/* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
     padding: 40px 200px 0 200px;
@@ -206,11 +214,11 @@ h2 {
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    text-decoration: none;
     font-size: 14px;
-    height: 80px;
     background: url(../images/naglowek_gdansk1.jpg);
-    width: 1200px;
-    height: 22px;
+    width: 1160px;
+    /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
+    padding: 7px 20px;
     text-align: center;
+    text-shadow: black 0px 2px 0px;
 }

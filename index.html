@@ -10,7 +10,7 @@
             <!--
             <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
             -->
-        <link href='https://fonts.googleapis.com/css?family=Oswald:700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
         <link type="text/css" rel="stylesheet" href="style/reset.css">
         <link type="text/css" rel="stylesheet" href="style/style.css">
@@ -40,12 +40,17 @@
             <main class="main">
 
                 <div class="cala_strona zacheta">
-                    <br>
                     <p>Turysto,</p>
                     <p>
                         Gdańsk to duże miasto z bogatą historią.
                         Nie trać czasu i zwiedź najbardziej znane
                         zabytki tego pięknego miasta.</p>
+                    <p>
+                        Dodatkowo oferujemy Tobie funkcjonalności powstające przy udziale wszystkich zarejestrowanych uczestników naszego serwisu,
+                    oraz mapy Google.
+
+
+                    </p>
                     <p>
                         Nasza aplikacja pomoże Ci je odwiedzić!
                     </p>
@@ -53,29 +58,32 @@
 
                 <!--FUNKCJONALNOSCI-->
                 <section class="funkcjonalnosci">
-                    <div class=" funkcjonalnosci mapa">
-                        <img src="images/mapaGdanska.jpg">
+
+
+
+                    <div class="topdiv">
+                        <img src="images/#">
                         <h2>Mapa z odległościami</h2>
                         <p>mapa z odległościami - funkcjonalność wyświetlająca mapkę pokazującą odległość z zadanego punktu do wybranego przez osobę oglądającą zabytku.</p>
 
-                        <!--<img class="hline" src="images/funkcjonalnosciLiniaPozioma.png">-->
+                        <img class="hline" src="images/funkcjonalnosciLiniaPozioma.png">
 
                         <img src="images/#">
                         <h2>Polecane</h2>
                         <p> Funkcjonalność polegająca na mozliwości opiniowania i polecania konkretnych zabytków.</p>
                     </div>
 
-
-                    <!--<img class="vline" src="images/funkcjonalnosciLiniaPion.png">-->
+            <!-- linie pionową lepiej zrobić border-right na poprzedzajacym z lewej lub border-left na nastep.divie-->
+                    <img class="vline" src="images/funkcjonalnosciLiniaPion.png">
 
                     <div class="topdiv">
                         <img src="images/#">
                         <h2>Popularne</h2>
                         <p>Funkcjonalność pokazująca, które z zabytków cieszą się największą popularnością.</p>
+            <!-- linie poziomą lepiej zróbmy tagiem <hr> albo w stylach poprzez border-bottom lub top -->
+                        <img class="hline" src="images/funkcjonalnosciLiniaPozioma.png">
 
-                        <!--<img class="hline" src="images/funkcjonalnosciLiniaPozioma.png">-->
-
-                        <!--<img src="images/#">-->
+                        <img src="images/#">
                         <h2>Ulubione</h2>
                         <p> Funkcjonalność polegająca na możliwości dodawania zabytków, które zaciekawiły oglądającego do osobnej zakładki
                         </p>
@@ -83,14 +91,18 @@
 
                 </section>
 
+
                     <!--CONTACT-->
                     <section class="contact">
                         <h3>KONTAKT</h3>
 
                         <form>
+             <!-- zamiast divow w formularzach grupy pól umieszczamy w tagu: fieldset. Naglowki fieldsetow nazywamy tagiem: legend (bezposrednio na poczatku fieldseta-->
                             <div class="contact_form">
                                 <input type="text" name="name" placeholder="Imię"/>
+             <!-- dla email type="email"-->
                                 <input type="text" name="email" placeholder="Email"/>
+             <!-- dla numeru telefonu mozna wymusic wpisanie tylko cyfr przy pomocy atrybutu pattern-->
                                 <input type="text" name="telefon" placeholder="Telefon"/>
                                 <textarea placeholder="Wiadomość"></textarea>
                             </div>
