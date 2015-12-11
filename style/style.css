@@ -16,7 +16,7 @@
 #logo2 {
     opacity: 0.65;
     position: absolute;
-    left: 10x;
+    left: 10px;
     top: 40px;
     width: 210px;
     height: 330px;
@@ -48,7 +48,7 @@
     text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
 }
 
-<!-- TODO linie na main -->
+/*TODO linie do zrobienia*/
 .glowna {
     border-right: 1px;
     border-left: 1px;
