@@ -10,6 +10,13 @@
     margin-right: auto;
 }
 
+.proba {
+    color: black;
+}
+.proba:hover {
+    color: red;
+}
+
 
 /* NAGŁÓWEK */
 
@@ -59,12 +66,20 @@
 
 /*ASIDE SOCIAL MEDIA*/
 .social_media {
-    /*border: 0px;*/
     width: 70px;
     position: absolute;
-    right: 0px;
+    right: -35px;
     margin-top: 10px;
 }
+
+.social_media:hover {
+    margin-top: 10px;
+    position: absolute;
+    width: 70px;
+    right: 0px;
+}
+
+
 
 /* Zacheta */
 
