@@ -10,7 +10,6 @@
     margin-right: auto;
 }
 
-
 /* NAGŁÓWEK */
 
 #logo2 {
@@ -48,7 +47,14 @@
     text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
 }
 
+<<<<<<< Updated upstream
 /*TODO linie do zrobienia*/
+=======
+<!--
+TODO linie na main
+
+-->
+>>>>>>> Stashed changes
 .glowna {
     border-right: 1px;
     border-left: 1px;
@@ -90,49 +96,36 @@
 /* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
-    padding: 40px 200px 0 200px;
     height: 592px;
-    background-color: #ffffff;
-}
-
-.nasz-header {
-    position: relative;
-}
-
-.topdiv {
-    display: inline-block;
-    width: 334px;
-    height: 420px;
-    vertical-align: 100px;
-}
-
-.bottomdiv {
-    display: inline-block;
-    width: 334px;
-    height: 200px;
     border: 1px solid red;
-    vertical-align: 58px;
 
 }
 
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
+.TopLeft img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 12px 0 0 133px;
 }
 
-.hline {
-    height: 2px;
-    width: 314px;
-    margin: 45px 0 25px 0;
+.funkcjonalnosci h2 {
+    display: inline-block;
+    padding: 5px 3px 5px 16px;
 }
 
-.vline {
-    vertical-align: 55px;
-    width: 2px;
-
+.TopLeft p {
+    padding-left: 300px;
 }
 
+.TopLeft img:hover {
+    width: 200px;
+}
+/*.nasz-header {*/
+/*position: relative;*/
+/*}*/
+
+.clear {
+    clear: left;
+}
 
 /*CONTACT*/
 
@@ -140,7 +133,6 @@ h2 {
     height: 600px;
     background-color: #fff;
 }
-
 
 .contact_form {
     display: inline-block;
@@ -177,9 +169,11 @@ h2 {
     display: inline-block;
 
 }
+
 #contact_submit img {
     margin-bottom: 40px;
 }
+
 #contact_submit p {
     font-family: ralewaylight;
     font-size: 18px;
@@ -187,23 +181,22 @@ h2 {
     padding-top: 8px;
 }
 
-
 /*.cta {*/
-    /*float: right;*/
-    /*padding: 20px;*/
-    /*opacity: 0.65;*/
-    /*color: #ffffff;*/
-    /*text-transform: uppercase;*/
-    /*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
-    /*font-weight: 700;*/
-    /*text-decoration: none;*/
-    /*position: absolute;*/
-    /*left: 955px;*/
-    /*top: 40px;*/
+/*float: right;*/
+/*padding: 20px;*/
+/*opacity: 0.65;*/
+/*color: #ffffff;*/
+/*text-transform: uppercase;*/
+/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
+/*font-weight: 700;*/
+/*text-decoration: none;*/
+/*position: absolute;*/
+/*left: 955px;*/
+/*top: 40px;*/
 /*}*/
 
 /*.cta:hover {*/
-    /*background-color: burlywood ;*/
+/*background-color: burlywood ;*/
 /*}*/
 
 .wrapper {
@@ -230,7 +223,6 @@ h2 {
 #nagl {
     font-size: 25px;
 }
-
 
 /*FOOTER */
 
