@@ -54,7 +54,16 @@
     border-left: 1px;
     border-color: black;
     width: 1200px;
-    background-color: beige;
+}
+
+
+/*ASIDE SOCIAL MEDIA*/
+.social_media {
+    /*border: 0px;*/
+    width: 70px;
+    position: absolute;
+    right: 0px;
+    margin-top: 10px;
 }
 
 /* Zacheta */
