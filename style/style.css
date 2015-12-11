@@ -1,6 +1,7 @@
 * {
     margin-top: 0px;
     margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 .cala_strona {
@@ -15,34 +16,45 @@
 #logo2 {
     opacity: 0.65;
     position: absolute;
-    left: 0x;
+    left: 10x;
     top: 40px;
     width: 210px;
     height: 330px;
     z-index: 100;
-    box-shadow: black 4px 0px 5px,
+    box-shadow: black 4px 0px 5px;
 }
 
-#motto {
+.motto_gdansk {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
     position: absolute;
-    left: 320px;
-    top: 315px;
-    text-shadow: black 1px 1px 0px, black 2px 2px 0px, black 3px 3px 0px,black 4px 4px 0px,black 5px 5px 0px,black 6px 6px 0px,black 7px 7px 0px;
+    left: 285px;
+    top: 295px;
+    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
 }
 
-
+.motto_miasto {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left: 310px;
+    top: 370px;
+    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
+}
 
 <!-- TODO linie na main -->
-.main {
+.glowna {
     border-right: 1px;
     border-left: 1px;
     border-color: black;
     width: 1200px;
+    background-color: beige;
 }
 
 /* Zacheta */
@@ -221,4 +233,9 @@ h2 {
     padding: 7px 20px;
     text-align: center;
     text-shadow: black 0px 2px 0px;
+}
+
+.partnerzy {
+    text-align: center;
+    padding: 5px;
 }
