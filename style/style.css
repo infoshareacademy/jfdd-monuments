@@ -124,9 +124,9 @@
 .TopLeft img:hover {
     width: 200px;
 }
-/*.nasz-header {*/
-/*position: relative;*/
-/*}*/
+.nasz-header {
+    position: relative;
+}
 
 .clear {
     clear: left;
