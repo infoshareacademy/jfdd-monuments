@@ -43,10 +43,6 @@
     border-color: black;
     width: 1200px;
 }
-
-
-/* FUNKCJONALNOŚCI */
-
 .zacheta {
     text-transform: uppercase;
     text-align: justify;
@@ -58,50 +54,20 @@
     width: 900px;
 }
 
+
+/* FUNKCJONALNOŚCI */
 .funkcjonalnosci {
-    padding: 40px 200px 0 200px;
-    height: 592px;
-    background-color: #ffffff;
-}
-
-.nasz-header {
-    position: relative;
-}
-
-.topdiv {
-    display: inline-block;
-    width: 334px;
-    height: 420px;
-    vertical-align: 100px;
-}
-
-.bottomdiv {
-    display: inline-block;
-    width: 334px;
-    height: 200px;
+    /*padding: 40px 200px 0 200px;*/
+    /*height: 592px;*/
+    /*background-color: #ffffff;*/
     border: 1px solid red;
-    vertical-align: 58px;
-
 }
 
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
+.funkcjonalnosci img{
+   width: 120px;
+    padding-left: 143px;
+    padding-top: 26px;
 }
-
-.hline {
-    height: 2px;
-    width: 314px;
-    margin: 45px 0 25px 0;
-}
-
-.vline {
-    vertical-align: 55px;
-    width: 2px;
-
-}
-
 
 /*CONTACT*/
 
