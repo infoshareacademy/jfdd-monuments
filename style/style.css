@@ -1,6 +1,7 @@
 * {
     margin-top: 0px;
     margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 .cala_strona {
@@ -9,64 +10,126 @@
     margin-right: auto;
 }
 
+.proba {
+    color: black;
+}
+.proba:hover {
+    color: red;
+}
+
 
 /* NAGŁÓWEK */
 
 #logo2 {
     opacity: 0.65;
     position: absolute;
-    left: 0x;
-    top: 40px;
+    left: 35px;
+    top: 28px;
     width: 210px;
     height: 330px;
     z-index: 100;
+    box-shadow: black 4px 0px 5px;
 }
 
-#motto {
+.motto_gdansk {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    text-decoration: none;
-    font-size: 40px;
+    font-size: 50px;
     position: absolute;
-    left: 320px;
-    top: 315px;
+    left: 285px;
+    top: 295px;
+    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
 }
 
+.motto_miasto {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left: 310px;
+    top: 370px;
+    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
+}
 
-
-<!-- TODO linie na main -->
-.main {
-    border-right: 1px;
-    border-left: 1px;
-    border-color: black;
+.glowna {
     width: 1200px;
 }
+
+
+/*ASIDE SOCIAL MEDIA*/
+.social_media {
+    width: 70px;
+    position: absolute;
+    right: -35px;
+    margin-top: 10px;
+}
+
+.social_media:hover {
+    margin-top: 10px;
+    position: absolute;
+    width: 70px;
+    right: 0px;
+}
+
+
+
+/* Zacheta */
+
 .zacheta {
     text-transform: uppercase;
     text-align: justify;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    text-decoration: none;
     font-size: 20px;
     color: #000000;
     width: 900px;
+    margin-top: 30px;
 }
 
+.zacheta p {
+    font-style: 5px;
+}
+
+/*.zacheta p:first-child, .zacheta p:nth-child(2) {*/
+    /*font-weight: 700;*/
+/*}*/
 
 /* FUNKCJONALNOŚCI */
+
 .funkcjonalnosci {
-    /*padding: 40px 200px 0 200px;*/
-    /*height: 592px;*/
-    /*background-color: #ffffff;*/
+    height: 592px;
     border: 1px solid red;
+
 }
 
-.funkcjonalnosci img{
-   width: 120px;
-    padding-left: 143px;
-    padding-top: 26px;
+.TopLeft img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 12px 0 0 133px;
+}
+
+.funkcjonalnosci h2 {
+    display: inline-block;
+    padding: 5px 3px 5px 16px;
+}
+
+.TopLeft p {
+    padding-left: 300px;
+}
+
+.TopLeft img:hover {
+    width: 200px;
+}
+.nasz-header {
+    position: relative;
+}
+
+.clear {
+    clear: left;
 }
 
 /*CONTACT*/
@@ -75,7 +138,6 @@
     height: 600px;
     background-color: #fff;
 }
-
 
 .contact_form {
     display: inline-block;
@@ -112,9 +174,11 @@
     display: inline-block;
 
 }
+
 #contact_submit img {
     margin-bottom: 40px;
 }
+
 #contact_submit p {
     font-family: ralewaylight;
     font-size: 18px;
@@ -122,23 +186,22 @@
     padding-top: 8px;
 }
 
-
 /*.cta {*/
-    /*float: right;*/
-    /*padding: 20px;*/
-    /*opacity: 0.65;*/
-    /*color: #ffffff;*/
-    /*text-transform: uppercase;*/
-    /*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
-    /*font-weight: 700;*/
-    /*text-decoration: none;*/
-    /*position: absolute;*/
-    /*left: 955px;*/
-    /*top: 40px;*/
+/*float: right;*/
+/*padding: 20px;*/
+/*opacity: 0.65;*/
+/*color: #ffffff;*/
+/*text-transform: uppercase;*/
+/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
+/*font-weight: 700;*/
+/*text-decoration: none;*/
+/*position: absolute;*/
+/*left: 955px;*/
+/*top: 40px;*/
 /*}*/
 
 /*.cta:hover {*/
-    /*background-color: burlywood ;*/
+/*background-color: burlywood ;*/
 /*}*/
 
 .wrapper {
@@ -166,7 +229,6 @@
     font-size: 25px;
 }
 
-
 /*FOOTER */
 
 .stopka {
@@ -174,11 +236,16 @@
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    text-decoration: none;
     font-size: 14px;
-    height: 80px;
     background: url(../images/naglowek_gdansk1.jpg);
-    width: 1200px;
-    height: 22px;
+    width: 1160px;
+    /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
+    padding: 7px 20px;
     text-align: center;
+    text-shadow: black 0px 2px 0px;
+}
+
+.partnerzy {
+    text-align: center;
+    padding: 5px;
 }
