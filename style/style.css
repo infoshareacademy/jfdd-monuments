@@ -102,7 +102,6 @@
 
 .funkcjonalnosci {
     height: 592px;
-    border: 1px solid red;
 
 }
 
@@ -115,6 +114,11 @@
 .funkcjonalnosci h2 {
     display: inline-block;
     padding: 5px 3px 5px 16px;
+    color: sandybrown;
+}
+
+.TopLeft{
+    display: inline;
 }
 
 .TopLeft p {
@@ -132,6 +136,25 @@
     clear: left;
 }
 
+
+.TopRight{
+  float: right;
+
+}
+
+.TopRight img{
+    width: 120px;
+    padding: 0 0 0 333px
+
+}
+
+.TopRight img:hover {
+    width: 200px;
+}
+
+.TopRight p {
+    padding-left: 300px;
+}
 /*CONTACT*/
 
 .contact {
