@@ -168,14 +168,7 @@ h2 {
 
 }
 
-.contact_submit {
-    display: inline-block;
-
-}
-#contact_submit img {
-    margin-bottom: 40px;
-}
-#contact_submit p {
+.button_send {
     font-family: ralewaylight, sans-serif;
     font-size: 18px;
     margin-bottom: 40px;
