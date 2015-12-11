@@ -55,11 +55,7 @@
     text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
 }
 
-/*TODO linie do zrobienia*/
 .glowna {
-    border-right: 1px;
-    border-left: 1px;
-    border-color: black;
     width: 1200px;
 }
 
