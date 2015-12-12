@@ -102,6 +102,7 @@
 
 .funkcjonalnosci {
     /*height: 592px;*/
+    padding-top: 40px;
 
 }
 
@@ -111,10 +112,12 @@
     padding: 12px 0 0 133px;
 }
 
-.funkcjonalnosci h2 {
+.funkcjonalnosci h1 {
     display: inline-block;
-    padding: 5px 3px 5px 16px;
+    padding: 10px 3px 5px 16px;
     color: sandybrown;
+    font-weight: bold;
+  text-shadow: brown 0px 1.5px 0px;
 }
 
 .TopLeft{
@@ -122,7 +125,7 @@
 }
 
 .TopLeft p {
-    padding-left: 300px;
+    padding:  15px 0 0 300px;
 }
 
 .TopLeft img:hover {
@@ -144,7 +147,49 @@
 }
 
 
+.TopRight p {
+    padding:  15px 0 0 300px;
+}
+
+.TopRight img:hover {
+    width: 200px;
+}
+
+
+
+.BottomLeft img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 12px 0 0 133px;
+}
+
+.BottomLeft p {
+    padding:  15px 0 0 300px;
+}
+
+.BottomLeft img:hover{
+    width: 200px;
+
+}
+
+
+.BottomRight img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 12px 0 0 133px;
+}
+
+.BottomRight p {
+    padding:  15px 0 0 300px;
+}
+
+.BottomRight img:hover{
+    width: 200px;
+
+}
+
 /*.TopRight{*/
+
   /*float: right;*/
 
 /*}*/
