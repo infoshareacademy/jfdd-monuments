@@ -101,7 +101,7 @@
 /* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
-    height: 592px;
+    /*height: 592px;*/
 
 }
 
@@ -137,24 +137,31 @@
 }
 
 
-.TopRight{
-  float: right;
-
-}
-
-.TopRight img{
+.TopRight img { /* img z klasy topLeft*/
     width: 120px;
-    padding: 0 0 0 333px
-
+    float: left;
+    padding: 22px 0 0 133px;
 }
 
-.TopRight img:hover {
-    width: 200px;
-}
 
-.TopRight p {
-    padding-left: 300px;
-}
+/*.TopRight{*/
+  /*float: right;*/
+
+/*}*/
+
+/*.TopRight img{*/
+    /*width: 120px;*/
+    /*padding: 0 0 0 333px*/
+
+/*}*/
+
+/*.TopRight img:hover {*/
+    /*width: 200px;*/
+/*}*/
+
+/*.TopRight p {*/
+    /*padding-left: 300px;*/
+/*}*/
 /*CONTACT*/
 
 .contact {
