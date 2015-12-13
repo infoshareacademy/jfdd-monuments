@@ -1,22 +1,7 @@
-* {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
 }
-
-.cala_strona {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.proba {
-    color: black;
-}
-.proba:hover {
-    color: red;
-}
-
 
 /* NAGŁÓWEK */
 
@@ -55,22 +40,16 @@
     text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
 }
 
-.glowna {
-    width: 1200px;
-}
-
-
 /*ASIDE SOCIAL MEDIA*/
 .social_media {
     width: 70px;
-    position: absolute;
-    right: -35px;
-    margin-top: 10px;
+    position: fixed;
+    right: 0px;
+    margin-top: 50px;
 }
 
 .social_media:hover {
-    margin-top: 10px;
-    position: absolute;
+    position: fixed;
     width: 70px;
     right: 0px;
 }
@@ -86,7 +65,7 @@
     font-weight: 700;
     font-size: 20px;
     color: #000000;
-    width: 900px;
+    max-width: 900px;
     margin-top: 30px;
 }
 
@@ -211,7 +190,6 @@
 
 .contact {
     height: 600px;
-    background-color: #fff;
 }
 
 .contact_form {
@@ -279,11 +257,6 @@
 /*background-color: burlywood ;*/
 /*}*/
 
-.wrapper {
-    max-width: 1200px;
-    margin: 80px auto;
-}
-
 .half {
     width: 40%;
     margin: 0 3%;
@@ -313,7 +286,6 @@
     font-weight: 700;
     font-size: 14px;
     background: url(../images/naglowek_gdansk1.jpg);
-    width: 1160px;
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
     padding: 7px 20px;
     text-align: center;
@@ -323,4 +295,5 @@
 .partnerzy {
     text-align: center;
     padding: 5px;
+    padding: 7px 20px;
 }
