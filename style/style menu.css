@@ -1,0 +1,25 @@
+body {
+    background-color: #3C2400;
+}
+
+.menu_gl {
+    position: fixed;
+    right: 60px;
+}
+
+.menu_tytul {
+    color: #ffffff;
+    font-size: 30px;
+
+}
+
+a:link {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E2AB2D;
+    font-size: 22px;
+}
