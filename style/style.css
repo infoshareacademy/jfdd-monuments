@@ -130,8 +130,8 @@ a:visited {
 /* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
-    /*height: 592px;*/
-    padding-top: 40px;
+
+     margin: 3% 15% 3% 15%;
 
 }
 
@@ -149,9 +149,9 @@ a:visited {
 text-shadow: brown 0px 1.5px 0px;
 }
 
-.TopLeft{
-    display: inline;
-}
+/*.TopLeft{*/
+    /*display: inline;*/
+/*}*/
 
 .TopLeft p {
     padding:  15px 0 0 300px;
