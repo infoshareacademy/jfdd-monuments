@@ -53,6 +53,8 @@ body{
     position: fixed;
     top: 28px;
     right: 60px;
+    background-color: darkgray;
+    opacity: 0.5;
 }
 
 .menu_tytul {
