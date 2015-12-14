@@ -47,6 +47,36 @@ body{
     margin-left: 20px;
 }
 
+/*MENU*/
+
+.menu_gl {
+    position: fixed;
+    top: 28px;
+    right: 60px;
+}
+
+.menu_tytul {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+a:link {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E2AB2D;
+    font-size: 22px;
+}
+
+a:visited {
+    color: #E2AB2D;
+    font-size: 20px;
+}
+
+
 /*ASIDE SOCIAL MEDIA*/
 .social-media {
     width: 40px;
