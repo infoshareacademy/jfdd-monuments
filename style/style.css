@@ -1,7 +1,13 @@
-.wrapper {
-    max-width: 1200px;
-    margin: auto;
+body{
+
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 300;
 }
+
+/*.wrapper {*/
+    /*max-width: 1200px;*/
+    /*margin: auto;*/
+/*}*/
 
 /* NAGŁÓWEK */
 .naglowek {
@@ -40,6 +46,51 @@
     font-size: 30px;
     margin-left: 20px;
 }
+
+/*MENU*/
+
+.menu_gl {
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 200px;
+    background-color: darkgray;
+    opacity: 0.5;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.menu_tytul {
+    color: #ffffff;
+    font-size: 30px;
+}
+#m_glowna {
+    margin: 60% 10% 20% 80%;
+}
+
+#m_funk {
+    margin: 65% 10% 15% 80%;
+}
+
+#m_cont {
+    margin: 70% 10% 10% 80%;
+}
+
+
+a:link {
+    color: magenta;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E2AB2D;
+    font-size: 22px;
+}
+
+a:visited {
+    color: magenta;
+    font-size: 20px;
+}
+
 
 /*ASIDE SOCIAL MEDIA*/
 .social-media {
@@ -80,8 +131,7 @@
     font-weight: 300;
     font-size: 28px;
     color: #000000;
-    max-width: 900px;
-    margin: 30px auto 0;
+    margin: 3% 15% 3% 15%;
 }
 .zacheta p {
     margin: 0.5em 0;
@@ -93,8 +143,8 @@
 /* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
-    /*height: 592px;*/
-    padding-top: 40px;
+
+     margin: 3% 15% 3% 15%;
 
 }
 
@@ -112,9 +162,9 @@
 text-shadow: brown 0px 1.5px 0px;
 }
 
-.TopLeft{
-    display: inline;
-}
+/*.TopLeft{*/
+    /*display: inline;*/
+/*}*/
 
 .TopLeft p {
     padding:  15px 0 0 300px;
@@ -202,54 +252,52 @@ text-shadow: brown 0px 1.5px 0px;
 /*CONTACT*/
 
 .contact {
-    height: 600px;
+    height: 300px;
+    background-color: #ffffff;
+    margin-left: 80%;
+    margin-bottom: 5%;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+
+
 }
 
 .contact_form {
-    display: inline-block;
-    width: 660px;
+    width: 220px;
     float: left;
     vertical-align: top;
 }
 
 .contact_form input {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     padding-left: 10px;
-    width: 633px;
-    height: 65px;
+    width: 220px;
+    height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: "ralewaylight";
-    font-size: 33px;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 17px;
 }
 
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 633px;
-    height: 191px;
+    width: 220px;
+    height: 110px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: ralewaylight;
-    font-size: 33px;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 17px;
     resize: none;
 
 }
 
-.contact_submit {
-    display: inline-block;
-
-}
-
-#contact_submit img {
-    margin-bottom: 40px;
-}
-
-#contact_submit p {
-    font-family: ralewaylight;
+.button_send {
+    font-family: ralewaylight, sans-serif;
     font-size: 18px;
-    margin-bottom: 40px;
-    padding-top: 8px;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    /*padding-top: 8px;*/
+
 }
 
 /*.cta {*/

@@ -8,7 +8,7 @@
     <meta name="keywords" content="zabytki, gdansk">
     <title>Zabytki Gdańska</title>
 
-    <link rel="shortcut icon" href="/jfdd-monuments/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
     <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -19,9 +19,9 @@
 
 <body>
 
-<div class="wrapper">
+<!--<div class="wrapper">-->
 
-    <header class="nasz-header">
+    <header class="nasz-header" id="nasz_header">
 
         <!--NAGLOWEK-->
         <div class="naglowek">
@@ -44,15 +44,33 @@
         </div>
     </header>
 
+    <!--MENU w trakcie budowy-->
+
+    <nav class="menu_gl">
+        <!--<h4 class="menu_tytul">Menu</h4>-->
+
+        <div id="m_glowna"><a href="#nasz_header">Glowna</a></div>
+        <div id="m_funk"><a href="#funkcjonalnosci">Funkcjonalnosci</a></div>
+        <div id="m_cont"><a href="#contact_id">Kontakt</a></div>
+
+    </nav>
+
+
     <aside class="social-media">
         <div class="social-media__link social-media__link--fb">
-            <img src="images/social_facebook.png">
+            <a href="https://www.facebook.com/Zabytki-Gdańska-778686898924776" target="_blank">
+                <img src="images/social_facebook.png">
+            </a>
         </div>
         <div class="social-media__link social-media__link--gp">
-            <img src="images/social_googleplus.png">
+            <a href="https://www.facebook.com/Zabytki-Gdańska-778686898924776" target="_blank">
+                <img src="images/social_googleplus.png">
+            </a>
         </div>
         <div class="social-media__link social-media__link--tw">
-            <img src="images/social_twitter.png">
+            <a href="https://twitter.com/ZabytkiGdanska" target="_blank">
+                <img src="images/social_twitter.png">
+            </a>
         </div>
     </aside>
 
@@ -68,8 +86,9 @@
 
         <!--FUNKCJONALNOSCI-->
 
+
         <!-- FUNKCJONALNOSCI BEDA W DWOCH RZEDACH -->
-        <section class="funkcjonalnosci">
+        <section class="funkcjonalnosci" id="funkcjonalnosci">
             <div class="funkcjonalnosci TopLeft">
                 <img src="images/FunkcjonalnosciMapaGdanska.jpg">
 
@@ -85,7 +104,7 @@
 
 
             <div class="funkcjonalnosci TopRight">
-                <img src="images/Funkcjonalnoscipolecane.png">
+                <img src="images/FunkcjonalnosciPolecane.png">
 
                 <h1>Polecane</h1>
 
@@ -129,24 +148,27 @@
 
         </section>
 
+        <section class="galeria">
+            tu bedzie galeria piekna
+
+        </section>
+
         <!--CONTACT-->
-        <section class="contact">
+        <section class="contact" id="contact_id">
             <h3>KONTAKT</h3>
 
-            <form>
-                <!-- zamiast divow w formularzach grupy pól umieszczamy w tagu: fieldset. Naglowki fieldsetow nazywamy tagiem: legend (bezposrednio na poczatku fieldseta-->
-                <div class="contact_form">
+            <form action="mailto:is.wunderteam@gmail.com" method="post">
+                <label class="contact_form">
                     <input type="text" name="name" placeholder="Imię"/>
-                    <!-- dla email type="email"-->
-                    <input type="text" name="email" placeholder="Email"/>
-                    <!-- dla numeru telefonu mozna wymusic wpisanie tylko cyfr przy pomocy atrybutu pattern-->
+                    <input type="email" name="email" placeholder="Email"/>
                     <input type="text" name="telefon" placeholder="Telefon"/>
                     <textarea placeholder="Wiadomość"></textarea>
-                </div>
-                <div class="contact_submit">
-                    <!--<div class="button_send"> Wyślij!</div>-->
+                </label>
+                <label class="button_send">
+                    <input type="submit" value="Wyślij">
 
-                </div>
+
+                </label>
             </form>
 
         </section>
@@ -166,6 +188,6 @@
             </a>
         </div>
     </footer>
-</div> <!-- wrapper end -->
+<!--</div> &lt;!&ndash; wrapper end &ndash;&gt;-->
 </body>
 </html>
