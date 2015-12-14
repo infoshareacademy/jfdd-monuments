@@ -133,20 +133,18 @@
         <section class="contact">
             <h3>KONTAKT</h3>
 
-            <form>
-                <!-- zamiast divow w formularzach grupy pól umieszczamy w tagu: fieldset. Naglowki fieldsetow nazywamy tagiem: legend (bezposrednio na poczatku fieldseta-->
-                <div class="contact_form">
+            <form action="mailto:deput.lukasz@gmail.com" method="post">
+                <label class="contact_form">
                     <input type="text" name="name" placeholder="Imię"/>
-                    <!-- dla email type="email"-->
-                    <input type="text" name="email" placeholder="Email"/>
-                    <!-- dla numeru telefonu mozna wymusic wpisanie tylko cyfr przy pomocy atrybutu pattern-->
+                    <input type="email" name="email" placeholder="Email"/>
                     <input type="text" name="telefon" placeholder="Telefon"/>
                     <textarea placeholder="Wiadomość"></textarea>
-                </div>
-                <div class="contact_submit">
-                    <!--<div class="button_send"> Wyślij!</div>-->
+                </label>
+                <label class="button_send">
+                    <input type="submit" value="Wyślij">
 
-                </div>
+
+                </label>
             </form>
 
         </section>

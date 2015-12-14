@@ -202,51 +202,42 @@ text-shadow: brown 0px 1.5px 0px;
 /*CONTACT*/
 
 .contact {
-    height: 600px;
+    height: 300px;
+    background-color: #fff;
 }
 
 .contact_form {
-    display: inline-block;
-    width: 660px;
+    width: 220px;
     float: left;
     vertical-align: top;
 }
 
 .contact_form input {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     padding-left: 10px;
-    width: 633px;
-    height: 65px;
+    width: 220px;
+    height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: "ralewaylight";
-    font-size: 33px;
+    font-family: ralewaylight, sans-serif;
+    font-size: 17px;
 }
 
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 633px;
-    height: 191px;
+    width: 220px;
+    height: 110px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: ralewaylight;
-    font-size: 33px;
+    font-family: ralewaylight, sans-serif;
+    font-size: 17px;
     resize: none;
 
 }
 
-.contact_submit {
-    display: inline-block;
-
-}
-
-#contact_submit img {
-    margin-bottom: 40px;
-}
-
-#contact_submit p {
-    font-family: ralewaylight;
+.button_send {
+    font-family: ralewaylight, sans-serif;
     font-size: 18px;
     margin-bottom: 40px;
     padding-top: 8px;
