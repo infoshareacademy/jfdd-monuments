@@ -1,7 +1,13 @@
-.wrapper {
-    max-width: 1200px;
-    margin: auto;
+body{
+
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 300;
 }
+
+/*.wrapper {*/
+    /*max-width: 1200px;*/
+    /*margin: auto;*/
+/*}*/
 
 /* NAGŁÓWEK */
 .naglowek {
