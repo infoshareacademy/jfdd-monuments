@@ -101,49 +101,36 @@
 /* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
-    padding: 40px 200px 0 200px;
     height: 592px;
-    background-color: #ffffff;
+    border: 1px solid red;
+
 }
 
+.TopLeft img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 12px 0 0 133px;
+}
+
+.funkcjonalnosci h2 {
+    display: inline-block;
+    padding: 5px 3px 5px 16px;
+}
+
+.TopLeft p {
+    padding-left: 300px;
+}
+
+.TopLeft img:hover {
+    width: 200px;
+}
 .nasz-header {
     position: relative;
 }
 
-.topdiv {
-    display: inline-block;
-    width: 334px;
-    height: 420px;
-    vertical-align: 100px;
+.clear {
+    clear: left;
 }
-
-.bottomdiv {
-    display: inline-block;
-    width: 334px;
-    height: 200px;
-    border: 1px solid red;
-    vertical-align: 58px;
-
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.hline {
-    height: 2px;
-    width: 314px;
-    margin: 45px 0 25px 0;
-}
-
-.vline {
-    vertical-align: 55px;
-    width: 2px;
-
-}
-
 
 /*CONTACT*/
 
@@ -151,7 +138,6 @@ h2 {
     height: 300px;
     background-color: #fff;
 }
-
 
 .contact_form {
     width: 220px;
@@ -190,23 +176,22 @@ h2 {
     padding-top: 8px;
 }
 
-
 /*.cta {*/
-    /*float: right;*/
-    /*padding: 20px;*/
-    /*opacity: 0.65;*/
-    /*color: #ffffff;*/
-    /*text-transform: uppercase;*/
-    /*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
-    /*font-weight: 700;*/
-    /*text-decoration: none;*/
-    /*position: absolute;*/
-    /*left: 955px;*/
-    /*top: 40px;*/
+/*float: right;*/
+/*padding: 20px;*/
+/*opacity: 0.65;*/
+/*color: #ffffff;*/
+/*text-transform: uppercase;*/
+/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
+/*font-weight: 700;*/
+/*text-decoration: none;*/
+/*position: absolute;*/
+/*left: 955px;*/
+/*top: 40px;*/
 /*}*/
 
 /*.cta:hover {*/
-    /*background-color: burlywood ;*/
+/*background-color: burlywood ;*/
 /*}*/
 
 .wrapper {
@@ -233,7 +218,6 @@ h2 {
 #nagl {
     font-size: 25px;
 }
-
 
 /*FOOTER */
 
