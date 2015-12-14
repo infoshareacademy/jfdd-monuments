@@ -62,13 +62,21 @@ body{
     color: #ffffff;
     font-size: 30px;
 }
-
-#nasz_header {
-
+#m_glowna {
+    margin: 60% 10% 20% 80%;
 }
 
+#m_funk {
+    margin: 65% 10% 15% 80%;
+}
+
+#m_cont {
+    margin: 70% 10% 10% 80%;
+}
+
+
 a:link {
-    color: #ffffff;
+    color: magenta;
     font-size: 20px;
     text-decoration: none;
 }
@@ -79,7 +87,7 @@ a:hover {
 }
 
 a:visited {
-    color: #E2AB2D;
+    color: magenta;
     font-size: 20px;
 }
 
@@ -245,9 +253,11 @@ text-shadow: brown 0px 1.5px 0px;
 
 .contact {
     height: 300px;
-    background-color: #fff;
-    padding-left: 1050px;
-    padding-bottom: 55px;
+    background-color: #ffffff;
+    margin-left: 80%;
+    margin-bottom: 5%;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+
 
 }
 
@@ -264,7 +274,7 @@ text-shadow: brown 0px 1.5px 0px;
     height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: ralewaylight, sans-serif;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
 }
 
@@ -275,7 +285,7 @@ text-shadow: brown 0px 1.5px 0px;
     height: 110px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: ralewaylight, sans-serif;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
     resize: none;
 
@@ -284,8 +294,8 @@ text-shadow: brown 0px 1.5px 0px;
 .button_send {
     font-family: ralewaylight, sans-serif;
     font-size: 18px;
-    margin-bottom: 40px;
-    padding-top: 8px;
+    margin-bottom: 5%;
+    /*padding-top: 8px;*/
 
 }
 
