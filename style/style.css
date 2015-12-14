@@ -1,25 +1,14 @@
-* {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
 }
-
-.cala_strona {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.proba {
-    color: black;
-}
-.proba:hover {
-    color: red;
-}
-
 
 /* NAGŁÓWEK */
-
+.naglowek {
+    height: 400px;
+    background: url(../images/naglowek_gdansk1.jpg) no-repeat center;
+    background-size: cover;
+}
 #logo2 {
     opacity: 0.65;
     position: absolute;
@@ -31,48 +20,53 @@
     box-shadow: black 4px 0px 5px;
 }
 
-.motto_gdansk {
+.motto {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 50px;
     position: absolute;
     left: 285px;
-    top: 295px;
+    bottom: 20px;
     text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
+    font-size: 50px;
 }
 
-.motto_miasto {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
+.motto__gdansk, .motto__miasto {
+    display: block;
+}
+
+.motto__miasto {
     font-size: 30px;
-    position: absolute;
-    left: 310px;
-    top: 370px;
-    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
+    margin-left: 20px;
 }
-
-.glowna {
-    width: 1200px;
-}
-
 
 /*ASIDE SOCIAL MEDIA*/
-.social_media {
-    width: 70px;
+.social-media {
+    width: 40px;
+    position: fixed;
+    right: 0px;
+    top: 50vh;
+}
+.social-media__link {
     position: absolute;
-    right: -35px;
-    margin-top: 10px;
+    right: 0;
+}
+.social-media__link--fb {
+    top: -63px;
+}
+.social-media__link--gp {
+    top: -20px;
+}
+.social-media__link--tw {
+    top: 23px;
+}
+.social-media__link img {
+    width: 40px;
 }
 
-.social_media:hover {
-    margin-top: 10px;
-    position: absolute;
-    width: 70px;
-    right: 0px;
+.social-media__link:hover {
+    width: 50px;
 }
 
 
@@ -83,26 +77,24 @@
     text-transform: uppercase;
     text-align: justify;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 28px;
     color: #000000;
-    width: 900px;
-    margin-top: 30px;
+    max-width: 900px;
+    margin: 30px auto 0;
 }
-
 .zacheta p {
-    font-style: 5px;
+    margin: 0.5em 0;
 }
-
-/*.zacheta p:first-child, .zacheta p:nth-child(2) {*/
-    /*font-weight: 700;*/
-/*}*/
+.zacheta p:first-of-type {
+    font-weight: 700;
+}
 
 /* FUNKCJONALNOŚCI */
 
 .funkcjonalnosci {
-    height: 592px;
-    border: 1px solid red;
+    /*height: 592px;*/
+    padding-top: 40px;
 
 }
 
@@ -112,13 +104,20 @@
     padding: 12px 0 0 133px;
 }
 
-.funkcjonalnosci h2 {
+.funkcjonalnosci h1 {
     display: inline-block;
-    padding: 5px 3px 5px 16px;
+    padding: 10px 3px 5px 16px;
+    color: sandybrown;
+    font-weight: bold;
+text-shadow: brown 0px 1.5px 0px;
+}
+
+.TopLeft{
+    display: inline;
 }
 
 .TopLeft p {
-    padding-left: 300px;
+    padding:  15px 0 0 300px;
 }
 
 .TopLeft img:hover {
@@ -132,6 +131,74 @@
     clear: left;
 }
 
+
+.TopRight img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 22px 0 0 133px;
+}
+
+
+.TopRight p {
+    padding:  15px 0 0 300px;
+}
+
+.TopRight img:hover {
+    width: 200px;
+}
+
+
+
+.BottomLeft img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 12px 0 0 133px;
+}
+
+.BottomLeft p {
+    padding:  15px 0 0 300px;
+}
+
+.BottomLeft img:hover{
+    width: 200px;
+
+}
+
+
+.BottomRight img { /* img z klasy topLeft*/
+    width: 120px;
+    float: left;
+    padding: 12px 0 0 133px;
+}
+
+.BottomRight p {
+    padding:  15px 0 0 300px;
+}
+
+.BottomRight img:hover{
+    width: 200px;
+
+}
+
+/*.TopRight{*/
+
+  /*float: right;*/
+
+/*}*/
+
+/*.TopRight img{*/
+    /*width: 120px;*/
+    /*padding: 0 0 0 333px*/
+
+/*}*/
+
+/*.TopRight img:hover {*/
+    /*width: 200px;*/
+/*}*/
+
+/*.TopRight p {*/
+    /*padding-left: 300px;*/
+/*}*/
 /*CONTACT*/
 
 .contact {
@@ -194,11 +261,6 @@
 /*background-color: burlywood ;*/
 /*}*/
 
-.wrapper {
-    max-width: 1200px;
-    margin: 80px auto;
-}
-
 .half {
     width: 40%;
     margin: 0 3%;
@@ -228,7 +290,6 @@
     font-weight: 700;
     font-size: 14px;
     background: url(../images/naglowek_gdansk1.jpg);
-    width: 1160px;
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
     padding: 7px 20px;
     text-align: center;
@@ -238,4 +299,9 @@
 .partnerzy {
     text-align: center;
     padding: 5px;
+    padding: 7px 20px;
+}
+
+.partnerzy img {
+    height: 25px;
 }
