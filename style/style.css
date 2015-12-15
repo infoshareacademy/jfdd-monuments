@@ -195,6 +195,8 @@ a:visited {
     color: #ffffff;
 }
 
+h3
+
 .TopLeft{
    position:absolute;
     top: 35px;
@@ -309,7 +311,44 @@ a:visited {
     /*line-height: 140%;*/
 }
 
-
+/* FEATURES */
+.features {
+    padding: 30px 0;
+    background: url(../images/Vogel-brama-1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.row {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: rgba(255,255,255,0.7);
+}
+.feature {
+    float: left;
+    margin: 15px 3%;
+    width: 44%;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+.feature__img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 48%;
+}
+.feature__title {
+    color: darkred;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+.feature__descr {
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
 
 /*CONTACT*/
 .contact {
