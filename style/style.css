@@ -146,12 +146,33 @@ a:visited {
 #funkcjonalnosci{
     position:relative;
     margin: 3% 15% 3% 15%;
+    width: 500px;
+    height: 500px;
 }
 
 .TopLeft{
    position:absolute;
     top: 20px;
     left: 50px;
+}
+
+.TopRight{
+
+    position:absolute;
+    top: 20px;
+    left: 400px;
+}
+
+.BottomLeft{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+.BottomRight{
+    position: absolute;
+    top: 200px;
+    left: 400px;
 }
 
 .TopLeft img { /* img z klasy topLeft*/
@@ -168,14 +189,14 @@ a:visited {
 
 }
 
-.TopLeft{
-    absolute: 0;
-}
+/*.TopLeft{*/
+    /*absolute: 0;*/
+/*}*/
 
-.TopRight{
-    absolute: 20px;
+/*.TopRight{*/
+    /*absolute: 20px;*/
 
-}
+/*}*/
 .TopLeft p {
     padding:  15px 0 0 300px;
 }
@@ -240,25 +261,6 @@ a:visited {
 
 }
 
-/*.TopRight{*/
-
-  /*float: right;*/
-
-/*}*/
-
-/*.TopRight img{*/
-    /*width: 120px;*/
-    /*padding: 0 0 0 333px*/
-
-/*}*/
-
-/*.TopRight img:hover {*/
-    /*width: 200px;*/
-/*}*/
-
-/*.TopRight p {*/
-    /*padding-left: 300px;*/
-/*}*/
 
 
 /* GALERIA */
