@@ -14,6 +14,34 @@
 
     <link type="text/css" rel="stylesheet" href="style/reset.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
+    <!-- ponizej pobieramy jQuery z google hosted libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        // timer sluzacy do obliczania czasu do uruchomienia kolejnej animacji.
+        var timer;
+        // $(document).ready oznacza poczekanie az caly dokument sie zaladuje.
+        $(document).ready(function() {
+            // to bedziemy wykonywac co kilka sekund.
+            var animuj = function() {
+                // znajdz slaj ktory jest teraz widoczny
+                var biezacy = $('.galeria div:visible');
+                // potem znajdz nastepny slajd (1 do 6, potem powrot na 1szy)
+                var nastepny = biezacy.next();
+                if (nastepny.length === 0) {
+                    nastepny = $('.galeria div:first');
+                }
+                // ukryj widoczny
+                biezacy.fadeOut(1500);
+                // pokaz nastepny
+                nastepny.fadeIn(1500);
+                // fadeIn i fadeOut wykonuja sie asynchronicznie, czyli nie czeka sie na ich zakonczenie tylko wykonywanie programu leci dalej.
+                // ustawiamy timer dla funkcji animuj co 4s (4000ms).
+                timer = setTimeout(animuj, 4000);
+            };
+            // 1sze uruchomienie animacji po 4s.
+            timer = setTimeout(animuj, 4000);
+        });
+    </script>
 </head>
 
 
@@ -105,7 +133,7 @@
 
 
             <div class="funkcjonalnosci TopRight">
-                <img src="images/FunkcjonalnosciPolecane.png">
+                <img src="images/Funkcjonalnoscipolecane.png">
 
                 <h1>Polecane</h1>
 
@@ -150,7 +178,24 @@
         </section>
 
         <section class="galeria">
-            tu bedzie galeria piekna
+            <div style="background-image: url(images/DSC_2817%202%20copy.jpg)">
+                <p>Portowe klimaty&hellip;</p>
+            </div>
+            <div style="background-image: url(images/DSC_2818%202.jpg)">
+                <p>Oryginalne gdańskie przysmaki</p>
+            </div>
+            <div style="background-image: url(images/DSC_2832%202.jpg)">
+                <p>Kameralne uliczki</p>
+            </div>
+            <div style="background-image: url(images/DSC_2837%20s.jpg)">
+                <p>Gładka tafla Motławy</p>
+            </div>
+            <div style="background-image: url(images/DSC_2838%202.jpg)">
+                <p>Ciekawa architektura</p>
+            </div>
+            <div style="background-image: url(images/DSC_2846%202.jpg)">
+                <p>Neptun</p>
+            </div>
 
         </section>
 
