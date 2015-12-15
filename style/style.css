@@ -162,8 +162,21 @@ a:visited {
     font-weight: 700;
 }
 
+.nasz-header {
+    position: relative;
+}
 /* FUNKCJONALNOŚCI */
 
+#film{
+
+    position: absolute;/* video in full screen*/
+    top:0px;
+    left:-200px; /* left powinno byc 0*/
+    min-width: 100%;
+    /*min-height: 30%;*/
+    z-index: -1;/* video is under all of the elements */
+
+}
 
 /*.funkcjonalnosci{*/
     /*background: url("../images/FunkcjonalnosciGdansk.jpg");*/
@@ -173,9 +186,8 @@ a:visited {
     /*background-repeat: no-repeat;*/
 /*position: absolute;*/
 /*}*/
-#funkcjonalnosci{
-    
 
+#funkcjonalnosci{
     position:relative;
     margin: 3% 15% 3% 15%;
     width: 500px;
@@ -209,10 +221,21 @@ a:visited {
 }
 
 .TopLeft img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
     float: left;
     padding: 12px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
+
 }
+
+
+.fade:hover
+{
+    opacity:1;
+}
+
 .funkcjonalnosci h1 {
     display: inline-block;
     padding: 10px 3px 5px 16px;
@@ -225,12 +248,6 @@ a:visited {
     padding:  15px 0 0 300px;
 }
 
-/*.TopLeft img:hover {*/
-    /*width: 200px;*/
-/*}*/
-.nasz-header {
-    position: relative;
-}
 
 .clear {
     clear: left;
@@ -238,9 +255,12 @@ a:visited {
 
 
 .TopRight img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
     float: left;
     padding: 22px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 
@@ -248,42 +268,38 @@ a:visited {
     padding:  15px 0 0 300px;
 }
 
-/*.TopRight img:hover {*/
-    /*width: 200px;*/
-/*}*/
 
 
 
 .BottomLeft img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
     float: left;
     padding: 12px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 .BottomLeft p {
     padding:  15px 0 0 300px;
 }
 
-/*.BottomLeft img:hover{*/
-    /*width: 200px;*/
 
-/*}*/
 
 
 .BottomRight img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
     float: left;
     padding: 12px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 .BottomRight p {
     padding:  15px 0 0 300px;
 }
 
-/*.BottomRight img:hover{*/
-    /*width: 200px;*/
-
-/*}*/
 
 
 
