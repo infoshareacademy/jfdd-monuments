@@ -143,10 +143,15 @@ a:visited {
 
 /* FUNKCJONALNOŚCI */
 
-.funkcjonalnosci {
+#funkcjonalnosci{
+    position:relative;
+    margin: 3% 15% 3% 15%;
+}
 
-     margin: 3% 15% 3% 15%;
-
+.TopLeft{
+   position:absolute;
+    top: 20px;
+    left: 50px;
 }
 
 .TopLeft img { /* img z klasy topLeft*/
@@ -160,14 +165,17 @@ a:visited {
     padding: 10px 3px 5px 16px;
     color: sandybrown;
     font-weight: bold;
-    /* niestety ten text shadow zmiejsza czytalnosc tekstu */
-text-shadow: brown 0 2px 0;
+
 }
 
-/*.TopLeft{*/
-    /*display: inline;*/
-/*}*/
+.TopLeft{
+    absolute: 0;
+}
 
+.TopRight{
+    absolute: 20px;
+
+}
 .TopLeft p {
     padding:  15px 0 0 300px;
 }
