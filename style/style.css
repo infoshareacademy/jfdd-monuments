@@ -4,7 +4,11 @@
 }
 
 /* NAGŁÓWEK */
-
+.naglowek {
+    height: 400px;
+    background: url(../images/naglowek_gdansk1.jpg) no-repeat center;
+    background-size: cover;
+}
 #logo2 {
     opacity: 0.65;
     position: absolute;
@@ -16,42 +20,53 @@
     box-shadow: black 4px 0px 5px;
 }
 
-.motto_gdansk {
+.motto {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 50px;
     position: absolute;
     left: 285px;
-    top: 295px;
+    bottom: 20px;
     text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
+    font-size: 50px;
 }
 
-.motto_miasto {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
+.motto__gdansk, .motto__miasto {
+    display: block;
+}
+
+.motto__miasto {
     font-size: 30px;
-    position: absolute;
-    left: 310px;
-    top: 370px;
-    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
+    margin-left: 20px;
 }
 
 /*ASIDE SOCIAL MEDIA*/
-.social_media {
-    width: 70px;
+.social-media {
+    width: 40px;
     position: fixed;
     right: 0px;
-    margin-top: 50px;
+    top: 50vh;
+}
+.social-media__link {
+    position: absolute;
+    right: 0;
+}
+.social-media__link--fb {
+    top: -63px;
+}
+.social-media__link--gp {
+    top: -20px;
+}
+.social-media__link--tw {
+    top: 23px;
+}
+.social-media__link img {
+    width: 40px;
 }
 
-.social_media:hover {
-    position: fixed;
-    width: 70px;
-    right: 0px;
+.social-media__link:hover {
+    width: 50px;
 }
 
 
@@ -62,20 +77,18 @@
     text-transform: uppercase;
     text-align: justify;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 28px;
     color: #000000;
     max-width: 900px;
-    margin-top: 30px;
+    margin: 30px auto 0;
 }
-
 .zacheta p {
-    font-style: 5px;
+    margin: 0.5em 0;
 }
-
-/*.zacheta p:first-child, .zacheta p:nth-child(2) {*/
-    /*font-weight: 700;*/
-/*}*/
+.zacheta p:first-of-type {
+    font-weight: 700;
+}
 
 /*MENU*/
 
@@ -126,7 +139,7 @@ a:visited {
     padding: 10px 3px 5px 16px;
     color: sandybrown;
     font-weight: bold;
-  text-shadow: brown 0px 1.5px 0px;
+text-shadow: brown 0px 1.5px 0px;
 }
 
 .TopLeft{
@@ -326,4 +339,8 @@ a:visited {
     text-align: center;
     padding: 5px;
     padding: 7px 20px;
+}
+
+.partnerzy img {
+    height: 25px;
 }
