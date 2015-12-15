@@ -9,12 +9,40 @@ body{
     /*margin: auto;*/
 /*}*/
 
-/* NAGŁÓWEK */
-.naglowek {
-    height: 400px;
-    background: url(../images/naglowek_gdansk1.jpg) no-repeat center;
+
+.galeria {
+    position:relative;
+    height:500px;
+}
+
+.galeria div {
+    position:absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display:none;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
+/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
+.galeria div:first-child {
+    display: block;
+}
+.galeria p {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    text-shadow: black 2px 4px 0;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
 #logo2 {
     opacity: 0.65;
     position: absolute;
@@ -253,46 +281,6 @@ text-shadow: brown 0 2px 0;
 /*}*/
 
 
-/* GALERIA */
-.galeria {
-    position:relative;
-    height:500px;
-}
-
-.galeria div {
-    position:absolute;
-    left:0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display:none;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
-.galeria div:first-child {
-    display: block;
-}
-.galeria p {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    text-shadow: black 2px 4px 0;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-
 /*CONTACT*/
 .contact {
     height: 300px;
@@ -375,10 +363,6 @@ text-shadow: brown 0 2px 0;
 .przyklad {
     font-size: 14px;
     font-style: italic;
-}
-
-#nagl {
-    font-size: 25px;
 }
 
 /*FOOTER */
