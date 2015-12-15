@@ -1,23 +1,49 @@
-.wrapper {
-    max-width: 1200px;
-    margin: auto;
-}
+body{
 
-/* NAGŁÓWEK */
-.naglowek {
-    height: 400px;
-    background: url(../images/naglowek_gdansk1.jpg) no-repeat center;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.galeria {
+    position:relative;
+    height:500px;
+}
+.galeria div {
+    position:absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display:none;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
+/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
+.galeria div:first-child {
+    display: block;
+}
+.galeria p {
+    color: #ffffff;
+    /*text-transform: uppercase;*/
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: black 2px 4px 0;
+    font-size: 23px;
+    text-align: right;
+    margin-top: 470px;
+    margin-right: 90px;
+    font-style: italic;
+}
+
 #logo2 {
     opacity: 0.65;
     position: absolute;
-    left: 35px;
-    top: 28px;
+    left: 80px;
+    top: 60px;
     width: 210px;
     height: 330px;
     z-index: 100;
-    box-shadow: black 4px 0px 5px;
+    box-shadow: black 4px 0 5px;
 }
 
 .motto {
@@ -26,10 +52,11 @@
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
     position: absolute;
-    left: 285px;
-    bottom: 20px;
-    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
-    font-size: 50px;
+    left: 330px;
+    bottom: 60px;
+    text-shadow: black 2px 4px 0;
+    font-size: 70px;
+    z-index: 101;
 }
 
 .motto__gdansk, .motto__miasto {
@@ -37,15 +64,63 @@
 }
 
 .motto__miasto {
-    font-size: 30px;
-    margin-left: 20px;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-left: 80px;
 }
+
+/*MENU*/
+
+.menu_gl {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 15%;
+    background-color: darkgray;
+    opacity: 0.5;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.menu_tytul {
+    color: #ffffff;
+    font-size: 30px;
+}
+#m_glowna {
+    margin: 60% 10% 20% 80%;
+}
+
+#m_funk {
+    margin: 65% 10% 15% 80%;
+}
+
+#m_cont {
+    margin: 70% 10% 10% 80%;
+}
+
+
+a:link {
+    color: magenta;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E2AB2D;
+    font-size: 22px;
+}
+
+a:visited {
+    color: magenta;
+    font-size: 20px;
+}
+
 
 /*ASIDE SOCIAL MEDIA*/
 .social-media {
     width: 40px;
     position: fixed;
-    right: 0px;
+    right: 0;
     top: 50vh;
 }
 .social-media__link {
@@ -80,8 +155,7 @@
     font-weight: 300;
     font-size: 28px;
     color: #000000;
-    max-width: 900px;
-    margin: 30px auto 0;
+    margin: 3% 15% 3% 15%;
 }
 .zacheta p {
     margin: 0.5em 0;
@@ -90,72 +164,98 @@
     font-weight: 700;
 }
 
-/*MENU*/
-
-.menu_gl {
-    position: fixed;
-    top: 28px;
-    right: 60px;
+.nasz-header {
+    position: relative;
 }
-
-.menu_tytul {
-    color: #ffffff;
-    font-size: 30px;
-}
-
-a:link {
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #E2AB2D;
-    font-size: 22px;
-}
-
-a:visited {
-    color: #E2AB2D;
-    font-size: 20px;
-}
-
-
 /* FUNKCJONALNOŚCI */
 
-.funkcjonalnosci {
-    /*height: 592px;*/
-    padding-top: 40px;
+#film{
 
+    position: absolute;/* video in full screen*/
+    top:0px;
+    left:-200px; /* left powinno byc 0*/
+    min-width: 100%;
+    /*min-height: 30%;*/
+    z-index: -1;/* video is under all of the elements */
+
+}
+
+/*.funkcjonalnosci{*/
+    /*background: url("../images/FunkcjonalnosciGdansk.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*width: auto;*/
+    /*height: 100%;*/
+    /*background-repeat: no-repeat;*/
+/*position: absolute;*/
+/*}*/
+
+#funkcjonalnosci{
+    position:relative;
+    margin: 3% 15% 3% 15%;
+    width: 500px;
+    height: 500px;
+    color: #ffffff;
+}
+
+h3
+
+.TopLeft{
+   position:absolute;
+    top: 35px;
+    /*left: 30px;*/
+}
+
+.TopRight{
+
+    position:absolute;
+    top: 35px;
+    left: 440px;
+}
+
+.BottomLeft{
+    position: absolute;
+    top: 300px;
+    /*left: 30px;*/
+}
+
+.BottomRight{
+    position: absolute;
+    top: 300px;
+    left: 440px;
 }
 
 .TopLeft img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
+    height:140px;
     float: left;
-    padding: 12px 0 0 133px;
+    padding: 12px 0 0 5px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
+
+}
+
+
+.fade:hover
+{
+    opacity:1;
 }
 
 .funkcjonalnosci h1 {
     display: inline-block;
     padding: 10px 3px 5px 16px;
-    color: sandybrown;
-    font-weight: bold;
-text-shadow: brown 0px 1.5px 0px;
-}
+    /*color: sandybrown;*/
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
 
-.TopLeft{
-    display: inline;
 }
 
 .TopLeft p {
-    padding:  15px 0 0 300px;
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
 }
 
-.TopLeft img:hover {
-    width: 200px;
-}
-.nasz-header {
-    position: relative;
-}
 
 .clear {
     clear: left;
@@ -163,124 +263,157 @@ text-shadow: brown 0px 1.5px 0px;
 
 
 .TopRight img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
+    height:140px;
     float: left;
     padding: 22px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 
 .TopRight p {
     padding:  15px 0 0 300px;
-}
+    /*line-height: 140%;*/
 
-.TopRight img:hover {
-    width: 200px;
 }
-
 
 
 .BottomLeft img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
+    height:140px;
     float: left;
-    padding: 12px 0 0 133px;
+    padding: 12px 0 0 5px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 .BottomLeft p {
-    padding:  15px 0 0 300px;
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
 }
 
-.BottomLeft img:hover{
-    width: 200px;
 
-}
 
 
 .BottomRight img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
+    height:140px;
     float: left;
     padding: 12px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 .BottomRight p {
     padding:  15px 0 0 300px;
+    /*line-height: 140%;*/
 }
 
-.BottomRight img:hover{
-    width: 200px;
-
+/* FEATURES */
+.features {
+    padding: 30px 0;
+    background: url(../images/Vogel-brama-1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.row {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: rgba(255,255,255,0.7);
+}
+.feature {
+    float: left;
+    margin: 15px 3%;
+    width: 44%;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+.feature__img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 48%;
+}
+.feature__title {
+    color: darkred;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+.feature__descr {
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
 }
 
-/*.TopRight{*/
-
-  /*float: right;*/
-
-/*}*/
-
-/*.TopRight img{*/
-    /*width: 120px;*/
-    /*padding: 0 0 0 333px*/
-
-/*}*/
-
-/*.TopRight img:hover {*/
-    /*width: 200px;*/
-/*}*/
-
-/*.TopRight p {*/
-    /*padding-left: 300px;*/
-/*}*/
 /*CONTACT*/
-
 .contact {
-    height: 600px;
+    height: 400px;
+    background-color: #ffffff;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 15%;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.contact_title {
+    font-weight: 300;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .contact_form {
-    display: inline-block;
-    width: 660px;
+    padding-left: 30%;
+    width: 400px;
     float: left;
     vertical-align: top;
 }
 
 .contact_form input {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     padding-left: 10px;
-    width: 633px;
-    height: 65px;
+    width: 400px;
+    height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: "ralewaylight";
-    font-size: 33px;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+
+
 }
 
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 633px;
-    height: 191px;
+    width: 500px;
+    height: 200px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: ralewaylight;
-    font-size: 33px;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 17px;
     resize: none;
+    text-transform: uppercase;
 
 }
 
-.contact_submit {
-    display: inline-block;
-
-}
-
-#contact_submit img {
-    margin-bottom: 40px;
-}
-
-#contact_submit p {
-    font-family: ralewaylight;
+.button_send {
+    font-family: ralewaylight, sans-serif;
     font-size: 18px;
-    margin-bottom: 40px;
-    padding-top: 8px;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    /*padding-top: 8px;*/
+
 }
+
 
 /*.cta {*/
 /*float: right;*/
@@ -316,10 +449,6 @@ text-shadow: brown 0px 1.5px 0px;
     font-style: italic;
 }
 
-#nagl {
-    font-size: 25px;
-}
-
 /*FOOTER */
 
 .stopka {
@@ -332,12 +461,12 @@ text-shadow: brown 0px 1.5px 0px;
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
     padding: 7px 20px;
     text-align: center;
-    text-shadow: black 0px 2px 0px;
+    text-shadow: black 0 2px 0;
 }
 
 .partnerzy {
     text-align: center;
-    padding: 5px;
+    /*padding: 5px; dwa razy ? */
     padding: 7px 20px;
 }
 
