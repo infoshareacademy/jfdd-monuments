@@ -192,19 +192,19 @@ a:visited {
     margin: 3% 15% 3% 15%;
     width: 500px;
     height: 500px;
-
+    color: #ffffff;
 }
 
 .TopLeft{
    position:absolute;
-    top: 25px;
+    top: 35px;
     /*left: 30px;*/
 }
 
 .TopRight{
 
     position:absolute;
-    top: 25px;
+    top: 35px;
     left: 440px;
 }
 
@@ -222,8 +222,9 @@ a:visited {
 
 .TopLeft img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
-    padding: 12px 0 0 133px;
+    padding: 12px 0 0 5px;
     transition: all 0.3s ease;
     opacity:0.7;
 
@@ -239,13 +240,16 @@ a:visited {
 .funkcjonalnosci h1 {
     display: inline-block;
     padding: 10px 3px 5px 16px;
-    color: sandybrown;
-    font-weight: bold;
+    /*color: sandybrown;*/
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
 
 }
 
 .TopLeft p {
-    padding:  15px 0 0 300px;
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
 }
 
 
@@ -256,6 +260,7 @@ a:visited {
 
 .TopRight img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
     padding: 22px 0 0 133px;
     transition: all 0.3s ease;
@@ -266,22 +271,24 @@ a:visited {
 
 .TopRight p {
     padding:  15px 0 0 300px;
+    /*line-height: 140%;*/
+
 }
-
-
 
 
 .BottomLeft img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
-    padding: 12px 0 0 133px;
+    padding: 12px 0 0 5px;
     transition: all 0.3s ease;
     opacity:0.7;
 
 }
 
 .BottomLeft p {
-    padding:  15px 0 0 300px;
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
 }
 
 
@@ -289,6 +296,7 @@ a:visited {
 
 .BottomRight img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
     padding: 12px 0 0 133px;
     transition: all 0.3s ease;
@@ -298,8 +306,8 @@ a:visited {
 
 .BottomRight p {
     padding:  15px 0 0 300px;
+    /*line-height: 140%;*/
 }
-
 
 
 
