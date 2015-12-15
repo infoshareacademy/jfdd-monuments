@@ -308,7 +308,7 @@ text-shadow: brown 0 2px 0;
 
 .contact_form {
     padding-left: 30%;
-    width: 500px;
+    width: 400px;
     float: left;
     vertical-align: top;
 }
@@ -316,7 +316,7 @@ text-shadow: brown 0 2px 0;
 .contact_form input {
     margin-bottom: 25px;
     padding-left: 10px;
-    width: 220px;
+    width: 400px;
     height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
@@ -327,8 +327,8 @@ text-shadow: brown 0 2px 0;
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 220px;
-    height: 110px;
+    width: 400px;
+    height: 200px;
     background-color: white;
     border: 1px solid sandybrown;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
