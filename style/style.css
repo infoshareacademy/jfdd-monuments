@@ -30,7 +30,7 @@ body{
     text-shadow: black 2px 4px 0;
     font-size: 23px;
     text-align: right;
-    margin-top: 470px;
+    margin-top: 468px;
     margin-right: 90px;
     font-style: italic;
 }
@@ -143,8 +143,6 @@ a:visited {
 .social-media__link:hover {
     width: 50px;
 }
-
-
 
 /* Zacheta */
 
