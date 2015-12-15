@@ -23,7 +23,7 @@ body{
     width: 210px;
     height: 330px;
     z-index: 100;
-    box-shadow: black 4px 0px 5px;
+    box-shadow: black 4px 0 5px;
 }
 
 .motto {
@@ -32,10 +32,10 @@ body{
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
     position: absolute;
-    left: 285px;
-    bottom: 20px;
-    text-shadow: #3C2400 2px 4px 2px, #E2AB2D -2px -2px 50px;
-    font-size: 50px;
+    left: 330px;
+    bottom: 40px;
+    text-shadow: black 2px 4px 0;
+    font-size: 70px;
 }
 
 .motto__gdansk, .motto__miasto {
@@ -43,27 +43,41 @@ body{
 }
 
 .motto__miasto {
-    font-size: 30px;
-    margin-left: 20px;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-left: 80px;
 }
 
 /*MENU*/
 
 .menu_gl {
-    position: fixed;
-    top: 28px;
-    right: 60px;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 200px;
     background-color: darkgray;
     opacity: 0.5;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
 .menu_tytul {
     color: #ffffff;
     font-size: 30px;
 }
+#m_glowna {
+    margin: 60% 10% 20% 80%;
+}
+
+#m_funk {
+    margin: 65% 10% 15% 80%;
+}
+
+#m_cont {
+    margin: 70% 10% 10% 80%;
+}
+
 
 a:link {
-    color: #ffffff;
+    color: magenta;
     font-size: 20px;
     text-decoration: none;
 }
@@ -74,7 +88,7 @@ a:hover {
 }
 
 a:visited {
-    color: #E2AB2D;
+    color: magenta;
     font-size: 20px;
 }
 
@@ -83,7 +97,7 @@ a:visited {
 .social-media {
     width: 40px;
     position: fixed;
-    right: 0px;
+    right: 0;
     top: 50vh;
 }
 .social-media__link {
@@ -140,13 +154,14 @@ a:visited {
     float: left;
     padding: 12px 0 0 133px;
 }
-
+/* h1 powinien byc jeden na dokument, chyba ze jest uzasadnienie dla wielu. Jest to tytul strony */
 .funkcjonalnosci h1 {
     display: inline-block;
     padding: 10px 3px 5px 16px;
     color: sandybrown;
     font-weight: bold;
-text-shadow: brown 0px 1.5px 0px;
+    /* niestety ten text shadow zmiejsza czytalnosc tekstu */
+text-shadow: brown 0 2px 0;
 }
 
 /*.TopLeft{*/
@@ -236,11 +251,57 @@ text-shadow: brown 0px 1.5px 0px;
 /*.TopRight p {*/
     /*padding-left: 300px;*/
 /*}*/
-/*CONTACT*/
 
+
+/* GALERIA */
+.galeria {
+    position:relative;
+    height:500px;
+}
+
+.galeria div {
+    position:absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display:none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
+.galeria div:first-child {
+    display: block;
+}
+.galeria p {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    text-shadow: black 2px 4px 0;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*CONTACT*/
 .contact {
     height: 300px;
-    background-color: #fff;
+    background-color: #ffffff;
+    margin-left: 80%;
+    margin-bottom: 5%;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+
+
 }
 
 .contact_form {
@@ -256,7 +317,7 @@ text-shadow: brown 0px 1.5px 0px;
     height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: ralewaylight, sans-serif;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
 }
 
@@ -267,7 +328,7 @@ text-shadow: brown 0px 1.5px 0px;
     height: 110px;
     background-color: white;
     border: 1px solid sandybrown;
-    font-family: ralewaylight, sans-serif;
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
     resize: none;
 
@@ -276,8 +337,10 @@ text-shadow: brown 0px 1.5px 0px;
 .button_send {
     font-family: ralewaylight, sans-serif;
     font-size: 18px;
-    margin-bottom: 40px;
-    padding-top: 8px;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    /*padding-top: 8px;*/
+
 }
 
 /*.cta {*/
@@ -330,12 +393,12 @@ text-shadow: brown 0px 1.5px 0px;
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
     padding: 7px 20px;
     text-align: center;
-    text-shadow: black 0px 2px 0px;
+    text-shadow: black 0 2px 0;
 }
 
 .partnerzy {
     text-align: center;
-    padding: 5px;
+    /*padding: 5px; dwa razy ? */
     padding: 7px 20px;
 }
 
