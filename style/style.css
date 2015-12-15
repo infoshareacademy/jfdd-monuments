@@ -194,21 +194,21 @@ a:visited {
     margin: 3% 15% 3% 15%;
     width: 500px;
     height: 500px;
-
+    color: #ffffff;
 }
 
 h3
 
 .TopLeft{
    position:absolute;
-    top: 25px;
+    top: 35px;
     /*left: 30px;*/
 }
 
 .TopRight{
 
     position:absolute;
-    top: 25px;
+    top: 35px;
     left: 440px;
 }
 
@@ -226,8 +226,9 @@ h3
 
 .TopLeft img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
-    padding: 12px 0 0 133px;
+    padding: 12px 0 0 5px;
     transition: all 0.3s ease;
     opacity:0.7;
 
@@ -243,13 +244,16 @@ h3
 .funkcjonalnosci h1 {
     display: inline-block;
     padding: 10px 3px 5px 16px;
-    color: sandybrown;
-    font-weight: bold;
+    /*color: sandybrown;*/
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
 
 }
 
 .TopLeft p {
-    padding:  15px 0 0 300px;
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
 }
 
 
@@ -260,6 +264,7 @@ h3
 
 .TopRight img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
     padding: 22px 0 0 133px;
     transition: all 0.3s ease;
@@ -270,22 +275,24 @@ h3
 
 .TopRight p {
     padding:  15px 0 0 300px;
+    /*line-height: 140%;*/
+
 }
-
-
 
 
 .BottomLeft img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
-    padding: 12px 0 0 133px;
+    padding: 12px 0 0 5px;
     transition: all 0.3s ease;
     opacity:0.7;
 
 }
 
 .BottomLeft p {
-    padding:  15px 0 0 300px;
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
 }
 
 
@@ -293,6 +300,7 @@ h3
 
 .BottomRight img { /* img z klasy topLeft*/
     width: 140px;
+    height:140px;
     float: left;
     padding: 12px 0 0 133px;
     transition: all 0.3s ease;
@@ -302,6 +310,7 @@ h3
 
 .BottomRight p {
     padding:  15px 0 0 300px;
+    /*line-height: 140%;*/
 }
 
 /* FEATURES */
@@ -342,7 +351,6 @@ h3
     font-weight: 300;
     font-size: 18px;
 }
-
 
 /*CONTACT*/
 .contact {
