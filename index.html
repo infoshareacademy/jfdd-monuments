@@ -10,19 +10,23 @@
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
 
     <link type="text/css" rel="stylesheet" href="style/reset.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
+    <link type="text/css" rel="stylesheet" href="style/animate.css">
+
+    <!-- NAGLOWEK -->
     <!-- ponizej pobieramy jQuery z google hosted libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
         // timer sluzacy do obliczania czasu do uruchomienia kolejnej animacji.
         var timer;
         // $(document).ready oznacza poczekanie az caly dokument sie zaladuje.
-        $(document).ready(function() {
+        $(document).ready(function () {
             // to bedziemy wykonywac co kilka sekund.
-            var animuj = function() {
+            var animuj = function () {
                 // znajdz slaj ktory jest teraz widoczny
                 var biezacy = $('.galeria div:visible');
                 // potem znajdz nastepny slajd (1 do 6, potem powrot na 1szy)
@@ -42,6 +46,7 @@
             timer = setTimeout(animuj, 4000);
         });
     </script>
+
 </head>
 
 
@@ -49,190 +54,221 @@
 
 <!--<div class="wrapper">-->
 
-    <header class="nasz-header" id="nasz_header">
+<header class="nasz-header" id="nasz_header">
 
-        <!--NAGLOWEK-->
-        <div class="naglowek">
-            <!--LOGO-->
-            <img id="logo2" src="http://pomorskie.travel/uploads/mm/obrazy/album_393/1000x760/obraz_1196.jpg">
+    <!--NAGLOWEK-->
+    <!--<div class="naglowek">-->
 
-            <!--MOTTO GDANSK-->
-            <h1 class="motto">
-                <span class="motto__gdansk">
+    <div class="galeria">
+        <div style="background-image: url(images/DSC_2817%202%20copy.jpg)">
+            <p>Portowe klimaty...</p>
+        </div>
+        <div style="background-image: url(images/DSC_2818%202.jpg)">
+            <p>Oryginalne gdańskie przysmaki...</p>
+        </div>
+        <div style="background-image: url(images/DSC_2832%202.jpg)">
+            <p>Kameralne uliczki...</p>
+        </div>
+        <div style="background-image: url(images/DSC_2837%20s.jpg)">
+            <p>Gładka tafla Motławy...</p>
+        </div>
+        <div style="background-image: url(images/DSC_2838%202.jpg)">
+            <p>Ciekawa architektura...</p>
+        </div>
+        <div style="background-image: url(images/DSC_2846%202.jpg)">
+            <p>Neptun...</p>
+        </div>
+
+    </div>
+
+
+    <!--LOGO-->
+    <img id="logo2" src="http://pomorskie.travel/uploads/mm/obrazy/album_393/1000x760/obraz_1196.jpg">
+
+    <!--MOTTO GDANSK-->
+    <h1 class="motto">
+                <span class="motto__gdansk animated fadeInDown">
                     Gdańsk,
                 </span>
-                <span class="motto__miasto">
+                <span class="motto__miasto animated fadeInLeft">
                     miasto które chcesz poznać.
                 </span>
-            </h1>
+    </h1>
 
-        <!--ZALOGUJ ZAREJESTRUJ-->
-        <!--<a class="cta" href="login-reg.html">Zaloguj się&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;Zarejestruj się</a>-->
+    <!--ZALOGUJ ZAREJESTRUJ-->
+    <!--<a class="cta" href="login-reg.html">Zaloguj się&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;Zarejestruj się</a>-->
 
-        </div>
-    </header>
+    <!--</div>-->
+</header>
 
-    <!--MENU w trakcie budowy-->
+<!--MENU w trakcie budowy-->
 
-    <nav class="menu_gl">
-        <!--<h4 class="menu_tytul">Menu</h4>-->
+<nav class="menu_gl">
 
-        <div id="m_glowna"><a href="#nasz_header">Glowna</a></div>
-        <div id="m_funk"><a href="#funkcjonalnosci">Funkcjonalnosci</a></div>
-        <div id="m_cont"><a href="#contact_id">Kontakt</a></div>
+    <div id="m_glowna"><a href="#nasz_header">Glowna</a></div>
+    <div id="m_funk"><a href="#funkcjonalnosci">Funkcjonalnosci</a></div>
+    <!--<div id="m_cont"><a href="#contact_id">Kontakt</a></div>-->
 
-    </nav>
+</nav>
 
 
-    <aside class="social-media">
-        <div class="social-media__link social-media__link--fb">
-            <a href="https://www.facebook.com/Zabytki-Gdańska-778686898924776" target="_blank">
-                <img src="images/social_facebook.png">
-            </a>
-        </div>
-        <div class="social-media__link social-media__link--gp">
-            <a href="https://www.facebook.com/Zabytki-Gdańska-778686898924776" target="_blank">
-                <img src="images/social_googleplus.png">
-            </a>
-        </div>
-        <div class="social-media__link social-media__link--tw">
-            <a href="https://twitter.com/ZabytkiGdanska" target="_blank">
-                <img src="images/social_twitter.png">
-            </a>
-        </div>
-    </aside>
+<aside class="social-media animated fadeInRight">
+    <div class="social-media__link social-media__link--fb">
+        <a href="https://www.facebook.com/Zabytki-Gdańska-778686898924776" target="_blank">
+            <img src="images/social_facebook.png">
+        </a>
+    </div>
+    <div class="social-media__link social-media__link--gp">
+        <a href="https://www.facebook.com/Zabytki-Gdańska-778686898924776" target="_blank">
+            <img src="images/social_googleplus.png">
+        </a>
+    </div>
+    <div class="social-media__link social-media__link--tw">
+        <a href="https://twitter.com/ZabytkiGdanska" target="_blank">
+            <img src="images/social_twitter.png">
+        </a>
+    </div>
+</aside>
 
-    <main>
-        <section class="zacheta">
-            <p>Turysto,</p>
-            <p>Gdańsk to duże miasto z bogatą historią.
+<main>
+    <section class="zacheta">
+        <p>Turysto,</p>
+
+        <p>Gdańsk to duże miasto z bogatą historią.
             Nie trać czasu i zwiedź najbardziej znane
             zabytki tego pięknego miasta.</p>
-            <p>Dzięki tej aplikacji to bardzo proste!
+
+        <p>Dzięki tej aplikacji to bardzo proste!
             Wybierz zabytek i dojdź do niego dzięki mapie google.</p>
-        </section>
+    </section>
 
-        <!--FUNKCJONALNOSCI-->
+    <!--FUNKCJONALNOSCI-->
 
+    <!-- FUNKCJONALNOSCI BEDA W DWOCH RZEDACH -->
+    <section class="funkcjonalnosci" id="funkcjonalnosci">
+        <video id="film" autoplay>
+            <source src="video/FunkcjonalnosciVideo.mov" type="video/webm">
 
-        <!-- FUNKCJONALNOSCI BEDA W DWOCH RZEDACH -->
-        <section class="funkcjonalnosci" id="funkcjonalnosci">
-            <div class="funkcjonalnosci TopLeft">
-                <img src="images/FunkcjonalnosciMapaGdanska.jpg">
+        </video>
+        <div class="funkcjonalnosci TopLeft">
+            <img  class="fade" src="images/FunkcjonalnosciRycina1.png">
+            <h1>Mapa z odległościami</h1>
 
-                <h1>Mapa z odległościami</h1>
+            <p>Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>
 
-                <p>Funkcjonalność wyświetlająca mapkę <br>pokazującą  odległość z zadanego punktu <br> do
-                    wybranego  przez osobę oglądającą zabytku.</p>
-
-                <div class="clear"> <!-- klasa majaca na celu "czyszczenie"  -->
-
-                </div>
-            </div>
-
-
-            <div class="funkcjonalnosci TopRight">
-                <img src="images/Funkcjonalnoscipolecane.png">
-
-                <h1>Polecane</h1>
-
-                <p> Funkcjonalność polegająca na mozliwości opiniowania<br> i polecania konkretnych zabytków.</p>
-
-                <div class="clear">
-
-                </div>
+            <div class="clear">
 
             </div>
+        </div>
 
-            <div class="funkcjonalnosci BottomLeft">
-                <img src="images/FunkcjonalnosciPopularne.jpg">
 
-                <h1>Popularne</h1>
 
-                <p>Funkcjonalność pokazująca, które z zabytków cieszą się<br> największą popularnością.</p>
+        <div class="funkcjonalnosci TopRight">
+            <img class="fade" src="images/FunkcjonalnosciRycina2.png">
 
-                <div class="clear">
+            <h1>Polecane</h1>
 
-                </div>
+            <p> Funkcjonalność polegająca na mozliwości opiniowania<br> i polecania konkretnych zabytków.</p>
+
+            <div class="clear">
+
             </div>
 
-            <div class="funkcjonalnosci BottomRight">
-                <img src="images/FunkcjonalnosciUlubione.jpg">
+        </div>
 
-                <h1>Ulubione</h1>
+        <div class="funkcjonalnosci BottomLeft">
+            <img class="fade" src="images/FunkcjonalnosciRycina3.png">
 
-                <p> Funkcjonalność polegająca na możliwości dodawania<br> zabytków,które zaciekawiły oglądającego.</p>
+            <h1>Popularne</h1>
 
-                <div class="clear">
+            <p>Zabytki najczęściej oglądane przez odwiedzających.</p>
 
-                </div>
+            <div class="clear">
+
             </div>
+        </div>
 
+        <div class="funkcjonalnosci BottomRight">
+            <img class="fade" src="images/FunkcjonalnosciRycina4.jpg">
 
-            <!--&lt;!&ndash; linie poziomą lepiej zróbmy tagiem <hr> albo w stylach poprzez border-bottom lub top &ndash;&gt;-->
+            <h1>Ulubione</h1>
 
+           <!-- <p> Funkcjonalność polegająca na możliwości dodawania zabytków,które zaciekawiły oglądającego.</p>-->
+                <p>Lista zabytków które najbardziej przypadły do gustu naszym użytkownikom.</p>
+            <div class="clear">
 
-
-
-        </section>
-
-        <section class="galeria">
-            <div style="background-image: url(images/DSC_2817%202%20copy.jpg)">
-                <p>Portowe klimaty&hellip;</p>
             </div>
-            <div style="background-image: url(images/DSC_2818%202.jpg)">
-                <p>Oryginalne gdańskie przysmaki</p>
+        </div>
+
+    </section>
+<!-- Poczatek FEATURES -->
+    <section class="features">
+        <div class="row">
+            <div class="feature">
+                <img  class="feature__img" src="images/FunkcjonalnosciMapaGdanska.jpg">
+                <h3 class="feature__title">Mapa z odległościami</h3>
+                <p class="feature__descr">Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>
             </div>
-            <div style="background-image: url(images/DSC_2832%202.jpg)">
-                <p>Kameralne uliczki</p>
+            <div class="feature">
+                <img  class="feature__img" src="images/Funkcjonalnoscipolecane.png">
+                <h3 class="feature__title">Polecane</h3>
+                <p class="feature__descr">Funkcjonalność polegająca na mozliwości opiniowania i polecania konkretnych zabytków.</p>
             </div>
-            <div style="background-image: url(images/DSC_2837%20s.jpg)">
-                <p>Gładka tafla Motławy</p>
+        </div>
+        <div class="row">
+            <div class="feature">
+                <img  class="feature__img" src="images/FunkcjonalnosciPopularne.jpg">
+                <h3 class="feature__title">Popularne</h3>
+                <p class="feature__descr">Zabytki najczęściej oglądane przez odwiedzających.</p>
             </div>
-            <div style="background-image: url(images/DSC_2838%202.jpg)">
-                <p>Ciekawa architektura</p>
+            <div class="feature">
+                <img  class="feature__img" src="images/FunkcjonalnosciUlubione.jpg">
+                <h3 class="feature__title">Ulubione</h3>
+                <p class="feature__descr">Lista zabytków które najbardziej przypadły do gustu naszym użytkownikom.</p>
             </div>
-            <div style="background-image: url(images/DSC_2846%202.jpg)">
-                <p>Neptun</p>
-            </div>
+        </div>
+    </section>
+<!-- Koniec FEATURES -->
 
-        </section>
-
-        <!--CONTACT-->
-        <section class="contact" id="contact_id">
-            <h3>KONTAKT</h3>
-
-            <form action="mailto:is.wunderteam@gmail.com" method="post">
-                <label class="contact_form">
-                    <input type="text" name="name" placeholder="Imię"/>
-                    <input type="email" name="email" placeholder="Email"/>
-                    <input type="text" name="telefon" placeholder="Telefon"/>
-                    <textarea placeholder="Wiadomość"></textarea>
-                </label>
-                <label class="button_send">
-                    <input type="submit" value="Wyślij">
-
-
-                </label>
-            </form>
-
-        </section>
     </main>
 
 
-    <!--FOOTER -->
-    <footer>
-        <div class="stopka">Copyright 2015 | All Rights Reserved - Wunder Team</div>
-        <div class="partnerzy">
-            <a href="http://www.oliviacentre.com/" target="_blank">
-                <img src="images/stopka_olivia.png" alt="Olivia Center">
-            </a>
-            <img src="images/stopka_Wteam2.jpg" alt="Wunder Team">
-            <a href="http://www.infoshareacademy.com/" target="_blank">
-                <img src="images/stopka_infoshare.svg" alt="InfoShare">
-            </a>
-        </div>
-    </footer>
+    <!--CONTACT-->
+    <section class="contact" id="contact_id">
+        <p class="contact_title">KONTAKT</p>
+
+        <form action="mailto:is.wunderteam@gmail.com" method="post">
+            <label class="contact_form">
+                <input type="text" name="name" placeholder="Imię"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="text" name="telefon" placeholder="Telefon"/>
+                <textarea placeholder="Wiadomość"></textarea>
+            </label>
+
+            <label class="button_send">
+                <input type="submit" value="Wyślij">
+
+
+            </label>
+        </form>
+
+    </section>
+</main>
+
+
+<!--FOOTER -->
+<footer>
+    <div class="stopka">Copyright 2015 | All Rights Reserved - Wunder Team</div>
+    <div class="partnerzy">
+        <a href="http://www.oliviacentre.com/" target="_blank">
+            <img src="images/stopka_olivia.png" alt="Olivia Center">
+        </a>
+        <img src="images/stopka_Wteam2.jpg" alt="Wunder Team">
+        <a href="http://www.infoshareacademy.com/" target="_blank">
+            <img src="images/stopka_infoshare.svg" alt="InfoShare">
+        </a>
+    </div>
+</footer>
 <!--</div> &lt;!&ndash; wrapper end &ndash;&gt;-->
 </body>
 </html>

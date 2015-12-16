@@ -3,23 +3,43 @@ body{
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 300;
 }
-
-/*.wrapper {*/
-    /*max-width: 1200px;*/
-    /*margin: auto;*/
-/*}*/
-
-/* NAGŁÓWEK */
-.naglowek {
-    height: 400px;
-    background: url(../images/naglowek_gdansk1.jpg) no-repeat center;
+.galeria {
+    position:relative;
+    height:500px;
+}
+.galeria div {
+    position:absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display:none;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
+/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
+.galeria div:first-child {
+    display: block;
+}
+.galeria p {
+    color: #ffffff;
+    /*text-transform: uppercase;*/
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: black 2px 4px 0;
+    font-size: 23px;
+    text-align: right;
+    margin-top: 470px;
+    margin-right: 90px;
+    font-style: italic;
+}
+
 #logo2 {
     opacity: 0.65;
     position: absolute;
-    left: 35px;
-    top: 28px;
+    left: 80px;
+    top: 60px;
     width: 210px;
     height: 330px;
     z-index: 100;
@@ -33,9 +53,10 @@ body{
     font-weight: 700;
     position: absolute;
     left: 330px;
-    bottom: 40px;
+    bottom: 60px;
     text-shadow: black 2px 4px 0;
     font-size: 70px;
+    z-index: 101;
 }
 
 .motto__gdansk, .motto__miasto {
@@ -52,8 +73,10 @@ body{
 
 .menu_gl {
     position: absolute;
-    margin-top: 50px;
-    margin-right: 200px;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 15%;
     background-color: darkgray;
     opacity: 0.5;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -141,43 +164,98 @@ a:visited {
     font-weight: 700;
 }
 
-/* FUNKCJONALNOŚCI */
-
-.funkcjonalnosci {
-
-     margin: 3% 15% 3% 15%;
-
-}
-
-.TopLeft img { /* img z klasy topLeft*/
-    width: 120px;
-    float: left;
-    padding: 12px 0 0 133px;
-}
-/* h1 powinien byc jeden na dokument, chyba ze jest uzasadnienie dla wielu. Jest to tytul strony */
-.funkcjonalnosci h1 {
-    display: inline-block;
-    padding: 10px 3px 5px 16px;
-    color: sandybrown;
-    font-weight: bold;
-    /* niestety ten text shadow zmiejsza czytalnosc tekstu */
-text-shadow: brown 0 2px 0;
-}
-
-/*.TopLeft{*/
-    /*display: inline;*/
-/*}*/
-
-.TopLeft p {
-    padding:  15px 0 0 300px;
-}
-
-.TopLeft img:hover {
-    width: 200px;
-}
 .nasz-header {
     position: relative;
 }
+/* FUNKCJONALNOŚCI */
+
+#film{
+
+    position: absolute;/* video in full screen*/
+    top:0px;
+    left:-200px; /* left powinno byc 0*/
+    min-width: 100%;
+    /*min-height: 30%;*/
+    z-index: -1;/* video is under all of the elements */
+
+}
+
+/*.funkcjonalnosci{*/
+    /*background: url("../images/FunkcjonalnosciGdansk.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*width: auto;*/
+    /*height: 100%;*/
+    /*background-repeat: no-repeat;*/
+/*position: absolute;*/
+/*}*/
+
+#funkcjonalnosci{
+    position:relative;
+    margin: 3% 15% 3% 15%;
+    width: 500px;
+    height: 500px;
+    color: #ffffff;
+}
+
+h3
+
+.TopLeft{
+   position:absolute;
+    top: 35px;
+    /*left: 30px;*/
+}
+
+.TopRight{
+
+    position:absolute;
+    top: 35px;
+    left: 440px;
+}
+
+.BottomLeft{
+    position: absolute;
+    top: 300px;
+    /*left: 30px;*/
+}
+
+.BottomRight{
+    position: absolute;
+    top: 300px;
+    left: 440px;
+}
+
+.TopLeft img { /* img z klasy topLeft*/
+    width: 140px;
+    height:140px;
+    float: left;
+    padding: 12px 0 0 5px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
+
+}
+
+
+.fade:hover
+{
+    opacity:1;
+}
+
+.funkcjonalnosci h1 {
+    display: inline-block;
+    padding: 10px 3px 5px 16px;
+    /*color: sandybrown;*/
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.TopLeft p {
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
+}
+
 
 .clear {
     clear: left;
@@ -185,127 +263,116 @@ text-shadow: brown 0 2px 0;
 
 
 .TopRight img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
+    height:140px;
     float: left;
     padding: 22px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 
 .TopRight p {
     padding:  15px 0 0 300px;
-}
+    /*line-height: 140%;*/
 
-.TopRight img:hover {
-    width: 200px;
 }
-
 
 
 .BottomLeft img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
+    height:140px;
     float: left;
-    padding: 12px 0 0 133px;
+    padding: 12px 0 0 5px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 .BottomLeft p {
-    padding:  15px 0 0 300px;
+    padding:  15px 0 0 200px;
+    /*line-height: 140%;*/
 }
 
-.BottomLeft img:hover{
-    width: 200px;
 
-}
 
 
 .BottomRight img { /* img z klasy topLeft*/
-    width: 120px;
+    width: 140px;
+    height:140px;
     float: left;
     padding: 12px 0 0 133px;
+    transition: all 0.3s ease;
+    opacity:0.7;
+
 }
 
 .BottomRight p {
     padding:  15px 0 0 300px;
+    /*line-height: 140%;*/
 }
 
-.BottomRight img:hover{
-    width: 200px;
-
-}
-
-/*.TopRight{*/
-
-  /*float: right;*/
-
-/*}*/
-
-/*.TopRight img{*/
-    /*width: 120px;*/
-    /*padding: 0 0 0 333px*/
-
-/*}*/
-
-/*.TopRight img:hover {*/
-    /*width: 200px;*/
-/*}*/
-
-/*.TopRight p {*/
-    /*padding-left: 300px;*/
-/*}*/
-
-
-/* GALERIA */
-.galeria {
-    position:relative;
-    height:500px;
-}
-
-.galeria div {
-    position:absolute;
-    left:0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display:none;
-    background-repeat: no-repeat;
-    background-position: center;
+/* FEATURES */
+.features {
+    padding: 30px 0;
+    background: url(../images/Vogel-brama-1.jpg) no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
-/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
-.galeria div:first-child {
-    display: block;
+.row {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: rgba(255,255,255,0.7);
 }
-.galeria p {
-    color: #ffffff;
+.feature {
+    float: left;
+    margin: 15px 3%;
+    width: 44%;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+.feature__img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 48%;
+}
+.feature__title {
+    color: darkred;
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    text-shadow: black 2px 4px 0;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
+    font-size: 25px;
+    padding-bottom: 8px;
 }
-
-
-
-
-
-
-
-
+.feature__descr {
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
 
 /*CONTACT*/
 .contact {
-    height: 300px;
+    height: 400px;
     background-color: #ffffff;
-    margin-left: 80%;
-    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 15%;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+}
 
-
+.contact_title {
+    font-weight: 300;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-left: 30%;
 }
 
 .contact_form {
-    width: 220px;
+    padding-left: 30%;
+    width: 400px;
     float: left;
     vertical-align: top;
 }
@@ -313,35 +380,40 @@ text-shadow: brown 0 2px 0;
 .contact_form input {
     margin-bottom: 25px;
     padding-left: 10px;
-    width: 220px;
+    width: 400px;
     height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
+    text-transform: uppercase;
+
+
 }
 
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 220px;
-    height: 110px;
+    width: 400px;
+    height: 200px;
     background-color: white;
     border: 1px solid sandybrown;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
     resize: none;
+    text-transform: uppercase;
 
 }
 
 .button_send {
     font-family: ralewaylight, sans-serif;
     font-size: 18px;
-    margin-bottom: 5%;
-    margin-left: 30%;
+    /*padding-left: 30%;*/
+
     /*padding-top: 8px;*/
 
 }
+
 
 /*.cta {*/
 /*float: right;*/
@@ -375,10 +447,6 @@ text-shadow: brown 0 2px 0;
 .przyklad {
     font-size: 14px;
     font-style: italic;
-}
-
-#nagl {
-    font-size: 25px;
 }
 
 /*FOOTER */
