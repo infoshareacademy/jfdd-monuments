@@ -82,13 +82,15 @@ body {
     opacity: 0.5;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     position: fixed;
+    color: black;
 
 }
 .menu_div {
     margin-left: 70%;
     margin-top: 0.5%;
     margin-bottom: 3%;
-    margin-right: 15%;
+    margin-right: 2%;
+
 
 }
 
