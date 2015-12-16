@@ -104,12 +104,15 @@
 <!--MENU w trakcie budowy-->
 
 <nav class="menu_gl">
-    <!--<h4 class="menu_tytul">Menu</h4>-->
-
-    <div id="m_glowna"><a href="#nasz_header">Glowna</a></div>
-    <div id="m_funk"><a href="#funkcjonalnosci">Funkcjonalnosci</a></div>
-    <!--<div id="m_cont"><a href="#contact_id">Kontakt</a></div>-->
-
+        <div class="menu_div" >
+            <a href="#nasz_header">Glowna</a>
+        </div>
+        <div class="menu_div" >
+            <a href="#funkcjonalnosci">Funkcjonalnosci</a>
+        </div>
+        <div class="menu_div" >
+            <a href="#contact_id">Kontakt</a>
+        </div>
 </nav>
 
 
@@ -145,79 +148,110 @@
 
     <!--FUNKCJONALNOSCI-->
 
-    <!-- FUNKCJONALNOSCI BEDA W DWOCH RZEDACH -->
-    <section class="funkcjonalnosci" id="funkcjonalnosci">
-        <video id="film" autoplay loop>
-            <source src="video/FunkcjonalnosciVideo.mov" type="video/webm">
+    <!--&lt;!&ndash; FUNKCJONALNOSCI BEDA W DWOCH RZEDACH &ndash;&gt;-->
+    <!--<section class="funkcjonalnosci" id="funkcjonalnosci">-->
+        <!--<video id="film" autoplay>-->
+            <!--<source src="video/FunkcjonalnosciVideo.mov" type="video/webm">-->
 
-        </video>
-        <div class="funkcjonalnosci TopLeft">
-            <img  class="fade" src="images/FunkcjonalnosciRycina1.png">
-            <h1>Mapa z odległościami</h1>
+        <!--</video>-->
+        <!--<div class="funkcjonalnosci TopLeft">-->
+            <!--<img  class="fade" src="images/FunkcjonalnosciRycina1.png">-->
+            <!--<h1>Mapa z odległościami</h1>-->
 
-            <p>Funkcjonalność wyświetlająca mapkę <br>pokazującą odległość z zadanego punktu <br> do
-                wybranego przez osobę oglądającą zabytku.</p>
+            <!--<p>Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>-->
 
-            <div class="clear">
+            <!--<div class="clear">-->
 
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+        <!--<div class="funkcjonalnosci TopRight">-->
+            <!--<img class="fade" src="images/FunkcjonalnosciRycina2.png">-->
+
+            <!--<h1>Polecane</h1>-->
+
+            <!--<p> Funkcjonalność polegająca na mozliwości opiniowania<br> i polecania konkretnych zabytków.</p>-->
+
+            <!--<div class="clear">-->
+
+            <!--</div>-->
+
+        <!--</div>-->
+
+        <!--<div class="funkcjonalnosci BottomLeft">-->
+            <!--<img class="fade" src="images/FunkcjonalnosciRycina3.png">-->
+
+            <!--<h1>Popularne</h1>-->
+
+            <!--<p>Zabytki najczęściej oglądane przez odwiedzających.</p>-->
+
+            <!--<div class="clear">-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="funkcjonalnosci BottomRight">-->
+            <!--<img class="fade" src="images/FunkcjonalnosciRycina4.jpg">-->
+
+            <!--<h1>Ulubione</h1>-->
+
+           <!--&lt;!&ndash; <p> Funkcjonalność polegająca na możliwości dodawania zabytków,które zaciekawiły oglądającego.</p>&ndash;&gt;-->
+                <!--<p>Lista zabytków które najbardziej przypadły do gustu naszym użytkownikom.</p>-->
+            <!--<div class="clear">-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</section>-->
+<!-- Poczatek FEATURES -->
+    <section class="features">
+        <div class="row">
+            <div class="feature">
+                <img  class="feature__img" src="images/FunkcjonalnosciMapaGdanska.jpg">
+                <h3 class="feature__title">Mapa z odległościami</h3>
+                <p class="feature__descr">Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>
+            </div>
+            <div class="feature">
+                <img  class="feature__img" src="images/FunkcjonalnosciRycina4.jpg">
+                <h3 class="feature__title">Polecane</h3>
+                <p class="feature__descr">Funkcjonalność polegająca na mozliwości opiniowania i polecania konkretnych zabytków.</p>
             </div>
         </div>
-
-
-        <div class="funkcjonalnosci TopRight">
-            <img class="fade" src="images/FunkcjonalnosciRycina2.png">
-
-            <h1>Polecane</h1>
-
-            <p> Funkcjonalność polegająca na mozliwości opiniowania<br> i polecania konkretnych zabytków.</p>
-
-            <div class="clear">
-
+        <div class="row">
+            <div class="feature">
+                <img  class="feature__img" src="images/FunkcjonalnosciRycina2.png">
+                <h3 class="feature__title">Popularne</h3>
+                <p class="feature__descr">Zabytki najczęściej oglądane przez odwiedzających.</p>
             </div>
-
-        </div>
-
-        <div class="funkcjonalnosci BottomLeft">
-            <img class="fade" src="images/FunkcjonalnosciRycina3.png">
-
-            <h1>Popularne</h1>
-
-            <p>Funkcjonalność pokazująca, które z zabytków cieszą się<br> największą popularnością.</p>
-
-            <div class="clear">
-
+            <div class="feature">
+                <img  class="feature__img" src="images/FunkcjonalnosciRycina1.png">
+                <h3 class="feature__title">Ulubione</h3>
+                <p class="feature__descr">Lista zabytków które najbardziej przypadły do gustu naszym użytkownikom.</p>
             </div>
         </div>
-
-        <div class="funkcjonalnosci BottomRight">
-            <img class="fade" src="images/FunkcjonalnosciRycina4.jpg">
-
-            <h1>Ulubione</h1>
-
-            <p> Funkcjonalność polegająca na możliwości dodawania<br> zabytków,które zaciekawiły oglądającego.</p>
-
-            <div class="clear">
-
-            </div>
-        </div>
-
     </section>
+<!-- Koniec FEATURES -->
+
+    </main>
 
 
     <!--CONTACT-->
     <section class="contact" id="contact_id">
-        <p class="contact_title">KONTAKT</p>
+        <p class="contact_title">Formularz kontaktowy</p>
 
-        <form action="mailto:is.wunderteam@gmail.com" method="post">
+        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
             <label class="contact_form">
-                <input type="text" name="name" placeholder="Imię"/>
+                <input type="text" name="name" placeholder="Imię" />
                 <input type="email" name="email" placeholder="Email"/>
                 <input type="text" name="telefon" placeholder="Telefon"/>
                 <textarea placeholder="Wiadomość"></textarea>
+                <input type="hidden" name="receiver" value="kgolat@gmail.com">
             </label>
 
             <label class="button_send">
-                <input type="submit" value="Wyślij">
+                <input type="submit" value="Wyślij zapytanie">
 
 
             </label>
