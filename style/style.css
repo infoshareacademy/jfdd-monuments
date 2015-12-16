@@ -82,20 +82,26 @@ body {
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     position: fixed;
 
+
+}
+
 }
 .menu_div {
-    margin-top: 0.5%;
-    margin-bottom: 3%;
-    margin-right: 2%;
+
 
 }
 .menu_div_header {
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+    margin-right: 2%;
     padding-left: 65%;
 
 }
 
 .menu_div_feat {
-    float: right;
+    position: relative;
+    margin-top: 0.5%;
+    margin-left:5%;
 
 }
 
