@@ -93,18 +93,18 @@ body {
 }
 
 
-.menu_div:link {
+nav div a:link {
     color: #000000;
     font-size: 20px;
     text-decoration: none;
 }
 
-.menu_div:hover {
+nav div a:hover {
     color: #E2AB2D;
     font-size: 22px;
 }
 
-.menu_div:visited {
+nav div a:visited {
     color: #ffffff;
     font-size: 20px;
 }
