@@ -169,149 +169,22 @@ a:visited {
 }
 /* FUNKCJONALNOŚCI */
 
-#film{
+#film {
 
-    position: absolute;/* video in full screen*/
-    top:0px;
-    left:-200px; /* left powinno byc 0*/
+    position: absolute; /* video in full screen*/
+    top: 0px;
+    left: -200px; /* left powinno byc 0*/
     min-width: 100%;
     /*min-height: 30%;*/
-    z-index: -1;/* video is under all of the elements */
+    z-index: -1; /* video is under all of the elements */
 
 }
-
-/*.funkcjonalnosci{*/
-    /*background: url("../images/FunkcjonalnosciGdansk.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*width: auto;*/
-    /*height: 100%;*/
-    /*background-repeat: no-repeat;*/
-/*position: absolute;*/
-/*}*/
-
-#funkcjonalnosci{
-    position:relative;
-    margin: 3% 15% 3% 15%;
-    width: 500px;
-    height: 500px;
-    color: #ffffff;
-}
-
-h3
-
-.TopLeft{
-   position:absolute;
-    top: 35px;
-    /*left: 30px;*/
-}
-
-.TopRight{
-
-    position:absolute;
-    top: 35px;
-    left: 440px;
-}
-
-.BottomLeft{
-    position: absolute;
-    top: 300px;
-    /*left: 30px;*/
-}
-
-.BottomRight{
-    position: absolute;
-    top: 300px;
-    left: 440px;
-}
-
-.TopLeft img { /* img z klasy topLeft*/
-    width: 140px;
-    height:140px;
-    float: left;
-    padding: 12px 0 0 5px;
-    transition: all 0.3s ease;
-    opacity:0.7;
-
-
-}
-
 
 .fade:hover
 {
     opacity:1;
 }
 
-.funkcjonalnosci h1 {
-    display: inline-block;
-    padding: 10px 3px 5px 16px;
-    /*color: sandybrown;*/
-    color: #ffffff;
-    font-weight: 600;
-    text-transform: uppercase;
-
-}
-
-.TopLeft p {
-    padding:  15px 0 0 200px;
-    /*line-height: 140%;*/
-}
-
-
-.clear {
-    clear: left;
-}
-
-
-.TopRight img { /* img z klasy topLeft*/
-    width: 140px;
-    height:140px;
-    float: left;
-    padding: 22px 0 0 133px;
-    transition: all 0.3s ease;
-    opacity:0.7;
-
-}
-
-
-.TopRight p {
-    padding:  15px 0 0 300px;
-    /*line-height: 140%;*/
-
-}
-
-
-.BottomLeft img { /* img z klasy topLeft*/
-    width: 140px;
-    height:140px;
-    float: left;
-    padding: 12px 0 0 5px;
-    transition: all 0.3s ease;
-    opacity:0.7;
-
-}
-
-.BottomLeft p {
-    padding:  15px 0 0 200px;
-    /*line-height: 140%;*/
-}
-
-
-
-
-.BottomRight img { /* img z klasy topLeft*/
-    width: 140px;
-    height:140px;
-    float: left;
-    padding: 12px 0 0 133px;
-    transition: all 0.3s ease;
-    opacity:0.7;
-
-}
-
-.BottomRight p {
-    padding:  15px 0 0 300px;
-    /*line-height: 140%;*/
-}
 
 /* FEATURES */
 .features {
