@@ -79,6 +79,7 @@ body {
     background-color: #000000;
     opacity: 0.3;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    color: #ffffff;
     position: fixed;
 }
 
@@ -88,13 +89,14 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
+
 }
 
 .menu_div_header {
     display: block;
     float: right;
     text-align: center;
-    font-size: 20%;
+    font-size: 20px;
     width: 130px;
     padding: 5px 15px;
     margin: 0px 1px 1px 0px;
@@ -104,7 +106,7 @@ body {
     display: block;
     float: right;
     text-align: center;
-    font-size: 20%;
+    font-size: 20px;
     width: 130px;
     padding: 5px 15px;
     margin: 0px 1px 1px 0px;
@@ -114,22 +116,31 @@ body {
     display: block;
     float: right;
     text-align: center;
-    font-size: 20%;
+    font-size: 20px;
     width: 130px;
     padding: 5px 15px;
     margin: 0px 1px 1px 0px;
 }
 
-/* MENU Hover */
+/* MENU Hover*/
 
-.menu_div_header:link {
+ div div a:link {
     color: white;
-    font-size: 20%;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-.menu_div_header:hover {
-    color: white
+div div a:hover {
+    color: #E2AB2D;
+    font-size: 22px;
 }
+
+div div a:visited {
+    color: white;
+    font-size: 20px;
+}
+
+
 
 
 
