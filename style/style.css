@@ -72,46 +72,39 @@ body{
 /*MENU*/
 
 .menu_gl {
-    position: absolute;
-    margin-left: 15%;
-    margin-top: 3%;
+
+    margin-top: 0.1%;
     margin-bottom: 3%;
-    margin-right: 15%;
-    background-color: darkgray;
+    width: 100%;
+    height: 5%;
+    background-color: #000000;
     opacity: 0.5;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-}
+    position: fixed;
 
-.menu_tytul {
-    color: #ffffff;
-    font-size: 30px;
 }
-#m_glowna {
-    margin: 60% 10% 20% 80%;
-}
+.menu_div {
+    margin-left: 70%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+    margin-right: 15%;
 
-#m_funk {
-    margin: 65% 10% 15% 80%;
-}
-
-#m_cont {
-    margin: 70% 10% 10% 80%;
 }
 
 
-a:link {
-    color: magenta;
+.menu_div:link {
+    color: #000000;
     font-size: 20px;
     text-decoration: none;
 }
 
-a:hover {
+.menu_div:hover {
     color: #E2AB2D;
     font-size: 22px;
 }
 
-a:visited {
-    color: magenta;
+.menu_div:visited {
+    color: #ffffff;
     font-size: 20px;
 }
 
@@ -352,7 +345,7 @@ h3
 
 /*CONTACT*/
 .contact {
-    height: 400px;
+    height: 500px;
     background-color: #ffffff;
     margin-left: 15%;
     margin-top: 3%;
@@ -365,7 +358,9 @@ h3
     font-weight: 300;
     font-size: 28px;
     text-transform: uppercase;
-    font-weight: 300;
+    padding-left: 30%;
+    padding-bottom: 20px;
+    padding-top: 3%;
 }
 
 .contact_form {
@@ -392,7 +387,7 @@ h3
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 500px;
+    width: 400px;
     height: 200px;
     background-color: white;
     border: 1px solid sandybrown;
@@ -406,10 +401,11 @@ h3
 .button_send {
     font-family: ralewaylight, sans-serif;
     font-size: 18px;
-    margin-bottom: 5%;
-    margin-left: 30%;
+    /*padding-left: 30%;*/
     /*padding-top: 8px;*/
-
+    position: relative;
+    left: -240px;
+    top: 410px;
 }
 
 
