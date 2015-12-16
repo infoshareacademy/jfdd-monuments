@@ -346,7 +346,7 @@ h3
 
 /*CONTACT*/
 .contact {
-    height: 500px;
+    height: 540px;
     background-color: #ffffff;
     margin-left: 15%;
     margin-top: 3%;
@@ -358,9 +358,8 @@ h3
 .contact_title {
     font-weight: 300;
     font-size: 28px;
-    text-transform: uppercase;
     padding-left: 30%;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     padding-top: 3%;
 }
 
@@ -374,21 +373,19 @@ h3
 .contact_form input {
     margin-bottom: 25px;
     padding-left: 10px;
-    width: 400px;
+    width: 440px;
     height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
     text-transform: uppercase;
-
-
 }
 
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 400px;
+    width: 440px;
     height: 200px;
     background-color: white;
     border: 1px solid sandybrown;
@@ -396,16 +393,14 @@ h3
     font-size: 17px;
     resize: none;
     text-transform: uppercase;
-
 }
 
 .button_send {
-    font-family: ralewaylight, sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     /*padding-left: 30%;*/
     /*padding-top: 8px;*/
     position: relative;
-    left: -240px;
+    left: -210px;
     top: 410px;
 }
 
