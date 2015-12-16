@@ -72,46 +72,39 @@ body{
 /*MENU*/
 
 .menu_gl {
-    position: absolute;
-    margin-left: 15%;
-    margin-top: 3%;
+
+    margin-top: 0.1%;
     margin-bottom: 3%;
-    margin-right: 15%;
-    background-color: darkgray;
+    width: 100%;
+    height: 5%;
+    background-color: #000000;
     opacity: 0.5;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-}
+    position: fixed;
 
-.menu_tytul {
-    color: #ffffff;
-    font-size: 30px;
 }
-#m_glowna {
-    margin: 60% 10% 20% 80%;
-}
+.menu_div {
+    margin-left: 70%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+    margin-right: 15%;
 
-#m_funk {
-    margin: 65% 10% 15% 80%;
-}
-
-#m_cont {
-    margin: 70% 10% 10% 80%;
 }
 
 
-a:link {
-    color: magenta;
+.menu_div:link {
+    color: #000000;
     font-size: 20px;
     text-decoration: none;
 }
 
-a:hover {
+.menu_div:hover {
     color: #E2AB2D;
     font-size: 22px;
 }
 
-a:visited {
-    color: magenta;
+.menu_div:visited {
+    color: #ffffff;
     font-size: 20px;
 }
 
