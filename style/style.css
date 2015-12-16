@@ -72,22 +72,29 @@ body{
 /*MENU*/
 
 .menu_gl {
-    position: absolute;
-    margin-left: 15%;
-    margin-top: 3%;
+    margin-left: 70%;
+    margin-top: 0.6%;
     margin-bottom: 3%;
     margin-right: 15%;
-    background-color: darkgray;
+    width: 500px;
+    height: 37px;
+    background-color: #000000;
     opacity: 0.5;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-}
+    position: fixed;
+    float: right;
 
-.menu_tytul {
-    color: #ffffff;
-    font-size: 30px;
+}
+.menu_pozycja {
+
 }
 #m_glowna {
-    margin: 60% 10% 20% 80%;
+    margin-left: 65%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+    margin-right: 15%;
+
+
 }
 
 #m_funk {
@@ -100,7 +107,7 @@ body{
 
 
 a:link {
-    color: magenta;
+    color: #000000;
     font-size: 20px;
     text-decoration: none;
 }
@@ -111,7 +118,7 @@ a:hover {
 }
 
 a:visited {
-    color: magenta;
+    color: #ffffff;
     font-size: 20px;
 }
 
