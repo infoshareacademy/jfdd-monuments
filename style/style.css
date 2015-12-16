@@ -354,7 +354,7 @@ h3
 
 /*CONTACT*/
 .contact {
-    height: 400px;
+    height: 500px;
     background-color: #ffffff;
     margin-left: 15%;
     margin-top: 3%;
@@ -368,6 +368,8 @@ h3
     font-size: 28px;
     text-transform: uppercase;
     padding-left: 30%;
+    padding-bottom: 20px;
+    padding-top: 3%;
 }
 
 .contact_form {
@@ -409,9 +411,10 @@ h3
     font-family: ralewaylight, sans-serif;
     font-size: 18px;
     /*padding-left: 30%;*/
-
     /*padding-top: 8px;*/
-
+    position: relative;
+    left: -240px;
+    top: 410px;
 }
 
 

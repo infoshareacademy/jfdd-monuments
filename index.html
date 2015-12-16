@@ -235,18 +235,19 @@
 
     <!--CONTACT-->
     <section class="contact" id="contact_id">
-        <p class="contact_title">KONTAKT</p>
+        <p class="contact_title">Formularz kontaktowy</p>
 
-        <form action="mailto:is.wunderteam@gmail.com" method="post">
+        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
             <label class="contact_form">
-                <input type="text" name="name" placeholder="Imię"/>
+                <input type="text" name="name" placeholder="Imię" />
                 <input type="email" name="email" placeholder="Email"/>
                 <input type="text" name="telefon" placeholder="Telefon"/>
                 <textarea placeholder="Wiadomość"></textarea>
+                <input type="hidden" name="receiver" value="kgolat@gmail.com">
             </label>
 
             <label class="button_send">
-                <input type="submit" value="Wyślij">
+                <input type="submit" value="Wyślij zapytanie">
 
 
             </label>
