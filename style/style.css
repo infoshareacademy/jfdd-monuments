@@ -124,7 +124,7 @@ body {
 
 /* MENU Hover*/
 
- div div a:link {
+div div a:link {
     color: white;
     font-size: 20px;
     text-decoration: none;
