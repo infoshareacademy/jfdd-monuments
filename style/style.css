@@ -89,32 +89,26 @@ body {
     color: #ffffff;
     text-align: center;
     z-index: 102;
+    border: white 2px solid;
 }
 
-/*.menu_div {
-    width: 100%;
-    margin: 0;
-}*/
-
-.menu_div_header {
+.menu_div {
     display: inline;
     width: 130px;
-    padding: 5px 35px 5px 5px;
     font-size: 25px;
+
+}
+
+.menu_div_header {
+    padding: 5px 35px 5px 5px;
 }
 
 .menu_div_feat {
-    display: inline;
-    width: 130px;
     padding: 5px 5px;
-    font-size: 25px;
 }
 
 .menu_div_contact {
-    display: inline;
-    width: 130px;
     padding: 5px 5px 5px 35px;
-    font-size: 25px;
 }
 
 /* MENU Hover*/
