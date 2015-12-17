@@ -82,29 +82,25 @@ body {
     height: 5%;
     right: 0px;
     position: fixed;
-    padding-top: 12px;
+    padding-top: 10px;
     background-color: #000000;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
     z-index: 102;
-    border: white 2px solid;
+    border: white 2px dashed;
+    /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
 }
 
 .menu_div {
     display: inline;
     width: 130px;
     font-size: 25px;
-
 }
 
 .menu_div_header {
     padding: 5px 35px 5px 5px;
-}
-
-.menu_div_feat {
-    padding: 5px 5px;
 }
 
 .menu_div_contact {
