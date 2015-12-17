@@ -60,6 +60,9 @@
     <!--<div class="naglowek">-->
 
     <div class="galeria">
+        <div style="background-image: url(images/DSC_2846%202.jpg)">
+            <p>Neptun...</p>
+        </div>
         <div style="background-image: url(images/DSC_2817%202%20copy.jpg)">
             <p>Portowe klimaty...</p>
         </div>
@@ -75,9 +78,7 @@
         <div style="background-image: url(images/DSC_2838%202.jpg)">
             <p>Ciekawa architektura...</p>
         </div>
-        <div style="background-image: url(images/DSC_2846%202.jpg)">
-            <p>Neptun...</p>
-        </div>
+
 
     </div>
 
@@ -101,17 +102,22 @@
     <!--</div>-->
 </header>
 
-<!--MENU w trakcie budowy-->
+<!--MENU-->
 
 <nav class="menu_gl">
         <div class="menu_div" >
-            <a href="#nasz_header">Glowna</a>
-        </div>
-        <div class="menu_div" >
-            <a href="#funkcjonalnosci">Funkcjonalnosci</a>
-        </div>
-        <div class="menu_div" >
-            <a href="#contact_id">Kontakt</a>
+
+            <div class="menu_div_contact">
+                <a href="#contact_id">Kontakt</a>
+            </div>
+
+            <div class="menu_div_feat">
+                <a href="#features_id" >Funkcjonalnosci</a>
+            </div>
+
+            <div class="menu_div_header">
+                <a href="#nasz_header">Glowna</a>
+            </div>
         </div>
 </nav>
 
@@ -146,117 +152,73 @@
             Wybierz zabytek i dojdź do niego dzięki mapie google.</p>
     </section>
 
-    <!--FUNKCJONALNOSCI-->
-
-    <!--&lt;!&ndash; FUNKCJONALNOSCI BEDA W DWOCH RZEDACH &ndash;&gt;-->
-    <!--<section class="funkcjonalnosci" id="funkcjonalnosci">-->
-        <!--<video id="film" autoplay>-->
-            <!--<source src="video/FunkcjonalnosciVideo.mov" type="video/webm">-->
-
-        <!--</video>-->
-        <!--<div class="funkcjonalnosci TopLeft">-->
-            <!--<img  class="fade" src="images/FunkcjonalnosciRycina1.png">-->
-            <!--<h1>Mapa z odległościami</h1>-->
-
-            <!--<p>Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>-->
-
-            <!--<div class="clear">-->
-
-            <!--</div>-->
-        <!--</div>-->
 
 
-
-        <!--<div class="funkcjonalnosci TopRight">-->
-            <!--<img class="fade" src="images/FunkcjonalnosciRycina2.png">-->
-
-            <!--<h1>Polecane</h1>-->
-
-            <!--<p> Funkcjonalność polegająca na mozliwości opiniowania<br> i polecania konkretnych zabytków.</p>-->
-
-            <!--<div class="clear">-->
-
-            <!--</div>-->
-
-        <!--</div>-->
-
-        <!--<div class="funkcjonalnosci BottomLeft">-->
-            <!--<img class="fade" src="images/FunkcjonalnosciRycina3.png">-->
-
-            <!--<h1>Popularne</h1>-->
-
-            <!--<p>Zabytki najczęściej oglądane przez odwiedzających.</p>-->
-
-            <!--<div class="clear">-->
-
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="funkcjonalnosci BottomRight">-->
-            <!--<img class="fade" src="images/FunkcjonalnosciRycina4.jpg">-->
-
-            <!--<h1>Ulubione</h1>-->
-
-           <!--&lt;!&ndash; <p> Funkcjonalność polegająca na możliwości dodawania zabytków,które zaciekawiły oglądającego.</p>&ndash;&gt;-->
-                <!--<p>Lista zabytków które najbardziej przypadły do gustu naszym użytkownikom.</p>-->
-            <!--<div class="clear">-->
-
-            <!--</div>-->
-        <!--</div>-->
-
-    <!--</section>-->
 <!-- Poczatek FEATURES -->
-    <section class="features">
+    <section class="features" id="features_id">
         <div class="row">
             <div class="feature">
-                <img  class="feature__img" src="images/FunkcjonalnosciMapaGdanska.jpg">
+                <img  class="feature__img" src="images/FunkcjonalnosciMapaGdanska.jpg" onmouseover="this.src='images/FunkcjonalnosciRycina7.gif'" onmouseout="this.src='images/FunkcjonalnosciMapaGdanska.jpg'">
                 <h3 class="feature__title">Mapa z odległościami</h3>
                 <p class="feature__descr">Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>
             </div>
             <div class="feature">
-                <img  class="feature__img" src="images/FunkcjonalnosciRycina4.jpg">
+
+                <img  class="feature__img" src="images/FunkcjonalnosciRycina4.jpg" onmouseover="this.src='images/FunkcjonalnosciRycina2.png'"  onmouseout="this.src='images/FunkcjonalnosciRycina4.jpg'">
                 <h3 class="feature__title">Polecane</h3>
-                <p class="feature__descr">Funkcjonalność polegająca na mozliwości opiniowania i polecania konkretnych zabytków.</p>
+                <p class="feature__descr">Funkcjonalność polegająca na możliwości opiniowania i polecania konkretnych zabytków.</p>
             </div>
         </div>
         <div class="row">
             <div class="feature">
-                <img  class="feature__img" src="images/FunkcjonalnosciRycina2.png">
+                <img  class="feature__img" src="images/FunkcjonalnosciRycina3.png" onmouseover="this.src='images/FunkcjonalnosciRycina.jpg'"  onmouseout="this.src='images/FunkcjonalnosciRycina3.png'">
                 <h3 class="feature__title">Popularne</h3>
                 <p class="feature__descr">Zabytki najczęściej oglądane przez odwiedzających.</p>
             </div>
             <div class="feature">
-                <img  class="feature__img" src="images/FunkcjonalnosciRycina1.png">
+
+                <img  class="feature__img" src="images/FunkcjonalnosciGdansk.jpg" onmouseover="this.src='images/FunkcjonalnosciRycina5.jpg'"  onmouseout="this.src='images/FunkcjonalnosciGdansk.jpg'">
                 <h3 class="feature__title">Ulubione</h3>
-                <p class="feature__descr">Lista zabytków które najbardziej przypadły do gustu naszym użytkownikom.</p>
+                <p class="feature__descr">Lista zabytków, które najbardziej przypadły do gustu naszym użytkownikom.</p>
             </div>
         </div>
+
+
+
+
+        <!--CONTACT-->
+        <section class="contact" id="contact_id">
+            <p class="contact_title">Formularz kontaktowy</p>
+
+            <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
+                <label class="contact_form">
+                    <input type="text" name="name" placeholder="Imię" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
+                    <textarea placeholder="Wiadomość" required></textarea>
+                    <input type="hidden" name="receiver" value="kgolat@gmail.com">
+                </label>
+
+                <label class="button_send" >
+                    <input type="submit" value="Wyślij zapytanie" >
+
+
+                </label>
+            </form>
+
+        </section>
+
+
+
+
+
     </section>
 <!-- Koniec FEATURES -->
 
     </main>
 
 
-    <!--CONTACT-->
-    <section class="contact" id="contact_id">
-        <p class="contact_title">KONTAKT</p>
 
-        <form action="mailto:is.wunderteam@gmail.com" method="post">
-            <label class="contact_form">
-                <input type="text" name="name" placeholder="Imię"/>
-                <input type="email" name="email" placeholder="Email"/>
-                <input type="text" name="telefon" placeholder="Telefon"/>
-                <textarea placeholder="Wiadomość"></textarea>
-            </label>
-
-            <label class="button_send">
-                <input type="submit" value="Wyślij">
-
-
-            </label>
-        </form>
-
-    </section>
 </main>
 
 
