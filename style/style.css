@@ -99,7 +99,7 @@ body {
 .menu_div_header {
     display: inline;
     width: 130px;
-    padding: 5px 10px 5px 5px;
+    padding: 5px 35px 5px 5px;
     font-size: 25px;
 }
 
@@ -113,7 +113,7 @@ body {
 .menu_div_contact {
     display: inline;
     width: 130px;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 5px 5px 35px;
     font-size: 25px;
 }
 
