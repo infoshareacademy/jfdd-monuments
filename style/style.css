@@ -81,59 +81,55 @@ body {
     width: 30%;
     height: 5%;
     right: 0px;
+    position: fixed;
+    padding-top: 12px;
     background-color: #000000;
-    font-size: 25px;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
     color: #ffffff;
-    position: fixed;
-    border: 1px;
-    padding-top: 12px;
     text-align: center;
-
+    z-index: 102;
 }
 
-.menu_div {
+/*.menu_div {
     width: 100%;
     margin: 0;
-}
+}*/
 
 .menu_div_header {
     display: inline;
-    font-size: 20px;
     width: 130px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 10px 5px 5px;
+    font-size: 25px;
 }
 
 .menu_div_feat {
     display: inline;
-    font-size: 20px;
     width: 130px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px;
+    font-size: 25px;
 }
 
 .menu_div_contact {
     display: inline;
-    font-size: 20px;
     width: 130px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 10px;
+    font-size: 25px;
 }
 
 /* MENU Hover*/
 
-nav div div a:link {
+.brown_sugar:link {
     color: white;
     text-decoration: none;
 }
 
-nav div div a:hover {
-    color: #E2AB2D;
-
+.brown_sugar:visited {
+    color: white;
 }
 
-nav div div a:visited {
-    color: white;
-
+.brown_sugar:hover {
+    color: #E2AB2D;
 }
 
 /*ASIDE SOCIAL MEDIA*/
