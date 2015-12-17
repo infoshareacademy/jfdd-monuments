@@ -182,33 +182,43 @@
                 <p class="feature__descr">Lista zabytków, które najbardziej przypadły do gustu naszym użytkownikom.</p>
             </div>
         </div>
+
+
+
+
+        <!--CONTACT-->
+        <section class="contact" id="contact_id">
+            <p class="contact_title">Formularz kontaktowy</p>
+
+            <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
+                <label class="contact_form">
+                    <input type="text" name="name" placeholder="Imię" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
+                    <textarea placeholder="Wiadomość" required></textarea>
+                    <input type="hidden" name="receiver" value="kgolat@gmail.com">
+                </label>
+
+                <label class="button_send" >
+                    <input type="submit" value="Wyślij zapytanie" >
+
+
+                </label>
+            </form>
+
+        </section>
+
+
+
+
+
     </section>
 <!-- Koniec FEATURES -->
 
     </main>
 
 
-    <!--CONTACT-->
-    <section class="contact" id="contact_id">
-        <p class="contact_title">Formularz kontaktowy</p>
 
-        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
-            <label class="contact_form">
-                <input type="text" name="name" placeholder="Imię" required/>
-                <input type="email" name="email" placeholder="Email" required/>
-                <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
-                <textarea placeholder="Wiadomość" required></textarea>
-                <input type="hidden" name="receiver" value="kgolat@gmail.com">
-            </label>
-
-            <label class="button_send" >
-                <input type="submit" value="Wyślij zapytanie" >
-
-
-            </label>
-        </form>
-
-    </section>
 </main>
 
 
