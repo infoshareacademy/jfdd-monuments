@@ -4,25 +4,29 @@ body {
     font-weight: 300;
     background-color: #f9f9f9;
 }
+
 .galeria {
-    position:relative;
-    height:500px;
+    position: relative;
+    height: 500px;
 }
+
 .galeria div {
-    position:absolute;
-    left:0;
+    position: absolute;
+    left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    display:none;
+    display: none;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 /* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
 .galeria div:first-child {
     display: block;
 }
+
 .galeria p {
     color: #ffffff;
     /*text-transform: uppercase;*/
@@ -73,42 +77,64 @@ body {
 /*MENU*/
 
 .menu_gl {
-
-    margin-top: 0.1%;
-    margin-bottom: 3%;
-    width: 100%;
+    top: 0px;
+    width: 30%;
     height: 5%;
-    /*background-color:#D3D3D3;*/
-    opacity: 0.5;
+    right: 0px;
+    background-color: #000000;
+    font-size: 25px;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
     position: fixed;
+    border: 1px;
+    padding-top: 12px;
+    text-align: center;
 
 }
+
 .menu_div {
-    margin-left: 70%;
-    margin-top: 0.5%;
-    margin-bottom: 3%;
-    margin-right: 15%;
-
+    width: 100%;
+    margin: 0;
 }
 
-
-.menu_div:link {
-    color: #000000;
+.menu_div_header {
+    display: inline;
     font-size: 20px;
+    width: 130px;
+    padding: 5px 5px 5px 5px;
+}
+
+.menu_div_feat {
+    display: inline;
+    font-size: 20px;
+    width: 130px;
+    padding: 5px 5px 5px 5px;
+}
+
+.menu_div_contact {
+    display: inline;
+    font-size: 20px;
+    width: 130px;
+    padding: 5px 5px 5px 5px;
+}
+
+/* MENU Hover*/
+
+nav div div a:link {
+    color: white;
     text-decoration: none;
 }
 
-.menu_div:hover {
+nav div div a:hover {
     color: #E2AB2D;
-    font-size: 22px;
+
 }
 
-.menu_div:visited {
-    color: #ffffff;
-    font-size: 20px;
-}
+nav div div a:visited {
+    color: white;
 
+}
 
 /*ASIDE SOCIAL MEDIA*/
 .social-media {
@@ -117,19 +143,24 @@ body {
     right: 0;
     top: 50vh;
 }
+
 .social-media__link {
     position: absolute;
     right: 0;
 }
+
 .social-media__link--fb {
     top: -63px;
 }
+
 .social-media__link--gp {
     top: -20px;
 }
+
 .social-media__link--tw {
     top: 23px;
 }
+
 .social-media__link img {
     width: 40px;
 }
@@ -146,19 +177,37 @@ body {
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 28px;
-    /*color: #000000;*/
+    color: #000000;
     margin: 3% 15% 3% 15%;
-    background-color: #f9f9f9;
 }
+
 .zacheta p {
     margin: 0.5em 0;
 }
+
 .zacheta p:first-of-type {
     font-weight: 700;
 }
 
 .nasz-header {
     position: relative;
+}
+
+/* FUNKCJONALNOŚCI */
+
+#film {
+
+    position: absolute; /* video in full screen*/
+    top: 0px;
+    left: -200px; /* left powinno byc 0*/
+    min-width: 100%;
+    /*min-height: 30%;*/
+    z-index: -1; /* video is under all of the elements */
+
+}
+
+.fade:hover {
+    opacity: 1;
 }
 
 /* FEATURES */
@@ -168,24 +217,28 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .row {
     overflow: hidden;
     max-width: 1000px;
     margin: 0 auto;
     padding: 15px 0;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
 }
+
 .feature {
     float: left;
     margin: 15px 3%;
     width: 44%;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
+
 .feature__img {
     float: left;
     margin: 0 15px 15px 0;
     width: 48%;
 }
+
 .feature__title {
     color: darkred;
     text-transform: uppercase;
@@ -194,6 +247,7 @@ body {
     font-size: 25px;
     padding-bottom: 8px;
 }
+
 .feature__descr {
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 300;
@@ -201,61 +255,84 @@ body {
 }
 
 /*CONTACT*/
-.contact {
-
-
-    background: url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
-    background-size: cover;
-    height: 500px;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    padding: 30px 0;
-
-    background-attachment: fixed;
-    margin-bottom: 10px;
-}
-
-.contact_form{
-    background-color: rgba(72,72,72,0.4);
-    padding-left: 35px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    width: 450px;
-    left: 50%;
-    position: absolute;
-    /*-moz-border-radius: 7px;*/
-    margin-left: -260px;
-    /*vertical-align: top;*/
-}
+/*.contact {*/
+/*height: 570px;*/
+/*background-color: #ffffff;*/
+/*margin-top: 3%;*/
+/*margin-bottom: 2%;;*/
+/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
+/*}*/
 
 .contact_title {
     font-weight: 300;
     font-size: 28px;
-    text-transform: uppercase;
     padding-left: 30%;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     padding-top: 3%;
-
-
 }
+
+/*.contact_form {*/
+/*padding-left: 30%;*/
+/*width: 400px;*/
+/*float: left;*/
+/*vertical-align: top;*/
+/*}*/
 
 .contact_form input {
     margin-bottom: 25px;
     padding-left: 10px;
-    width: 400px;
+    width: 440px;
     height: 35px;
     background-color: white;
     border: 1px solid sandybrown;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
     text-transform: uppercase;
-
-
 }
+
+/*poczatek stylowania */
+.contact {
+    margin: 3% auto;
+    max-width: 1000px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    /*margin-bottom: 8px;*/
+}
+
+.contact_title {
+    font-weight: 300;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-left: 38%;
+    padding-bottom: 20px;
+    padding-top: 3%;
+}
+
+.contact_form {
+
+    padding-left: 30%;
+    width: 400px;
+    float: left;
+    /*background-color: rgba(72,72,72,0.4);*/
+    padding-left: 35px;
+    /*padding-top: 35px;*/
+    padding-bottom: 50px;
+    width: 450px;
+    left: 50%;
+    position: absolute;
+    margin-left: -260px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    padding-right: 35px;
+}
+
+/*koniec do proby */
 
 .contact_form textarea {
     margin-right: 20px;
     padding-left: 10px;
-    width: 400px;
+    width: 440px;
     height: 200px;
     background-color: white;
     border: 1px solid sandybrown;
@@ -263,19 +340,16 @@ body {
     font-size: 17px;
     resize: none;
     text-transform: uppercase;
-
 }
 
 .button_send {
-    font-family: ralewaylight, sans-serif;
-    font-size: 18px;
+    font-size: 24px;
+    /*padding-left: 30%;*/
+    /*padding-top: 8px;*/
     position: relative;
-    left: -240px;
-    top: 410px;
-
+    left: 0px;
+    top: 0px;
 }
-
-
 
 /*.cta {*/
 /*float: right;*/
@@ -321,9 +395,10 @@ body {
     font-size: 14px;
     background: url(../images/naglowek_gdansk1.jpg);
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
-    padding: 7px 20px;
+    padding: 10px 20px 10px 20px;
     text-align: center;
     text-shadow: black 0 2px 0;
+    margin-top: 20px;
 }
 
 .partnerzy {
@@ -335,3 +410,4 @@ body {
 .partnerzy img {
     height: 25px;
 }
+
