@@ -293,9 +293,10 @@ div div a:visited {
 
 /*poczatek stylowania */
 .contact {
-    background:url("../images/ContactBackgroung_sephia.jpg") no-repeat;
-    background-size: cover;
+    margin: 3% 15%;
+    max-width: 1000px;
     height: 500px;
+    background: red;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     /*margin-bottom: 8px;*/
 }
@@ -311,6 +312,7 @@ div div a:visited {
 }
 
 .contact_form {
+
     padding-left: 30%;
     width: 400px;
     float: left;
