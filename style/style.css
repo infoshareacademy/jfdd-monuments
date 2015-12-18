@@ -47,7 +47,7 @@ body {
     top: 60px;
     width: 210px;
     height: 330px;
-    z-index: 100;
+    /*z-index: 100;*/
     box-shadow: black 4px 0 5px;
 }
 
