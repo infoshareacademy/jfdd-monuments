@@ -89,7 +89,8 @@ body {
     color: #ffffff;
     text-align: center;
     z-index: 102;
-    border: white 2px dashed;
+    border: white 2px solid;
+    opacity: 0.8;
     /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
 }
 
