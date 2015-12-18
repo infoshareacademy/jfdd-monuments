@@ -79,7 +79,6 @@ body {
 .menu_gl {
     top: 0px;
     width: 30%;
-    height: 38px;
     right: 0px;
     position: fixed;
     padding-top: 10px;
@@ -91,6 +90,7 @@ body {
     z-index: 102;
     border: white 2px solid;
     opacity: 0.8;
+    padding-bottom: 12px;
     /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
 }
 
@@ -387,13 +387,12 @@ body {
     margin-top: 20px;
 }
 
-.partnerzy {
+.partner {
     text-align: center;
     /*padding: 5px; dwa razy ? */
     padding: 7px 20px;
 }
-
-.partnerzy img {
+.partner img {
     height: 25px;
 }
 
