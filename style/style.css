@@ -280,7 +280,7 @@ body {
 .contact {
     margin: 3% auto;
     max-width: 1000px;
-    height: 500px;
+    height: 535px;
     background: rgba(255, 255, 255, 0.7);
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     /*margin-bottom: 8px;*/
@@ -298,7 +298,6 @@ body {
 .contact_form {
 
     padding-left: 30%;
-    width: 400px;
     float: left;
     /*background-color: rgba(72,72,72,0.4);*/
     padding-left: 35px;
@@ -306,7 +305,7 @@ body {
     padding-bottom: 50px;
     width: 450px;
     left: 50%;
-    position: absolute;
+    position: relative;
     margin-left: -260px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -333,8 +332,8 @@ body {
     /*padding-left: 30%;*/
     /*padding-top: 8px;*/
     position: relative;
-    left: 0px;
-    top: 0px;
+    left: 185px;
+    top: 405px;
 }
 
 /*.cta {*/
