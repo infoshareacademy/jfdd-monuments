@@ -79,61 +79,48 @@ body {
 .menu_gl {
     top: 0px;
     width: 30%;
-    height: 5%;
     right: 0px;
+    position: fixed;
+    padding-top: 10px;
     background-color: #000000;
-    font-size: 25px;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
     color: #ffffff;
-    position: fixed;
-    border: 1px;
-    padding-top: 12px;
     text-align: center;
-
+    z-index: 102;
+    border: white 2px solid;
+    opacity: 0.8;
+    padding-bottom: 12px;
+    /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
 }
 
 .menu_div {
-    width: 100%;
-    margin: 0;
+    display: inline;
+    width: 130px;
+    font-size: 25px;
 }
 
 .menu_div_header {
-    display: inline;
-    font-size: 20px;
-    width: 130px;
-    padding: 5px 5px 5px 5px;
-}
-
-.menu_div_feat {
-    display: inline;
-    font-size: 20px;
-    width: 130px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 35px 5px 5px;
 }
 
 .menu_div_contact {
-    display: inline;
-    font-size: 20px;
-    width: 130px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 35px;
 }
 
 /* MENU Hover*/
 
-nav div div a:link {
+.brown_sugar:link {
     color: white;
     text-decoration: none;
 }
 
-nav div div a:hover {
-    color: #E2AB2D;
-
+.brown_sugar:visited {
+    color: white;
 }
 
-nav div div a:visited {
-    color: white;
-
+.brown_sugar:hover {
+    color: #E2AB2D;
 }
 
 /*ASIDE SOCIAL MEDIA*/
@@ -288,13 +275,18 @@ nav div div a:visited {
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
     text-transform: uppercase;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: rgba(255,255,255,0.7);
 }
 
 /*poczatek stylowania */
 .contact {
     margin: 3% auto;
     max-width: 1000px;
-    height: 500px;
+    height: 535px;
     background: rgba(255, 255, 255, 0.7);
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     /*margin-bottom: 8px;*/
@@ -312,7 +304,6 @@ nav div div a:visited {
 .contact_form {
 
     padding-left: 30%;
-    width: 400px;
     float: left;
     /*background-color: rgba(72,72,72,0.4);*/
     padding-left: 35px;
@@ -320,7 +311,7 @@ nav div div a:visited {
     padding-bottom: 50px;
     width: 450px;
     left: 50%;
-    position: absolute;
+    position: relative;
     margin-left: -260px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -347,8 +338,8 @@ nav div div a:visited {
     /*padding-left: 30%;*/
     /*padding-top: 8px;*/
     position: relative;
-    left: 0px;
-    top: 0px;
+    left: 185px;
+    top: 405px;
 }
 
 /*.cta {*/
@@ -398,16 +389,13 @@ nav div div a:visited {
     padding: 10px 20px 10px 20px;
     text-align: center;
     text-shadow: black 0 2px 0;
-    margin-top: 20px;
 }
 
 .partnerzy {
     text-align: center;
-    /*padding: 5px; dwa razy ? */
-    padding: 7px 20px;
+    padding: 8px 20px;
 }
-
 .partnerzy img {
-    height: 25px;
+    height: 26px;
 }
 
