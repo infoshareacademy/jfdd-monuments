@@ -9,17 +9,30 @@
     <title>Zabytki Gdańska</title>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300&subset=latin,latin-ext' rel='stylesheet'
-          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     <link type="text/css" rel="stylesheet" href="style/reset.css">
     <link type="text/css" rel="stylesheet" href="style/animate.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
 
+    <!-- Informacja o Cookies -->
+    <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
+    <script>
+        CookieAlert.init({
+            style: 'dark',
+            position: 'bottom',
+            opacity: '1',
+            displayTime: 10000,
+            cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
+            text: 'Ten serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
+        });
+    </script>
+
+
     <!-- NAGLOWEK -->
     <!-- ponizej pobieramy jQuery z google hosted libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <script>
         // timer sluzacy do obliczania czasu do uruchomienia kolejnej animacji.
         var timer;
@@ -137,7 +150,8 @@
     <section class="features" id="features_id">
         <div class="row">
             <div class="feature">
-                <img class="feature__img" src="images/FunkcjonalnosciMapaGdanska.jpg"
+                <img class="feature__img"
+src="images/FunkcjonalnosciMapaGdanska.jpg"
                      onmouseover="this.src='images/FunkcjonalnosciRycina7.gif'"
                      onmouseout="this.src='images/FunkcjonalnosciMapaGdanska.jpg'">
 
@@ -186,11 +200,11 @@
 
             <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
                 <label class="contact_form">
-                    <input type="text" name="name" placeholder="Imię" required/>
-                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="text" name="name" placeholder="imię" required/>
+                    <input type="email" name="email" placeholder="email" required/>
                     <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
-                    <textarea placeholder="Wiadomość" required></textarea>
-                    <input type="hidden" name="receiver" value="kgolat@gmail.com">
+                    <textarea placeholder="wiadomość" required></textarea>
+                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
                 </label>
 
                 <label class="button_send">
@@ -215,7 +229,7 @@
         <div class="stopka">Copyright 2015 | All Rights Reserved - Wunder Team</div>
         <div class="partnerzy">
             <a href="http://www.oliviacentre.com/" target="_blank">
-                <img src="images/stopka_olivia.png" alt="Olivia Center logo">
+                <img src="images/stopka_olivia_center.jpg" alt="Olivia Center logo">
             </a>
             <img src="images/stopka_Wteam2.jpg" alt="WunderTeam logo">
             <a href="http://www.infoshareacademy.com/" target="_blank">
