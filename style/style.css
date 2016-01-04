@@ -118,7 +118,8 @@ body {
 }
 
 .hover_brown:visited {
-    color: white;
+    /*color: white;*/
+    color:pink;
 }
 
 .hover_brown:hover {
