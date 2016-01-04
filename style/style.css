@@ -76,7 +76,7 @@ body {
 
 /*MENU*/
 
-.menu_gl {
+.menu_glowne {
     top: 0px;
     width: 30%;
     right: 0px;
@@ -91,7 +91,7 @@ body {
     border: white 2px solid;
     opacity: 0.8;
     padding-bottom: 12px;
-    /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
+
 }
 
 .menu_div {
@@ -110,16 +110,16 @@ body {
 
 /* MENU Hover*/
 
-.brown_sugar:link {
+.hover_brown:link {
     color: white;
     text-decoration: none;
 }
 
-.brown_sugar:visited {
+.hover_brown:visited {
     color: white;
 }
 
-.brown_sugar:hover {
+.hover_brown:hover {
     color: #E2AB2D;
 }
 
