@@ -41,11 +41,12 @@
             // to bedziemy wykonywac co kilka sekund.
             var animuj = function () {
                 // znajdz slaj ktory jest teraz widoczny
-                var biezacy = $(('.galeria div:visible') && ('.galeriaMusea div:visible')); /* NIE WIEM DLACZEGO DRUGA CZESC GALERIAMUSEA DZIALA A GALERIA  NIE*/
+                var biezacy = $('.galeriaMusea div:visible');
+//
                 // potem znajdz nastepny slajd (1 do 6, potem powrot na 1szy)
                 var nastepny = biezacy.next();
                 if (nastepny.length === 0) {
-                    nastepny = $(('.galeria div:first')  && ('.galeriaMusea div:first'));
+                    nastepny = $('.galeriaMusea div:first');
                 }
                 // ukryj widoczny
                 biezacy.fadeOut(1500);
@@ -152,7 +153,10 @@
         <h2 class="h2">   NIEPOWTARZALNE FUNKCJE</h2>
         <div class="row">
             <div class="feature">
-                <img class="feature__img" src="images/FunkcjonalnosciRycina7.jpg'" width="160" height="150"
+
+
+
+                <img class="feature__img" src="images/FunkcjonalnosciRycina7.jpg" width="160" height="150"
                      onmouseover="this.src='images/FunkcjonalnosciMapaGdanska.jpg'"
                      onmouseout="this.src='images/FunkcjonalnosciRycina7.jpg'">
 
@@ -162,7 +166,7 @@
             </div>
             <div class="feature">
 
-                <img class="feature__img" src="images/FunkcjonalnosciRycina4.jpg'" width="160" height="150"
+                <img class="feature__img" src="images/FunkcjonalnosciRycina4.jpg" width="160" height="150"
                      onmouseover="this.src='images/FunkcjonalnosciRycina3.jpg'"
                      onmouseout="this.src='images/FunkcjonalnosciRycina4.jpg'">
 
@@ -241,16 +245,6 @@
                     <input type="submit" value="Wyślij">
 
 
-
-                    <!--<script>-->
-                        <!--$(document).ready(function(){-->
-                            <!--$(".contact_form input:last-of-type").mouseenter(function(){-->
-                                <!--alert("Dzieki za wypelnienie");-->
-                            <!--});-->
-                        <!--});-->
-                    <!--</script>-->
-
- <!--dzieki za wypelnienie nie na mousenter tylko po wypelnieniu formularza !!!!!!!!!!!!!!!!-->
                 </label>
             </form>
 

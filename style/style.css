@@ -400,12 +400,12 @@ h2{
 /*FOOTER */
 
 .stopka {
-    height: 46px;
+    height: 26px;
     color: white;
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     background: url(../images/naglowek_gdansk1.jpg);
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
     padding: 40px 20px 10px 20px;
