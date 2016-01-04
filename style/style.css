@@ -154,6 +154,7 @@ body {
 
 .social-media__link:hover {
     width: 50px;
+    /*background-color: deeppink;*/
 }
 
 /* Zacheta */
@@ -275,6 +276,11 @@ body {
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 17px;
     text-transform: uppercase;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: rgba(255,255,255,0.7);
 }
 
 /*poczatek stylowania */
