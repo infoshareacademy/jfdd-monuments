@@ -1,0 +1,73 @@
+.overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 666;
+}
+
+.wywolanie__easteregg {
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 195px;
+    left: 85px;
+    z-index: 102;
+}
+
+.easter {
+    position: fixed;
+    left: 15vw;
+    right: 15vw;
+    top: 10vh;
+    background-color: #000000;
+    z-index: 1000;
+// display: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.easter__close {
+    background: gray;
+    padding: 2px 10px 10px;
+    display: inline-block;
+    float: right;
+    border-radius: 0px 0 0px 6px;
+    cursor: pointer;
+    font-size: 4em;
+    line-height: 0.5em;
+
+}
+
+.easter__close:hover {
+    color: yellow;
+}
+
+.easter__map {
+    background-image: url('../images/easter_mapa.jpg');
+    height: 70vh;
+    background-size: cover;
+}
+
+.easter__counters {
+    color: white;
+    font-size: 1.5em;
+    padding:5px;
+}
+
+.easter__counters__monuments, .easter__counters__highscore {
+    float: right;
+}
+
+.easter__counters span {
+    padding:10px;
+    display: inline-block;
+}
+
+.easter__counters em {
+    color: yellow;
+    font-style: normal;
+}
