@@ -2,5 +2,6 @@
 //    document.getElementsByClassName('easter')[0].onclick() = "yellow";
 
 function myEaster() {
-    document.getElementsByName('demo').style.color = "red";
+    document.getElementById('demo').style.color = "red";
+    document.getElementById('easter-egg-container').style.display = "block";
 }
