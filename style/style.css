@@ -109,16 +109,16 @@ body {
 
 /* MENU Hover*/
 
-.brown_sugar:link {
+.hover_orange:link {
     color: white;
     text-decoration: none;
 }
 
-.brown_sugar:visited {
+.hover_orange:visited {
     color: white;
 }
 
-.brown_sugar:hover {
+.hover_orange:hover {
     color: sandybrown;
 }
 
