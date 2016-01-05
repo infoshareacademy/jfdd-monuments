@@ -50,6 +50,16 @@ body {
     box-shadow: black 4px 0 5px;
 }
 
+.easter {
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 195px;
+    left: 85px;
+    z-index: 102;
+}
+
 .motto {
     color: #ffffff;
     text-transform: uppercase;
