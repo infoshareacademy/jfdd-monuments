@@ -5,38 +5,17 @@ body {
     background-color: #f9f9f9;
 }
 
-.galeria {
+
+
+.header {
     position: relative;
+    background-image: url(../images/mainPicture.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position:  -235.6562px; /* dzieki tej pozycji zdjecie "idzie" z dolu do gory */
     height: 670px;
-}
 
-.galeria div {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
-/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
-.galeria div:first-child {
-    display: block;
-}
-
-.galeria p {
-    color: #ffffff;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 400;
-    text-shadow: black 2px 4px 0;
-    font-size: 23px;
-    text-align: right;
-    margin-top: 468px;
-    margin-right: 90px;
-    font-style: italic;
 }
 
 #logo2 {
@@ -87,10 +66,9 @@ body {
     color: #ffffff;
     text-align: center;
     z-index: 102;
-    /*border: white 2px solid;*/
     opacity: 0.8;
     padding-bottom: 12px;
-    /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
+
 }
 
 .menu_div {
@@ -129,6 +107,7 @@ body {
     position: fixed;
     right: 0;
     top: 50vh;
+    z-index: 102;
 }
 
 .social-media__link {
@@ -154,7 +133,6 @@ body {
 
 .social-media__link:hover {
     width: 50px;
-    /*background-color: deeppink;*/
 }
 
 /* Zacheta */
@@ -176,10 +154,6 @@ body {
 
 .zacheta p:first-of-type {
     font-weight: 700;
-}
-
-.nasz-header {
-    position: relative;
 }
 
 
@@ -246,19 +220,10 @@ h2{
 
 
 
-/*GALLERY*/
-
-
-
-/*.galleryOfMuseas{*/
-
-/*padding-top: 96px;*/
-/*}*/
 .galeriaMusea{
 
     position: relative;
-    height: 500px;
-
+    height: 600px;
 }
 
 
@@ -284,7 +249,6 @@ h2{
 
 .galeriaMusea p {
     color: #ffffff;
-    /*text-transform: uppercase;*/
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 400;
     text-shadow: black 2px 4px 0;
@@ -315,9 +279,7 @@ h2{
     margin: 3% auto;
     max-width: 1000px;
     height: 535px;
-    /*background: rgba(255, 255, 255, 0.7);*/
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    /*margin-bottom: 8px;*/
 
 }
 
@@ -357,6 +319,7 @@ h2{
     width: 440px;
     height: 70px;
     border:none;
+    color:#71706B;
 }
 
 

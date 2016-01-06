@@ -41,12 +41,12 @@
             // to bedziemy wykonywac co kilka sekund.
             var animuj = function () {
                 // znajdz slaj ktory jest teraz widoczny
-                var biezacy = $(('.galeria div:visible') && $('.galeriaMusea div:visible'));
-//
+                var biezacy =  $('.galeriaMusea div:visible');
+
                 // potem znajdz nastepny slajd (1 do 6, potem powrot na 1szy)
                 var nastepny = biezacy.next();
                 if (nastepny.length === 0) {
-                    nastepny = $(('.galeria div:first') && $('.galeriaMusea div:first'));
+                    nastepny = $('.galeriaMusea div:first');
                 }
                 // ukryj widoczny
                 biezacy.fadeOut(1500);
@@ -65,10 +65,7 @@
 
 <body>
 <!--NAGLÓWEK-->
-<header class="nasz-header" id="nasz_header">
-
-    <div class="galeria">
-        <div style="background-image: url(images/mainPicture.jpg)"></div>
+<header class="header" id="nasz_header">
 
     <!--LOGO-->
     <img id="logo2" src="http://pomorskie.travel/uploads/mm/obrazy/album_393/1000x760/obraz_1196.jpg">
@@ -215,15 +212,13 @@
 
     <!--CONTACT-->
     <section class="contact" id="contact_id">
-        <p class="contact_title">Dziękujemy,  że nas odwiedziłeś. Chcesz być na bieżąco?<br>Zostaw info,  a my skontaktujemy się z Tobą!</p>
+        <p class="contact_title">Dziękujemy,  że nas odwiedziłeś. Chcesz być na bieżąco?<br>Zostaw info, że tu byłeś,  a my skontaktujemy się z Tobą!</p>
 
         <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
             <label class="contact_form">
                 <input type="text" name="name" placeholder="Imie" required/>
                 <input type="email" name="email" placeholder="Email" required/>
                 <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
-
-                <!--<textarea placeholder="Wiadomość" required></textarea>-->
                 <input type="hidden" name="receiver" value="piekarska@live.com">
                 <input type="submit" value="Wyślij">
 
