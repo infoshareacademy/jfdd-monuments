@@ -211,52 +211,52 @@
 
         <!-- END OF GALLERY-x->
 
-<!--ADDITIONAL FEATURES -->
+<!--&lt;!&ndash;ADDITIONAL FEATURES &ndash;&gt;-->
         <section class="additionalFeatures">
             <div class="additionalFeaturesTitle"> Z NAMI ODKRYJESZ PIĘKNO TEGO MIASTA</div>
 
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="Bursztyn" title="Bursztyn" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="Bursztyn" title="Bursztyn"  width="180px" height="180px"
                      class="LogoFeatures">
                 <p>architektura</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="#" title="#" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="#" title="#" width="180px" height="180px"
                      class="LogoFeatures">
                 <p>muzyka</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="" title="" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="" title=""  width="180px" height="180px"
                      class="LogoFeatures">
                 <p> motława</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="" title="" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="" title=""  width="180px" height="180px"
                      class="LogoFeatures">
                 <p>zatoka</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="" title="" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="" title=""  width="180px" height="180px"
                      class="LogoFeatures">
                 <p>bursztyn</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="" title="" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="" title=""  width="180px" height="180px"
                      class="LogoFeatures">
                 <p>teatr</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="" title="" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="" title="" width="180px" height="180px"
                      class="LogoFeatures">
                 <p> kluby</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="" title="" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="" title=""  width="180px" height="180px"
                      class="LogoFeatures">
                 <p> lokalne przysmaki</p>
             </div>
             <div class="additionalFeaturesBox">
-                <img src="images/bursztyn.png" alt="" title="" width="206px" height="206px"
+                <img src="images/bursztyn.png" alt="" title=""  width="180px" height="180px"
                      class="LogoFeatures">
                 <p>sztuka</p>
             </div>
@@ -269,13 +269,15 @@
 
         <!--CONTACT-->
         <section class="contact" id="contact_id">
-            <p class="contact_title"> Chcesz być na bieżąco?<br>Zostaw info, że tu byłeś,  a my skontaktujemy się z Tobą!</p>
+            <p class="contact_title"> Chcesz być na bieżąco?<br>Zostaw  swoje Imię  a my skontaktujemy się z Tobą!</p>
 
             <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
                 <label class="contact_form">
                     <input type="text" name="name" placeholder="Imie" required/>
                     <input type="email" name="email" placeholder="Email" required/>
-                    <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
+                    <!--<input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>-->
+                    <input id="checkbox" title="checkbox" type="checkbox" required="">
+                    <span> Zapoznałem/zapoznałam się i akceptuję  regulamin strony.</span>
                     <input type="hidden" name="receiver" value="piekarska@live.com">
                     <input type="submit" value="Wyślij">
 
