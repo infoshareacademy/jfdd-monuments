@@ -16,7 +16,6 @@
     <link type="text/css" rel="stylesheet" href="style/style.css">
 
 
-
 </head>
 
 <body>
@@ -92,10 +91,10 @@
                 <div class="feature">
 
 
-                    <div class="obrazek obrazek1"></div>
-                    <div class="obrazek obrazek1"></div>
-                    <div class="obrazek obrazek1"></div>
-                    <div class="obrazek obrazek1"></div>
+                    <!--<div class="obrazek obrazek1"></div>-->
+                    <!--<div class="obrazek obrazek1"></div>-->
+                    <!--<div class="obrazek obrazek1"></div>-->
+                    <!--<div class="obrazek obrazek1"></div>-->
 
 
 
@@ -150,19 +149,19 @@
                 <div style="background-image: url(images/mainPicture.jpg)">
                     <p>Neptun...</p>
                 </div>
-                <div style="background-image: url(images/DSC_2817%202%20copy.jpg)">
+                <div style="background-image: url(images/galeriaMuseapicture1.jpg)">
                     <p>Portowe klimaty...</p>
                 </div>
-                <div style="background-image: url(images/DSC_2818%202.jpg)">
+                <div style="background-image: url(images/galeriaMuseapicture2.jpg)">
                     <p>Oryginalne gdańskie przysmaki...</p>
                 </div>
-                <div style="background-image: url(images/DSC_2832%202.jpg)">
+                <div style="background-image: url(images/galeriaMuseaPicture3.jpg)">
                     <p>Kameralne uliczki...</p>
                 </div>
-                <div style="background-image: url(images/DSC_2837%20s.jpg)">
+                <div style="background-image: url(images/galeriaMuseaPicture4.jpg)">
                     <p>Gładka tafla Motławy...</p>
                 </div>
-                <div style="background-image: url(images/DSC_2838%202.jpg)">
+                <div style="background-image: url(images/galeriaMuseaPicture5.jpg)">
                     <p>Ciekawa architektura...</p>
                 </div>
             </div>
@@ -226,17 +225,18 @@
         </section>
 
 
+
         <!--CONTACT-->
         <section class="contact" id="contact_id">
-            <p class="contact_title"> Chcesz być na bieżąco?<br>Zostaw  swoje Imię  a my skontaktujemy się z Tobą!</p>
+            <p class="contact_title">Dziękujemy,  że nas odwiedziłeś. Chcesz być na bieżąco?<br>Zostaw info,  a my skontaktujemy się z Tobą!</p>
 
             <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
                 <label class="contact_form">
                     <input type="text" name="name" placeholder="Imie" required/>
                     <input type="email" name="email" placeholder="Email" required/>
-                    <!--<input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>-->
-                    <input id="checkbox" title="checkbox" type="checkbox" required="">
-                    <span> Zapoznałem/zapoznałam się i akceptuję  regulamin strony.</span>
+                    <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
+
+                    <!--<textarea placeholder="Wiadomość" required></textarea>-->
                     <input type="hidden" name="receiver" value="piekarska@live.com">
                     <input type="submit" value="Wyślij">
 
@@ -246,9 +246,11 @@
 
         </section>
 
+        </label>
+            </form>
 
-        <!--</section>-->
-        <!-- Koniec FEATURES -->
+
+
 
 
     </main>
@@ -317,6 +319,7 @@
         });
     </script>
 
+    <script src="scripts/features.js"></script>
     <script src="scripts/parallax.js"></script>
 </body>
 </html>

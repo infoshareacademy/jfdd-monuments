@@ -10,9 +10,9 @@ body {
 .header {
     position: relative;
     background-image: url(../images/mainPicture.jpg);
-    /*backround-repeat:no-repeat;*/
+    backround-repeat:no-repeat;
     /*background-attachment: fixed;*/
-    background-position: 0 -400px; /* dzieki tej pozycji zdjecie "idzie" z dolu do gory */
+    background-position: 0 -400px;
     height: 670px;
 
 
@@ -201,6 +201,8 @@ h2{
 .feature__img {
     float: left;
     margin: 0 15px 15px 0;
+    width: 160px;
+    height: 150px;
     width: 48%;
 }
 
@@ -324,7 +326,9 @@ text-align: center;
     margin: 3% auto;
     max-width: 1000px;
     height: 535px;
+    /*background: rgba(255, 255, 255, 0.7);*/
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
+    /*margin-bottom: 8px;*/
 
 }
 
@@ -356,18 +360,6 @@ text-align: center;
 }
 
 
-.contact span{
-    color:#71706B;
-    font-size:15px;
-
-}
-#checkbox{
-    text-align: center;
-    width: 15px;
-    height: 19px;
-    margin-top: 20px;
-
-}
 
 .contact_form input:last-of-type{
     margin-top:20px;
@@ -376,8 +368,10 @@ text-align: center;
     width: 440px;
     height: 70px;
     border:none;
-    color:#71706B;
 }
+
+
+
 
 
 
