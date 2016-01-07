@@ -139,6 +139,7 @@ body {
     position: fixed;
     right: 0;
     top: 50vh;
+    z-index: 1200;
 }
 
 .social-media__link {
