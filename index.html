@@ -15,51 +15,7 @@
     <link type="text/css" rel="stylesheet" href="style/animate.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
 
-    <!-- Informacja o Cookies -->
-    <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
-    <script>
-        CookieAlert.init({
-            style: 'dark',
-            position: 'bottom',
-            opacity: '1',
-            displayTime: 10000,
-            cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
-            text: 'Ten serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
-        });
-    </script>
 
-
-    <!-- NAGLOWEK -->
-    <!-- ponizej pobieramy jQuery z google hosted libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-    <script>
-        // timer sluzacy do obliczania czasu do uruchomienia kolejnej animacji.
-        var timer;
-        // $(document).ready oznacza poczekanie az caly dokument sie zaladuje.
-        $(document).ready(function () {
-            // to bedziemy wykonywac co kilka sekund.
-            var animuj = function () {
-                // znajdz slaj ktory jest teraz widoczny
-                var biezacy =  $('.galeriaMusea div:visible');
-
-                // potem znajdz nastepny slajd (1 do 6, potem powrot na 1szy)
-                var nastepny = biezacy.next();
-                if (nastepny.length === 0) {
-                    nastepny = $('.galeriaMusea div:first');
-                }
-                // ukryj widoczny
-                biezacy.fadeOut(1500);
-                // pokaz nastepny
-                nastepny.fadeIn(1500);
-                // fadeIn i fadeOut wykonuja sie asynchronicznie, czyli nie czeka sie na ich zakonczenie tylko wykonywanie programu leci dalej.
-                // ustawiamy timer dla funkcji animuj co 4s (4000ms).
-                timer = setTimeout(animuj, 4000);
-            };
-            // 1sze uruchomienie animacji po 4s.
-            timer = setTimeout(animuj, 4000);
-        });
-    </script>
 
 </head>
 
@@ -81,7 +37,6 @@
             miasto które chcesz poznać
         </span>
         </h1>
-        </div>
     </header>
 
 
@@ -135,6 +90,12 @@
             <h2 class="h2">   NIEPOWTARZALNE FUNKCJONALNOŚCI</h2>
             <div class="row">
                 <div class="feature">
+
+
+                    <div class="obrazek obrazek1"></div>
+                    <div class="obrazek obrazek1"></div>
+                    <div class="obrazek obrazek1"></div>
+                    <div class="obrazek obrazek1"></div>
 
 
 
@@ -262,8 +223,6 @@
             </div>
 
 
-            </div>
-
         </section>
 
 
@@ -309,7 +268,56 @@
         </div>
     </footer>
     <!--</div> &lt;!&ndash; wrapper end &ndash;&gt;-->
-</section>
+
+
+
+    <!-- Informacja o Cookies -->
+    <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
+    <script>
+        CookieAlert.init({
+            style: 'dark',
+            position: 'bottom',
+            opacity: '1',
+            displayTime: 10000,
+            cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
+            text: 'Ten serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
+        });
+    </script>
+
+
+    <!-- NAGLOWEK -->
+    <!-- ponizej pobieramy jQuery z google hosted libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        // timer sluzacy do obliczania czasu do uruchomienia kolejnej animacji.
+        var timer;
+        // $(document).ready oznacza poczekanie az caly dokument sie zaladuje.
+        $(document).ready(function () {
+            // to bedziemy wykonywac co kilka sekund.
+            var animuj = function () {
+                // znajdz slaj ktory jest teraz widoczny
+                var biezacy =  $('.galeriaMusea div:visible');
+
+                // potem znajdz nastepny slajd (1 do 6, potem powrot na 1szy)
+                var nastepny = biezacy.next();
+                if (nastepny.length === 0) {
+                    nastepny = $('.galeriaMusea div:first');
+                }
+                // ukryj widoczny
+                biezacy.fadeOut(1500);
+                // pokaz nastepny
+                nastepny.fadeIn(1500);
+                // fadeIn i fadeOut wykonuja sie asynchronicznie, czyli nie czeka sie na ich zakonczenie tylko wykonywanie programu leci dalej.
+                // ustawiamy timer dla funkcji animuj co 4s (4000ms).
+                timer = setTimeout(animuj, 4000);
+            };
+            // 1sze uruchomienie animacji po 4s.
+            timer = setTimeout(animuj, 4000);
+        });
+    </script>
+
+    <script src="scripts/parallax.js"></script>
 </body>
 </html>
 

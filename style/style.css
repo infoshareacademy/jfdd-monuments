@@ -10,9 +10,9 @@ body {
 .header {
     position: relative;
     background-image: url(../images/mainPicture.jpg);
-   backround-repeat:no-repeat;
-    background-attachment: fixed;
-    background-position:  -235.6562px; /* dzieki tej pozycji zdjecie "idzie" z dolu do gory */
+    /*backround-repeat:no-repeat;*/
+    /*background-attachment: fixed;*/
+    background-position: 0 -400px; /* dzieki tej pozycji zdjecie "idzie" z dolu do gory */
     height: 670px;
 
 
@@ -410,6 +410,15 @@ text-align: center;
 /*float: right;*/
 /*}*/
 
+
+
+.obrazek1 {
+    background-image: url(...);
+}
+
+.obrazek1:hover {
+    background-image: url(...);
+}
 
 
 
