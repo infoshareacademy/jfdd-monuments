@@ -23,7 +23,7 @@ body {
     opacity: 0.65;
     position: absolute;
     left: 80px;
-    bottom: 60px;
+    bottom: 61px;
     width: 210px;
     height: 330px;
     z-index: 100;
@@ -369,40 +369,6 @@ text-align: center;
     color:#71706B;
     font-weight: bolder;
 }
-
-
-
-
-
-
-/*.cta {*/
-/*float: right;*/
-/*padding: 20px;*/
-/*opacity: 0.65;*/
-/*color: #ffffff;*/
-/*text-transform: uppercase;*/
-/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
-/*font-weight: 700;*/
-/*text-decoration: none;*/
-/*position: absolute;*/
-/*left: 955px;*/
-/*top: 40px;*/
-/*}*/
-
-/*.cta:hover {*/
-/*background-color: burlywood ;*/
-/*}*/
-
-/*.half {*/
-/*width: 40%;*/
-/*margin: 0 3%;*/
-/*float: left;*/
-/*}*/
-
-/*.login-register input:not([type="submit"]) {*/
-/*background-color: gainsboro;*/
-/*float: right;*/
-/*}*/
 
 
 
