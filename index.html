@@ -14,6 +14,7 @@
     <link type="text/css" rel="stylesheet" href="style/reset.css">
     <link type="text/css" rel="stylesheet" href="style/animate.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
+    <link type="text/css" rel="stylesheet" href="style/easteregg.css">
 
     <!-- Informacja o Cookies -->
     <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
@@ -27,7 +28,7 @@
             text: 'Ten serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
         });
     </script>
-    <!-- koniec informacji o Cookies -->
+
 
     <!-- NAGLOWEK -->
     <!-- ponizej pobieramy jQuery z google hosted libraries -->
@@ -41,11 +42,12 @@
             // to bedziemy wykonywac co kilka sekund.
             var animuj = function () {
                 // znajdz slaj ktory jest teraz widoczny
-                var biezacy = $('.galeria div:visible');
+                var biezacy = $(('.galeria div:visible') && $('.galeriaMusea div:visible'));
+//
                 // potem znajdz nastepny slajd (1 do 6, potem powrot na 1szy)
                 var nastepny = biezacy.next();
                 if (nastepny.length === 0) {
-                    nastepny = $('.galeria div:first');
+                    nastepny = $(('.galeria div:first') && $('.galeriaMusea div:first'));
                 }
                 // ukryj widoczny
                 biezacy.fadeOut(1500);
@@ -55,66 +57,71 @@
                 // ustawiamy timer dla funkcji animuj co 4s (4000ms).
                 timer = setTimeout(animuj, 4000);
             };
-            // 1sze uruchomienie animacji po 5s.
-            timer = setTimeout(animuj, 5000);
+            // 1sze uruchomienie animacji po 4s.
+            timer = setTimeout(animuj, 4000);
         });
     </script>
 
 </head>
 
 <body>
-    <!--NAGLÓWEK-->
-    <header class="nasz-header" id="nasz_header">
 
-        <div class="galeria">
-            <div style="background-image: url(images/DSC_2846%202.jpg)">
-                <p>Neptun...</p></div>
-            <div style="background-image: url(images/DSC_2817%202%20copy.jpg)">
-                <p>Portowe klimaty...</p>
-            </div>
-            <div style="background-image: url(images/DSC_2818%202.jpg)">
-                <p>Oryginalne gdańskie przysmaki...</p>
-            </div>
-            <div style="background-image: url(images/DSC_2832%202.jpg)">
-                <p>Kameralne uliczki...</p>
-            </div>
-            <div style="background-image: url(images/DSC_2837%20s.jpg)">
-                <p>Gładka tafla Motławy...</p>
-            </div>
-            <div style="background-image: url(images/DSC_2838%202.jpg)">
-                <p>Ciekawa architektura...</p>
-            </div>
+    <div id="easterEgg" class="easter">
+        <a class="easter__close">×</a>
+        <div class="easter__map"></div>
+        <div class="easter__counters">
+            <span class="easter__counters__route">Przebyta droga: <em>0</em></span>
+            <span class="easter__counters__limit">Limit odległości: <em>X</em></span>
+            <span class="easter__counters__highscore">Rekord: <em>0</em></span>
+            <span class="easter__counters__monuments">Odwiedzone zabytki: <em>0</em></span>
         </div>
+    </div>
+
+    <div class="overlay"></div>
+
+<!--NAGLÓWEK-->
+<header class="nasz-header" id="nasz_header">
+
+    <div class="galeria">
+        <div style="background-image: url(images/mainPicture.jpg)"></div>
 
     <!--LOGO-->
     <img id="logo2" src="http://pomorskie.travel/uploads/mm/obrazy/album_393/1000x760/obraz_1196.jpg">
 
+<<<<<<< HEAD
+    <div class="wywolanie__easter">
+        <div id="demo" onclick="myEaster()">Click me</div>
+    </div>
+
+=======
+>>>>>>> origin/develop
     <!--MOTTO GDANSK-->
     <h1 class="motto">
         <span class="motto__gdansk animated fadeInDown">
             Gdańsk,
         </span>
         <span class="motto__miasto animated fadeInLeft">
-            miasto które chcesz poznać.
+            miasto które chcesz poznać
         </span>
     </h1>
+        </div>
 </header>
 
 
 <!--MENU-->
-<nav class="menu_glowne">
+<nav class="menu_gl">
     <div>
 
         <div class="menu_div_header menu_div">
-            <a href="#nasz_header" class="hover_brown">Główna</a>
+            <a href="#nasz_header" class="hover_orange">Główna</a>
         </div>
 
         <div class="menu_div">
-            <a href="#features_id" class="hover_brown">Atrakcje</a>
+            <a href="#features_id" class="hover_orange">Atrakcje</a>
         </div>
 
         <div class="menu_div_contact menu_div">
-            <a href="#contact_id" class="hover_brown">Kontakt</a>
+            <a href="#contact_id" class="hover_orange">Kontakt</a>
         </div>
 
     </div>
@@ -148,24 +155,27 @@
 
     <!-- Poczatek FEATURES -->
     <section class="features" id="features_id">
+        <h2 class="h2">   NIEPOWTARZALNE FUNKCJONALNOŚCI</h2>
         <div class="row">
             <div class="feature">
-                <img class="feature__img"
-src="images/FunkcjonalnosciMapaGdanska.jpg"
-                     onmouseover="this.src='images/FunkcjonalnosciRycina7.gif'"
-                     onmouseout="this.src='images/FunkcjonalnosciMapaGdanska.jpg'">
 
-                <h3 class="feature__title">Mapa z odległościami</h3>
+
+
+                <img class="feature__img" src="images/FunkcjonalnosciRycina7.jpg" width="160" height="150"
+                     onmouseover="this.src='images/FunkcjonalnosciMapaGdanska.jpg'"
+                     onmouseout="this.src='images/FunkcjonalnosciRycina7.jpg'">
+
+                <h3 class="feature__title  animated fadeInDown">Mapa z odległościami</h3>
 
                 <p class="feature__descr">Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>
             </div>
             <div class="feature">
 
-                <img class="feature__img" src="images/FunkcjonalnosciRycina4.jpg"
-                     onmouseover="this.src='images/FunkcjonalnosciRycina2.png'"
+                <img class="feature__img" src="images/FunkcjonalnosciRycina4.jpg" width="160" height="150"
+                     onmouseover="this.src='images/FunkcjonalnosciRycina9.jpeg'"
                      onmouseout="this.src='images/FunkcjonalnosciRycina4.jpg'">
 
-                <h3 class="feature__title">Polecane</h3>
+                <h3 class="feature__title  animated fadeInDown">Polecane</h3>
 
                 <p class="feature__descr">Funkcjonalność polegająca na możliwości opiniowania i polecania konkretnych
                     zabytków.</p>
@@ -173,71 +183,98 @@ src="images/FunkcjonalnosciMapaGdanska.jpg"
         </div>
         <div class="row">
             <div class="feature">
-                <img class="feature__img" src="images/FunkcjonalnosciRycina.png"
-                     onmouseover="this.src='images/FunkcjonalnosciRycina3.jpg'"
-                     onmouseout="this.src='images/FunkcjonalnosciRycina.png'">
+                <img class="feature__img" src="images/FunkcjonalnosciRycina5.jpg" width="160" height="150"
+                     onmouseover="this.src='images/Funkcjonalnosci10.jpeg'"
+                     onmouseout="this.src='images/FunkcjonalnosciRycina5.jpg'">
 
-                <h3 class="feature__title">Popularne</h3>
+                <h3 class="feature__title  animated fadeInDown">Popularne</h3>
 
                 <p class="feature__descr">Zabytki najczęściej oglądane przez odwiedzających.</p>
             </div>
             <div class="feature">
 
-                <img class="feature__img" src="images/FunkcjonalnosciGdansk.jpg"
-                     onmouseover="this.src='images/FunkcjonalnosciRycina5.jpg'"
-                     onmouseout="this.src='images/FunkcjonalnosciGdansk.jpg'">
+                <img class="feature__img" src="images/FunkcjonalnosciRycina11.jpg" width="160" height="150"
+                     onmouseover="this.src='images/FunkcjonalnosciRycina12.jpg'"
+                     onmouseout="this.src='images/FunkcjonalnosciRycina11.jpg'">
 
-                <h3 class="feature__title">Ulubione</h3>
+                <h3 class="feature__title  animated fadeInDown">Ulubione</h3>
 
                 <p class="feature__descr">Lista zabytków, które najbardziej przypadły do gustu naszym użytkownikom.</p>
             </div>
         </div>
+    </section>
+
+    <!--GALLERY -->
+    <section class="galleryOfMuseas">
 
 
-        <!--CONTACT-->
-        <section class="contact" id="contact_id">
-            <p class="contact_title">Formularz kontaktowy</p>
-
-            <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
-                <label class="contact_form">
-                    <input type="text" name="name" placeholder="imię" required/>
-                    <input type="email" name="email" placeholder="email" required/>
-                    <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
-                    <textarea placeholder="wiadomość" required></textarea>
-                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
-                </label>
-
-                <label class="button_send">
-                    <input type="submit" value="Wyślij zapytanie">
-
-
-                </label>
-            </form>
-
-        </section>
+        <div class="galeriaMusea">
+            <div style="background-image: url(images/mainPicture.jpg)">
+                <p>Neptun...</p>
+            </div>
+            <div style="background-image: url(images/DSC_2817%202%20copy.jpg)">
+                <p>Portowe klimaty...</p>
+            </div>
+            <div style="background-image: url(images/DSC_2818%202.jpg)">
+                <p>Oryginalne gdańskie przysmaki...</p>
+            </div>
+            <div style="background-image: url(images/DSC_2832%202.jpg)">
+                <p>Kameralne uliczki...</p>
+            </div>
+            <div style="background-image: url(images/DSC_2837%20s.jpg)">
+                <p>Gładka tafla Motławy...</p>
+            </div>
+            <div style="background-image: url(images/DSC_2838%202.jpg)">
+                <p>Ciekawa architektura...</p>
+            </div>
+        </div>
 
 
     </section>
+
+    <!-- END OF GALLERY-x->
+
+
+    <!--CONTACT-->
+    <section class="contact" id="contact_id">
+        <p class="contact_title">Dziękujemy,  że nas odwiedziłeś. Chcesz być na bieżąco?<br>Zostaw info,  a my skontaktujemy się z Tobą!</p>
+
+        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
+            <label class="contact_form">
+                <input type="text" name="name" placeholder="Imie" required/>
+                <input type="email" name="email" placeholder="Email" required/>
+                <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
+
+                <!--<textarea placeholder="Wiadomość" required></textarea>-->
+                <input type="hidden" name="receiver" value="piekarska@live.com">
+                <input type="submit" value="Wyślij">
+
+
+            </label>
+        </form>
+
+    </section>
+
+
+    <!--</section>-->
     <!-- Koniec FEATURES -->
 
 
-    </main>
+</main>
 
 
-    <!--FOOTER -->
-    <footer>
-        <div class="stopka">Copyright 2015 | All Rights Reserved - Wunder Team</div>
-        <div class="partnerzy">
-            <a href="http://www.oliviacentre.com/" target="_blank">
-                <img src="images/stopka_olivia_center.jpg" alt="Olivia Center logo">
-            </a>
-            <img src="images/stopka_Wteam2.jpg" alt="WunderTeam logo">
-            <a href="http://www.infoshareacademy.com/" target="_blank">
-                <img src="images/stopka_infoshare.svg" alt="InfoShare Academy">
-            </a>
-        </div>
-    </footer>
-    <!--</div> &lt;!&ndash; wrapper end &ndash;&gt;-->
+<!--FOOTER -->
+<footer>
+    <div class="stopka">Copyright 2015 | All Rights Reserved - Wunder Team</div>
+    <div class="partnerzy">
+        <img src="images/stopka_olivia_center.jpg" alt="Olivia Center logo">
+        <img src="images/stopka_Wteam2.jpg" alt="WunderTeam logo">
+        <a href="http://www.infoshareacademy.com/" target="_blank">
+            <img src="images/stopka_infoshare.svg" alt="InfoShare Academy">
+        </a>
+    </div>
+</footer>
+<!--</div> &lt;!&ndash; wrapper end &ndash;&gt;-->
 
 </body>
 </html>
