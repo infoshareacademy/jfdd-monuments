@@ -23,7 +23,7 @@ body {
     opacity: 0.65;
     position: absolute;
     left: 80px;
-    top: 60px;
+    bottom: 60px;
     width: 210px;
     height: 330px;
     z-index: 100;
