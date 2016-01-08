@@ -400,25 +400,9 @@ text-align: center;
 
 
 
-.obrazek1 {
-    background-image: url(...);
-}
-
-.obrazek1:hover {
-    background-image: url(...);
-}
 
 
 
-/*FOOTER */
-
-/*footer {*/
-    /*position: fixed;*/
-    /*z-index: -1;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-
-/*}*/
 
 .stopka {
     height: 26px;
