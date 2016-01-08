@@ -5,39 +5,19 @@ body {
     background-color: #f9f9f9;
 }
 
-.galeria {
+
+
+.header {
     position: relative;
+    background-image: url(../images/mainPicture.jpg);
+    backround-repeat:no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: 0 -400px;
     height: 670px;
+
+
 }
 
-.galeria div {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-/* 1szy slajd widoczny zeby JS wiedzial co ma animowac */
-.galeria div:first-child {
-    display: block;
-}
-
-.galeria p {
-    color: #ffffff;
-    font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 400;
-    text-shadow: black 2px 4px 0;
-    font-size: 23px;
-    text-align: right;
-    margin-top: 468px;
-    margin-right: 90px;
-    font-style: italic;
-}
 
 #logo2 {
     opacity: 0.65;
@@ -87,10 +67,11 @@ body {
     color: #ffffff;
     text-align: center;
     z-index: 102;
-    /*border: white 2px solid;*/
+    border-left: white 2px solid;
+    border-bottom: white 2px solid;
     opacity: 0.8;
     padding-bottom: 12px;
-    /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
+
 }
 
 .menu_div {
@@ -155,7 +136,6 @@ body {
 
 .social-media__link:hover {
     width: 50px;
-    /*background-color: deeppink;*/
 }
 
 /* Zacheta */
@@ -179,10 +159,6 @@ body {
     font-weight: 700;
 }
 
-.nasz-header {
-    position: relative;
-}
-
 
 .fade:hover {
     opacity: 1;
@@ -198,7 +174,7 @@ body {
     height: 670px;
 }
 
-h2{
+.features h2{
 
     text-align: center;
     font-size: 50px;
@@ -227,6 +203,8 @@ h2{
 .feature__img {
     float: left;
     margin: 0 15px 15px 0;
+
+    height: 150px;
     width: 48%;
 }
 
@@ -247,19 +225,10 @@ h2{
 
 
 
-/*GALLERY*/
-
-
-
-/*.galleryOfMuseas{*/
-
-/*padding-top: 96px;*/
-/*}*/
 .galeriaMusea{
 
     position: relative;
-    height: 500px;
-
+    height: 600px;
 }
 
 
@@ -285,7 +254,6 @@ h2{
 
 .galeriaMusea p {
     color: #ffffff;
-    /*text-transform: uppercase;*/
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 400;
     text-shadow: black 2px 4px 0;
@@ -296,7 +264,47 @@ h2{
     font-style: italic;
 }
 
+/*ADDITIONAL FEATURES */
 
+.additionalFeatures{
+    background-color: rgba(72,72,72,0.2);
+    padding:5% 5%  5% 5%;
+    height: 700px;
+}
+
+.additionalFeaturesTitle {
+font-weight: bolder;
+color: #71706B;
+font-size: 37px;
+text-transform: uppercase;
+padding-bottom: 25px;
+padding-top: 3%;
+margin-bottom: 30px;
+text-align: center;
+}
+
+.LogoFeatures
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 48%;
+
+}
+
+
+
+.additionalFeaturesBox {
+    width: 33%;
+    float: left; /* dzieki temu wszystkie dodatkowe funkcjonalnosci sa obok siebie */
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.additionalFeatures div p{
+    font-size: 22px;
+    font-weight: lighter;
+    color:#71706B;
+}
 
 /*CONTACT */
 
@@ -358,7 +366,12 @@ h2{
     width: 440px;
     height: 70px;
     border:none;
+    color:#71706B;
+    font-weight: bolder;
 }
+
+
+
 
 
 
@@ -391,14 +404,27 @@ h2{
 /*float: right;*/
 /*}*/
 
-/*.przyklad {*/
-/*font-size: 14px;*/
-/*font-style: italic;*/
-/*}*/
+
+
+.obrazek1 {
+    background-image: url(...);
+}
+
+.obrazek1:hover {
+    background-image: url(...);
+}
 
 
 
 /*FOOTER */
+
+/*footer {*/
+    /*position: fixed;*/
+    /*z-index: -1;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+
+/*}*/
 
 .stopka {
     height: 26px;
@@ -412,6 +438,7 @@ h2{
     padding: 20px 20px 10px 20px;
     text-align: center;
     text-shadow: black 0 2px 0;
+    /*position: fixed;*/
 }
 
 .partnerzy {
