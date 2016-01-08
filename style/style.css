@@ -67,6 +67,8 @@ body {
     color: #ffffff;
     text-align: center;
     z-index: 102;
+    border-left: white 2px solid;
+    border-bottom: white 2px solid;
     opacity: 0.8;
     padding-bottom: 12px;
 
@@ -108,7 +110,7 @@ body {
     position: fixed;
     right: 0;
     top: 50vh;
-    z-index: 102;
+    z-index: 1200;
 }
 
 .social-media__link {
@@ -433,7 +435,7 @@ text-align: center;
     font-size: 18px;
     background: url(../images/naglowek_gdansk1.jpg);
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
-    padding: 40px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
     text-align: center;
     text-shadow: black 0 2px 0;
     /*position: fixed;*/
