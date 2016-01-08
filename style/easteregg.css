@@ -48,9 +48,10 @@
 }
 
 .easter__map {
-    background-image: url('../images/easter_mapa.jpg');
+    /*background-image: url('../images/easter_mapa.jpg');*/
     height: 70vh;
     background-size: cover;
+    background-color: white;
 }
 
 .easter__counters {
@@ -72,3 +73,5 @@
     color: yellow;
     font-style: normal;
 }
+
+/*Wstawianie punków w eastergg*/
