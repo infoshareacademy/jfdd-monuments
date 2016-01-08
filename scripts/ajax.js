@@ -1,6 +1,3 @@
-/**
- * Created by Gosia on 07/01/16.
- */
 
 // timer sluzacy do obliczania czasu do uruchomienia kolejnej animacji.
 var timer;
