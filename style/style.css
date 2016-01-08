@@ -9,8 +9,6 @@ body {
     position: relative;
     background-image: url(../images/mainPicture.jpg);
     backround-repeat:no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: 0 -400px;
     height: 670px;
 }
 
@@ -160,12 +158,15 @@ body {
 
 /* FEATURES */
 
+
 .features {
     padding: 30px 0;
     background: url(../images/Vogel-brama-1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 670px;
+
+
 }
 
 .features h2{
