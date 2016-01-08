@@ -87,10 +87,11 @@ body {
     color: #ffffff;
     text-align: center;
     z-index: 102;
-    /*border: white 2px solid;*/
+    border-left: white 2px solid;
+    border-bottom: white 2px solid;
     opacity: 0.8;
     padding-bottom: 12px;
-    /*dashed wprowadza element lekkiej wioseczki - a co stać Nas :D */
+
 }
 
 .menu_div {
