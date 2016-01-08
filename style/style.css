@@ -9,8 +9,6 @@ body {
     position: relative;
     background-image: url(../images/mainPicture.jpg);
     backround-repeat:no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: 0 -400px;
     height: 670px;
 }
 
@@ -162,12 +160,15 @@ body {
 
 /* FEATURES */
 
+
 .features {
     padding: 30px 0;
     background: url(../images/Vogel-brama-1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 670px;
+
+
 }
 
 .features h2{
@@ -402,25 +403,9 @@ text-align: center;
 
 
 
-.obrazek1 {
-    background-image: url(...);
-}
-
-.obrazek1:hover {
-    background-image: url(...);
-}
 
 
 
-/*FOOTER */
-
-/*footer {*/
-    /*position: fixed;*/
-    /*z-index: -1;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-
-/*}*/
 
 .stopka {
     height: 26px;
