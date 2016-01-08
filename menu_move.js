@@ -1,5 +1,1 @@
-menuOrangeHover ()
-
-if (x >= 0, x ){
-
-}
+$ document.ready
