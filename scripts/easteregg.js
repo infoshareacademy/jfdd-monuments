@@ -72,8 +72,9 @@ $(document).ready(function() {
             var mapWidth = $('.easter__map').width();
             var mapHeight = $('.easter__map').height();
             var routeLimit = mapHeight + mapWidth;
-            routeLimit = Math.round(routeLimit);
+			routeLimit = Math.round(routeLimit);
             $('.easter__counters__limit em').text(routeLimit);
+
         }
     });
 	
