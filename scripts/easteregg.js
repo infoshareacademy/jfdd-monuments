@@ -6,7 +6,7 @@ $(document).ready(function() {
 		$('.easter__map').empty();
     });
 
-    $('.wywolanie__easter').click(function() {
+    $('.wywolanie__easteregg').click(function() {
         $('.easter').fadeIn(500);
         $('.overlay').fadeIn(500);
 
