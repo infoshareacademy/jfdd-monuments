@@ -51,10 +51,10 @@
 }
 
 .easter__map {
-    /*background-image: url('../images/easter_mapa.jpg');*/
+    background-image: url('../images/easter_mapa.jpg');
     height: 70vh;
     background-size: cover;
-    background-color: white;
+    /*background-color: white;*/
 	position: relative;
 }
 
