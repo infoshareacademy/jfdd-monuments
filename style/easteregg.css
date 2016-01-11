@@ -35,11 +35,14 @@
     background: gray;
     padding: 2px 10px 10px;
     display: inline-block;
-    float: right;
-    border-radius: 0px 0 0px 6px;
+    position: absolute;
+	top:-10px;
+	right:-10px;
+    border-radius: 100%;
     cursor: pointer;
     font-size: 4em;
     line-height: 0.5em;
+	z-index: 1;
 
 }
 
@@ -51,6 +54,8 @@
     background-image: url('../images/easter_mapa.jpg');
     height: 70vh;
     background-size: cover;
+    /*background-color: white;*/
+	position: relative;
 }
 
 .easter__counters {
@@ -72,3 +77,20 @@
     color: yellow;
     font-style: normal;
 }
+
+/*Wstawianie punktów w eastergg*/
+
+.symbol-zabytku {
+	width:  20px;
+	height: 30px;
+	background-color: brown;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.symbol-zabytku.klikniety {
+	background-color: orange;
+}
+
+
+
