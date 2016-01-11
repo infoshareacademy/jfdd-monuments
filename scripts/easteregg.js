@@ -39,7 +39,7 @@ $(document).ready(function() {
 				var odlegloscXY = 0,
 					odlegloscNaOsiX,
 					odlegloscNaOsiY;
-				for (var j=0 ; j<10 ; j++) {
+				for (var j=0 ; j<15 ; j++) {
 					console.log(j, zabytkiNaMapie[j].kliknietyJako, monumentsCounter.text());
 					if (zabytkiNaMapie[j].kliknietyJako == parseInt(monumentsCounter.text()) ) {		
 						odlegloscNaOsiX = Math.abs(zabytkiNaMapie[lpZabytku].x - zabytkiNaMapie[j].x) * mapWidth / 100;
