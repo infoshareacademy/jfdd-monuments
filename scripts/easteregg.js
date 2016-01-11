@@ -22,7 +22,7 @@ $(document).ready(function() {
 		var zabytkiNaMapie = [];
 		var zabytekNaMapie = {};
 			
-		for (var i=0 ; i <10 ; i++) {
+		for (var i=0 ; i <15 ; i++) {
 			zabytekNaMapie = {};
 			zabytekNaMapie.x = Math.round(Math.random() * 90) + 5;
 			zabytekNaMapie.y = Math.round(Math.random() * 90) + 5;
