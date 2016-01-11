@@ -22,7 +22,7 @@ $(document).ready(function() {
 		var zabytkiNaMapie = [];
 		var zabytekNaMapie = {};
 			
-		for (var i=0 ; i <10 ; i++) {
+		for (var i=0 ; i <15 ; i++) {
 			zabytekNaMapie = {};
 			zabytekNaMapie.x = Math.round(Math.random() * 90) + 5;
 			zabytekNaMapie.y = Math.round(Math.random() * 90) + 5;
@@ -39,7 +39,7 @@ $(document).ready(function() {
 				var odlegloscXY = 0,
 					odlegloscNaOsiX,
 					odlegloscNaOsiY;
-				for (var j=0 ; j<10 ; j++) {
+				for (var j=0 ; j<15 ; j++) {
 					console.log(j, zabytkiNaMapie[j].kliknietyJako, monumentsCounter.text());
 					if (zabytkiNaMapie[j].kliknietyJako == parseInt(monumentsCounter.text()) ) {		
 						odlegloscNaOsiX = Math.abs(zabytkiNaMapie[lpZabytku].x - zabytkiNaMapie[j].x) * mapWidth / 100;
@@ -72,8 +72,9 @@ $(document).ready(function() {
             var mapWidth = $('.easter__map').width();
             var mapHeight = $('.easter__map').height();
             var routeLimit = mapHeight + mapWidth;
-            routeLimit = Math.round(routeLimit);
+			routeLimit = Math.round(routeLimit);
             $('.easter__counters__limit em').text(routeLimit);
+
         }
     });
 	
