@@ -66,6 +66,8 @@ body {
     border-bottom: white 2px solid;
     opacity: 0.8;
     padding-bottom: 12px;
+    box-shadow: 10px 5px 5px 1px #000 ;
+
 }
 
 .menu_div {
@@ -366,6 +368,40 @@ text-align: center;
 
 
 
+
+
+
+/*.cta {*/
+/*float: right;*/
+/*padding: 20px;*/
+/*opacity: 0.65;*/
+/*color: #ffffff;*/
+/*text-transform: uppercase;*/
+/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
+/*font-weight: 700;*/
+/*text-decoration: none;*/
+/*position: absolute;*/
+/*left: 955px;*/
+/*top: 40px;*/
+/*}*/
+
+/*.cta:hover {*/
+/*background-color: burlywood ;*/
+/*}*/
+
+/*.half {*/
+/*width: 40%;*/
+/*margin: 0 3%;*/
+/*float: left;*/
+/*}*/
+
+/*.login-register input:not([type="submit"]) {*/
+/*background-color: gainsboro;*/
+/*float: right;*/
+/*}*/
+
+
+
 .obrazek1 {
     background-image: url(...);
 }
@@ -374,6 +410,17 @@ text-align: center;
     background-image: url(...);
 }
 
+
+
+/*FOOTER */
+
+/*footer {*/
+    /*position: fixed;*/
+    /*z-index: -1;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+
+/*}*/
 
 .stopka {
     height: 26px;
