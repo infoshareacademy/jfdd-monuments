@@ -92,5 +92,19 @@
 	background-color: orange;
 }
 
+.instrukcja {
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    border-color: chartreuse;
+    font-size: 2em;
+    left: 50%;
+    bottom: 2%;
+    color: white;
+}
 
+.koleczko {
+    border-radius: 100%;
+    border-color: chartreuse;
 
+}
