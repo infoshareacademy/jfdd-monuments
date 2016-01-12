@@ -1,6 +1,6 @@
 .overlay {
     position: fixed;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.55);
     top:0;
     bottom:0;
     left:0;
@@ -10,13 +10,13 @@
 }
 
 .wywolanie__easteregg {
-    background-color: pink;
     width: 30px;
     height: 30px;
     position: absolute;
     top: 415px;
     left: 85px;
     z-index: 102;
+    cursor: alias;
 }
 
 .easter {
@@ -24,26 +24,26 @@
     left: 15vw;
     right: 15vw;
     top: 10vh;
-    background-color: #000000;
     z-index: 1000;
     display: none;
     padding: 10px;
+    background-color: black;
     border-radius: 10px;
 }
 
 .easter__close {
     background: gray;
-    padding: 2px 10px 10px;
+    padding: 0px 10px 16px;
     display: inline-block;
     position: absolute;
-	top:-10px;
-	right:-10px;
-    border-radius: 100%;
+	top: 6px;
+	right: 6px;
+    border-radius: 5%;
     cursor: pointer;
     font-size: 4em;
+    font-weight: 500;
     line-height: 0.5em;
 	z-index: 1;
-
 }
 
 .easter__close:hover {
@@ -51,7 +51,8 @@
 }
 
 .easter__map {
-    background-image: url('../images/easter_mapa.jpg');
+    background-image: url('../images/easteregg_map_4.jpg');
+    background-position: center;
     height: 70vh;
     background-size: cover;
     /*background-color: white;*/
@@ -92,5 +93,24 @@
 	background-color: orange;
 }
 
+.easter__gameover {
+    width: 50vh;
+    height: 11vh;
+    color: yellow;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 10px;
+    position: fixed;
+    left: 50vw;
+    right: 50vw;
+    top: 50vh;
+    z-index: 2000;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.85);
+    font-size: 2em;
+    text-align: center;
+    text-overline: 2px;
+    text-overline-color: red;
+}
 
 

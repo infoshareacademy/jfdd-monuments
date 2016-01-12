@@ -50,7 +50,7 @@ $(document).ready(function() {
 					$(this).addClass('klikniety').attr('data-klikniety-jako', monumentsCounter.text());
 				} else {
 					// game over
-					$('.easter__map').append('<h2>Obiekt jest za daleko, przegrałeś, na na na na!</h2>');
+					$('.easter__map').append('<div class="easter__gameover">GAME OVER!<br>Wyczerpałeś swój limit! </div>');
 					$('.symbol-zabytku').off('click');
 					if (parseInt($('.easter__counters__monuments em').text() )> parseInt($('.easter__counters__highscore em').text() )) {
 						$('.easter__counters__highscore em').text($('.easter__counters__monuments em').text());
