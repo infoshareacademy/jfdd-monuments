@@ -110,7 +110,6 @@ body {
 }
 
 .social-media__link {
-
     position: absolute;
     right: 0;
 }
@@ -135,18 +134,21 @@ body {
     width: 55px;
     height: 40px;
     background-color: #346da6;
+    border-radius: 5%;
 }
 
 .social-media__link--gp:hover {
     width: 55px;
     height: 40px;
     background-color: #ca4738;
+    border-radius: 5%;
 }
 
 .social-media__link--tw:hover {
     width: 55px;
     height: 40px;
     background-color: #4186cd;
+    border-radius: 5%;
 }
 
 /* Zacheta */
