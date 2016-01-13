@@ -42,7 +42,7 @@ $(document).ready(function() {
 				}
 				
 				var nowaOdleglosc = Math.round(parseInt($('.easter__counters__route em').text()) + odlegloscXY);
-				var limitOdleglosci = parseInt($('.easter__counters__limit em').text());
+				var limitOdle glosci = parseInt($('.easter__counters__limit em').text());
 				
 				if(nowaOdleglosc <= limitOdleglosci) {
 					$('.easter__counters__route em').text(nowaOdleglosc); 										
@@ -97,35 +97,4 @@ $(document).ready(function() {
         }
     });
 			
-});	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+});
