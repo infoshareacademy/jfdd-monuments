@@ -96,7 +96,6 @@ body {
 
 .menu_div {
     display: inline;
-    width: 130px;
     font-size: 25px;
 }
 
@@ -109,11 +108,11 @@ body {
 }
 
 /* MENU Hover*/
-
-.hover_orange:link {
-    color: red;
-    text-decoration: none;
+.hover_orange {
+    border-bottom: 5px solid orange;
 }
+
+
 
 /*.hover_orange:visited {*/
     /*color: green;*/
