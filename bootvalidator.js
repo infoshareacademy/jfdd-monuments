@@ -3,19 +3,39 @@
  */
 
 
-//$(document).ready(function)
-//{
-//
-//
-//    var keyDown = $(document).onkeydown(function)
-//    {
-////$('.contact_form').validate
-//    })
-//
-//    var mouseClick = $(docment).onmousedown(function () {
-//
-//
-//    })
-//
-//    var
-//
+$(function() {
+    var mouseClick = false;
+    var scroll = false;
+    var keyDown = false;
+    $(window).scroll(function(){
+
+        scroll=true;
+
+    });
+    $(window).keydown(function(){
+
+        keyDown=true;
+
+    });
+    $(window).click(function(){
+
+        mouseClick=true;
+
+    });
+
+    debugger;
+    $(".contact form").submit(function(event){
+        event.preventDefault();
+        //debugger;
+
+        if (mouseClick || scroll || keyDown){
+            alert('dziękuję za wypełnienie formularza');
+
+        } else{
+            return false;
+        }
+
+    });
+
+});
+

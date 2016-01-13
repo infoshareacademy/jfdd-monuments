@@ -7,9 +7,8 @@ body {
 
 .header {
     position: relative;
-    background-image: url(../images/mainPicture.jpg);
-    backround-repeat:no-repeat;
-    /*background-attachment: fixed;*/
+    background: url(../images/mainPicture.jpg) no-repeat;
+    /*backround-repeat:no-repeat;*/
     background-position: 0 -400px;
     height: 670px;
 }
@@ -51,9 +50,9 @@ body {
 /*MENU*/
 
 .menu_gl {
-    top: 0px;
+    top: 0;
     width: 30%;
-    right: 0px;
+    right: 0;
     position: fixed;
     padding-top: 10px;
     background-color: #000000;
@@ -163,11 +162,10 @@ body {
 /* FEATURES */
 
 .features {
-    padding: 30px 0;
+    padding: 40px 0;
     background: url(../images/Vogel-brama-1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 670px;
 }
 
 .features h2{
@@ -199,25 +197,24 @@ body {
 .feature__img {
     float: left;
     margin: 0 15px 15px 0;
-
-    height: 150px;
-    width: 48%;
+    height: 200px;
+    width: 58%;
     background-image: url("../images/FunkcjonalnosciRycina7.jpg");
 
 }
 
-.feature__img:hover{
-    float: left;
-    margin: 0 15px 15px 0;
-    /*height: 150px;*/
-    /*width: 48%;*/
-    background-image: url("../images/FunkcjonalnosciMapaGdanska.jpg");
-    background-repeat: no-repeat;
-    background-position: 0%, 0%;
-    background-size:contain;
-    background-size: 150px;
+/*.feature__img:hover{*/
+    /*float: left;*/
+    /*margin: 0 15px 15px 0;*/
+    /*/!*height: 150px;*!/*/
+    /*/!*width: 48%;*!/*/
+    /*background-im: url("../images/FunkcjonalnosciMapaGdanska.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 0;*/
+    /*background-size:contain;*/
+    /*background-size: 150px;*/
 
-}
+/*}*/
 
 .feature__title {
     color: darkred;
@@ -241,10 +238,6 @@ body {
     position: relative;
     height: 600px;
 }
-
-
-
-
 
 .galeriaMusea div {
     position: absolute;
@@ -336,41 +329,33 @@ body {
 
 }
 
+
+
 .LogoFeatures
 
 {
 
     padding-top: 35px;
-
+    width: 150px;
+    height:150px;
     padding-bottom: 20px;
-
     -moz-transition: all 0.4s ease;
-
     -webkit-transition: all 0.4s ease;
-
     -ms-transition: all 0.4s ease;
-
     -o-transition: all 0.4s ease;
-
     transition: all 0.4s ease;
 
 }
 
-.LogoFeatures:hover  {
+/*.LogoFeatures:hover  {*/
+    /*-moz-transform: scale(1.15);*/
+    /*-webkit-transform: scale(1.15);*/
+    /*-o-transform: scale(1.15);*/
+    /*-ms-transform: scale(1.15);*/
+    /*transform: scale(1.15);*/
+    /*z-index: 2;*/
 
-    -moz-transform: scale(1.15);
-
-    -webkit-transform: scale(1.15);
-
-    -o-transform: scale(1.15);
-
-    -ms-transform: scale(1.15);
-
-    transform: scale(1.15);
-
-    z-index: 2;
-
-}
+/*}*/
 
 
 
@@ -439,7 +424,8 @@ body {
     height: 70px;
     border:none;
     color:#71706B;
-    font-weight: bolder;
+    font-size:13px;
+    padding-top:5px;
 }
 
 
@@ -476,15 +462,6 @@ body {
 /*float: right;*/
 /*}*/
 
-
-
-.obrazek1 {
-    background-image: url(...);
-}
-
-.obrazek1:hover {
-    background-image: url(...);
-}
 
 
 
