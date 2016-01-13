@@ -111,6 +111,24 @@
     text-align: center;
     text-overline: 2px;
     text-overline-color: red;
+.instrukcja {
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    border-color: chartreuse;
+    font-size: 1.5em;
+    left: 50%;
+    bottom: 2%;
+    color: white;
 }
 
-
+.koleczko {
+    border-radius: 100%;
+    border-color: chartreuse;
+    position: relative;
+    display: block;
+    left: 50%;
+    bottom: 2%;
+    color: white;
+}
+}
