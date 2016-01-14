@@ -172,6 +172,7 @@ body {
     font-weight: 700;
 }
 
+
 .fade:hover {
     opacity: 1;
 }
@@ -219,6 +220,7 @@ body {
     height: 150px;
     width: 48%;
     background-image: url("../images/FunkcjonalnosciRycina7.jpg");
+
 }
 
 .feature__img:hover{
@@ -229,8 +231,8 @@ body {
     background-image: url("../images/FunkcjonalnosciMapaGdanska.jpg");
     background-repeat: no-repeat;
     background-position: 0%, 0%;
-    background-size:contain;
-    background-size: 150px;
+    background-size: 100% 100%;
+ 
 }
 
 .feature__title {
@@ -248,11 +250,17 @@ body {
     font-size: 18px;
 }
 
+
+
 .galeriaMusea{
 
     position: relative;
     height: 600px;
 }
+
+
+
+
 
 .galeriaMusea div {
     position: absolute;
@@ -380,6 +388,8 @@ body {
 
 }
 
+
+
 .clear{
     clear:both;
 }
@@ -397,6 +407,7 @@ body {
     text-align: center;
 }
 
+
 .contact {
     margin: 3% auto;
     max-width: 1000px;
@@ -404,6 +415,7 @@ body {
     /*background: rgba(255, 255, 255, 0.7);*/
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     /*margin-bottom: 8px;*/
+
 }
 
 .contact_form
@@ -433,6 +445,8 @@ body {
 
 }
 
+
+
 .contact_form input:last-of-type{
     margin-top:20px;
     background-color: sandybrown;
@@ -443,6 +457,62 @@ body {
     color:#71706B;
     font-weight: bolder;
 }
+
+
+
+
+
+
+/*.cta {*/
+/*float: right;*/
+/*padding: 20px;*/
+/*opacity: 0.65;*/
+/*color: #ffffff;*/
+/*text-transform: uppercase;*/
+/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
+/*font-weight: 700;*/
+/*text-decoration: none;*/
+/*position: absolute;*/
+/*left: 955px;*/
+/*top: 40px;*/
+/*}*/
+
+/*.cta:hover {*/
+/*background-color: burlywood ;*/
+/*}*/
+
+/*.half {*/
+/*width: 40%;*/
+/*margin: 0 3%;*/
+/*float: left;*/
+/*}*/
+
+/*.login-register input:not([type="submit"]) {*/
+/*background-color: gainsboro;*/
+/*float: right;*/
+/*}*/
+
+
+
+.obrazek1 {
+    background-image: url(...);
+}
+
+.obrazek1:hover {
+    background-image: url(...);
+}
+
+
+
+/*FOOTER */
+
+/*footer {*/
+    /*position: fixed;*/
+    /*z-index: -1;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+
+/*}*/
 
 .stopka {
     height: 26px;
