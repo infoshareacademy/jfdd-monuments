@@ -108,11 +108,14 @@ body {
 }
 
 /* MENU Hover*/
-.hover_orange {
+.hover_js {
     border-bottom: 5px solid orange;
 }
 
-
+.hover_orange {
+    text-decoration: none;
+    color: white;
+}
 
 /*.hover_orange:visited {*/
     /*color: green;*/
