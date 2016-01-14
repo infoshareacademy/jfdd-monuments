@@ -3,13 +3,21 @@ $(document).ready(function() {
         $('.easter').fadeOut(500);
         $('.overlay').fadeOut(500);
         $('.easter span:not(.easter__counters__highscore) em').text('0');
-		$('.easter__map').empty();
+		$('.easter__map .symbol-zabytku, .easter__gameover').remove();
+		
     });
-
+	/* obsługa wyłączenia okienka eastern__welcome;*/
+	$('#EasterWelcome a').click(function() {
+		$('#EasterWelcome').remove();
+	});
+	
+	
+	
+	
     $('.wywolanie__easteregg').click(function() {
         $('.easter').fadeIn(500);
         $('.overlay').fadeIn(500);
-
+		
 		var ciastko = document.cookie.match('rekordWGrze\=([0-9]+)');
 		if(ciastko) {
 			$('.easter__counters__highscore em').text(ciastko[1]);
@@ -20,6 +28,12 @@ $(document).ready(function() {
         var routeLimit = mapHeight + mapWidth;
         routeLimit = Math.round(routeLimit);
         $('.easter__counters__limit em').text(routeLimit);
+		
+		var c = document.getElementById("EasterLines");
+		var ctx = c.getContext("2d");
+		ctx.canvas.width = mapWidth;
+		ctx.canvas.height = mapHeight;
+		
 		
 		var x, y;
 		for (var i=0 ; i <15 ; i++) {
@@ -39,6 +53,8 @@ $(document).ready(function() {
 					var odlegloscNaOsiX = Math.abs($(this).attr('data-x') - poprzednioKlikniety.attr('data-x')) * mapWidth / 100;
 					var odlegloscNaOsiY = Math.abs($(this).attr('data-y') - poprzednioKlikniety.attr('data-y')) * mapHeight / 100;	
 					odlegloscXY = Math.sqrt(odlegloscNaOsiX * odlegloscNaOsiX + odlegloscNaOsiY * odlegloscNaOsiY);
+				
+												
 				}
 				
 				var nowaOdleglosc = Math.round(parseInt($('.easter__counters__route em').text()) + odlegloscXY);
@@ -48,6 +64,15 @@ $(document).ready(function() {
 					$('.easter__counters__route em').text(nowaOdleglosc); 										
 					monumentsCounter.text(parseInt(monumentsCounter.text()) + 1);
 					$(this).addClass('klikniety').attr('data-klikniety-jako', monumentsCounter.text());
+					
+					ctx.beginPath();
+					ctx.moveTo(poprzednioKlikniety.attr('data-x') * mapWidth / 100, poprzednioKlikniety.attr('data-y') * mapHeight / 100);
+					ctx.lineTo($(this).attr('data-x') * mapWidth / 100, $(this).attr('data-y') * mapHeight / 100);
+					ctx.lineWidth = 4;
+					ctx.strokeStyle = '#cc2222';
+					ctx.stroke();
+					
+					
 				} else {
 					// game over
 					$('.easter__map').append('<div class="easter__gameover">GAME OVER!<br>Wyczerpałeś swój limit! </div>');
@@ -57,6 +82,8 @@ $(document).ready(function() {
 						
 						// cookie odn.ustanowienia rekordu
 						document.cookie = 'rekordWGrze=' + $('.easter__counters__highscore em').text();
+						
+						
         			}
 				}
 			}
@@ -98,34 +125,3 @@ $(document).ready(function() {
     });
 			
 });	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
