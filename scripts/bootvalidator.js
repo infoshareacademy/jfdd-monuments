@@ -2,7 +2,7 @@
  * Created by Gosia on 12/01/16.
  */
 
-/* po wypelnieniu calego formularza zostanie wyslany formularz*/
+/*dopiero  po wypelnieniu calego formularza zostanie wyslany formularz*/
 $(function() {
     var mouseClick = false;
     var scroll = false;
@@ -23,13 +23,10 @@ $(function() {
 
     });
 
-    //debugger;
     $(".contact form").submit(function(event){
-        event.preventDefault();
-        //debugger;
+        //event.preventDefault();
 
         if (mouseClick || scroll || keyDown){
-alert('dziękuję');
 
         } else{
             return false;
