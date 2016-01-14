@@ -9,7 +9,7 @@ $(document).ready(function(){
         function() {
             var aktualnyScrollOkna = $(window).scrollTop();//zwraca przesuniecie okna po scrollu
             //
-            var wektorZmianyTla = aktualnyScrollOkna *0.8 ;//wyliczanie wektora zmiany
+            var wektorZmianyTla = aktualnyScrollOkna *(0.8) ;//wyliczanie wektora zmiany
 //
             elementZTlem.css('background-position-y', wektorZmianyTla - 300);// 200 to poczatkowe przesuniecie tla voila,
             //zwraca wartosc w/w linijka

@@ -273,7 +273,7 @@ body {
 
     background-color: #e7e7e7;
 
-    padding:3% 5%  15% 15%;
+    padding:3% 5%  3% 15%;
 
     /*height: 700px;*/ /* nie moze byc ustawiona wysokosc na sztywno */
 
@@ -329,16 +329,14 @@ body {
 
 }
 
-
-
 .LogoFeatures
 
 {
 
     padding-top: 35px;
+    padding-bottom: 20px;
     width: 150px;
     height:150px;
-    padding-bottom: 20px;
 
     -moz-transition: all 0.4s ease;
 
@@ -352,21 +350,29 @@ body {
 
 }
 
-/*.LogoFeatures:hover  {*/
-    /*-moz-transform: scale(1.15);*/
-    /*-webkit-transform: scale(1.15);*/
-    /*-o-transform: scale(1.15);*/
-    /*-ms-transform: scale(1.15);*/
-    /*transform: scale(1.15);*/
-    /*z-index: 2;*/
+.LogoFeatures:hover  {
 
-/*}*/
+    -moz-transform: scale(1.15);
+
+    -webkit-transform: scale(1.15);
+
+    -o-transform: scale(1.15);
+
+    -ms-transform: scale(1.15);
+
+    transform: scale(1.15);
+
+    z-index: 2;
+
+}
 
 
 
 .clear{
     clear:both;
 }
+
+
 
 /*CONTACT */
 

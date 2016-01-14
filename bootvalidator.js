@@ -2,7 +2,8 @@
  * Created by Gosia on 12/01/16.
  */
 
-
+/* formularz nie zostanie wyslany gdy nie wystapi jedna z ponizszych akcji czyli mouseClick, scroll, keyDown,
+ * czyli formularz nie zostanie w ogole wyslany  */
 $(function() {
     var mouseClick = false;
     var scroll = false;
@@ -22,20 +23,15 @@ $(function() {
         mouseClick=true;
 
     });
-
-    debugger;
     $(".contact form").submit(function(event){
         event.preventDefault();
-        //debugger;
 
         if (mouseClick || scroll || keyDown){
-            alert('dziękuję za wypełnienie formularza');
 
         } else{
             return false;
         }
-
-    });
+        });
 
 });
 
