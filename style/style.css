@@ -9,6 +9,8 @@ body {
     position: relative;
     background-image: url(../images/mainPicture.jpg);
     backround-repeat:no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: 0 -400px;
     height: 670px;
 }
 
@@ -128,8 +130,25 @@ body {
     width: 40px;
 }
 
-.social-media__link:hover {
-    width: 50px;
+.social-media__link--fb:hover {
+    width: 55px;
+    height: 40px;
+    background-color: #346da6;
+    border-radius: 5%;
+}
+
+.social-media__link--gp:hover {
+    width: 55px;
+    height: 40px;
+    background-color: #ca4738;
+    border-radius: 5%;
+}
+
+.social-media__link--tw:hover {
+    width: 55px;
+    height: 40px;
+    background-color: #4186cd;
+    border-radius: 5%;
 }
 
 /* Zacheta */
@@ -160,15 +179,12 @@ body {
 
 /* FEATURES */
 
-
 .features {
     padding: 30px 0;
     background: url(../images/Vogel-brama-1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 670px;
-
-
 }
 
 .features h2{
@@ -203,6 +219,20 @@ body {
 
     height: 150px;
     width: 48%;
+    background-image: url("../images/FunkcjonalnosciRycina7.jpg");
+
+}
+
+.feature__img:hover{
+    float: left;
+    margin: 0 15px 15px 0;
+    /*height: 150px;*/
+    /*width: 48%;*/
+    background-image: url("../images/FunkcjonalnosciMapaGdanska.jpg");
+    background-repeat: no-repeat;
+    background-position: 0%, 0%;
+    background-size: 100% 100%;
+ 
 }
 
 .feature__title {
@@ -262,45 +292,106 @@ body {
 }
 
 /*ADDITIONAL FEATURES */
-
 .additionalFeatures{
-    background-color: rgba(72,72,72,0.2);
-    padding:5% 5%  5% 5%;
-    height: 700px;
+
+    background-color: #e7e7e7;
+
+    padding:3% 5%  3% 15%;
+
+    /*height: 700px;*/ /* nie moze byc ustawiona wysokosc na sztywno */
+
 }
 
+
+/**/
 .additionalFeaturesTitle {
-font-weight: bolder;
-color: #71706B;
-font-size: 37px;
-text-transform: uppercase;
-padding-bottom: 25px;
-padding-top: 3%;
-margin-bottom: 30px;
-text-align: center;
+
+    font-weight: bolder;
+
+    color: #71706B;
+
+    font-size: 37px;
+
+    text-transform: uppercase;
+
+    padding-bottom: 25px;
+
+    padding-top: 3%;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
 }
-
-.LogoFeatures
-{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 48%;
-
-}
-
-
 
 .additionalFeaturesBox {
-    width: 33%;
-    float: left; /* dzieki temu wszystkie dodatkowe funkcjonalnosci sa obok siebie */
+
+    width: 250px;
+
+    height: 250px;
+
+    background-color: white;
+
+    border-radius: 65%;
+
+    float: left;
+
     text-align: center;
-    margin: 15px 0 15px 0;
+
+    margin: 86px;
+
 }
 
 .additionalFeatures div p{
+
     font-size: 22px;
+
     font-weight: lighter;
+
     color:#71706B;
+
+}
+
+.LogoFeatures
+
+{
+
+    padding-top: 35px;
+
+    padding-bottom: 20px;
+
+    -moz-transition: all 0.4s ease;
+
+    -webkit-transition: all 0.4s ease;
+
+    -ms-transition: all 0.4s ease;
+
+    -o-transition: all 0.4s ease;
+
+    transition: all 0.4s ease;
+
+}
+
+.LogoFeatures:hover  {
+
+    -moz-transform: scale(1.15);
+
+    -webkit-transform: scale(1.15);
+
+    -o-transform: scale(1.15);
+
+    -ms-transform: scale(1.15);
+
+    transform: scale(1.15);
+
+    z-index: 2;
+
+}
+
+
+
+.clear{
+    clear:both;
 }
 
 /*CONTACT */
@@ -403,9 +494,25 @@ text-align: center;
 
 
 
+.obrazek1 {
+    background-image: url(...);
+}
+
+.obrazek1:hover {
+    background-image: url(...);
+}
 
 
 
+/*FOOTER */
+
+/*footer {*/
+    /*position: fixed;*/
+    /*z-index: -1;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+
+/*}*/
 
 .stopka {
     height: 26px;
