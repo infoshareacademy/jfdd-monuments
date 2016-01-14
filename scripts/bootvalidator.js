@@ -24,7 +24,6 @@ $(function() {
     });
 
     $(".contact form").submit(function(event){
-        //event.preventDefault();
 
         if (mouseClick || scroll || keyDown){
 
