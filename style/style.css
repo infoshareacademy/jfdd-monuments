@@ -129,8 +129,25 @@ body {
     width: 40px;
 }
 
-.social-media__link:hover {
-    width: 50px;
+.social-media__link--fb:hover {
+    width: 55px;
+    height: 40px;
+    background-color: #346da6;
+    border-radius: 5%;
+}
+
+.social-media__link--gp:hover {
+    width: 55px;
+    height: 40px;
+    background-color: #ca4738;
+    border-radius: 5%;
+}
+
+.social-media__link--tw:hover {
+    width: 55px;
+    height: 40px;
+    background-color: #4186cd;
+    border-radius: 5%;
 }
 
 /* Zacheta */
