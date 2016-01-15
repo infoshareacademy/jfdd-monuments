@@ -107,8 +107,12 @@
             <h2>   NIEPOWTARZALNE FUNKCJONALNOŚCI</h2>
             <div class="row">
                 <div class="feature">
-                    <div class="feature__img"></div>
-                    <h3 class="feature__title  animated fadeInDown">Mapa z odległościami</h3>
+                    <img class="feature__img" src="images/FunkcjonalnosciMapaGdanska.jpg"
+                         onmouseover="this.src='images/FunkcjonalnosciRycina7.jpg'"
+                         onmouseout="this.src='images/FunkcjonalnosciMapaGdanska.jpg'">
+
+                    <h3 class="feature__title  animated fadeInDown">Odległości</h3>
+
                     <p class="feature__descr">Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>
                 </div>
 
@@ -145,6 +149,7 @@
                     <p class="feature__descr">Lista zabytków, które najbardziej przypadły do gustu naszym użytkownikom.</p>
                 </div>
             </div>
+           <div class="clear"></div>
         </section>
 
     </main>
@@ -183,33 +188,27 @@
     <section class="additionalFeatures">
         <div class="additionalFeaturesTitle"> Z NAMI ODKRYJESZ PIĘKNO TEGO MIASTA</div>
         <div class="additionalFeaturesBox">
-            <img src="images/church.png" width="150px" height="150px"
-                 class="LogoFeatures">
+            <img src="images/church.png" class="LogoFeatures">
             <p> kościoły</p>
         </div>
         <div class="additionalFeaturesBox">
-            <img src="images/museum.png" width="150px" height="150px"
-                 class="LogoFeatures">
+            <img src="images/museum.png" class="LogoFeatures">
             <p>muzea</p>
         </div>
         <div class="additionalFeaturesBox">
-            <img src="images/teatr.png" width="150px" height="150px"
-                 class="LogoFeatures">
+            <img src="images/teatr.png" class="LogoFeatures">
             <p>teatry</p>
         </div>
         <div class="additionalFeaturesBox">
-            <img src="images/punktwidokowy.png" width="150px" height="150px"
-                 class="LogoFeatures">
+            <img src="images/punktwidokowy.png" class="LogoFeatures">
             <p>widoki</p>
         </div>
         <div class="additionalFeaturesBox">
-            <img src="images/plaza.png" width="150px" height="150px"
-                 class="LogoFeatures">
+            <img src="images/plaza.png" class="LogoFeatures">
             <p> plaże</p>
         </div>
         <div class="additionalFeaturesBox">
-            <img src="images/pomnikPrzyrody.png" width="150px" height="150px"
-                 class="LogoFeatures">
+            <img src="images/pomnikPrzyrody.png" class="LogoFeatures">
             <p>przyroda</p>
         </div>
         <div class="clear">
@@ -219,7 +218,7 @@
 
 
     <!--CONTACT-->
-        <section class="contact" id="contact_id">
+        <section class="contact animated fadeInUp" id="contact_id">
             <p class="contact_title">Dziękujemy,  że nas odwiedziłeś. Chcesz być na bieżąco?<br>Zostaw info,  a my skontaktujemy się z Tobą!</p>
 
             <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="post">
@@ -227,8 +226,7 @@
                     <input type="text" name="name" placeholder="Imię" required/>
                     <input type="email" name="email" placeholder="Email" required/>
                     <input type="tel" name="telefon" placeholder="Telefon" maxlength="13"/>
-                    <!--<textarea placeholder="Wiadomość" required></textarea>-->
-                    <input type="hidden" name="receiver" value="#">
+                    <input type="hidden" name="receiver" value="piekarska@live.com">
                     <input type="submit" value="Wyślij">
 
 
@@ -266,8 +264,8 @@
     <!-- ponizej pobieramy jQuery z google hosted libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="scripts/ajax.js"></script>
-    <script src="scripts/features.js"></script>
     <script src="scripts/parallax.js"></script>
+    <script src="scripts/bootvalidator.js"></script>
     <script src="scripts/easteregg.js"></script>
 
 </body>
