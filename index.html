@@ -20,26 +20,21 @@
 
 <body>
 
-    <!--EASTER EGG--> <!--test-->
+    <!--EASTER EGG-->
     <div id="easterEgg" class="easter">
         <a class="easter__close">×</a>
-        <div class="easter__map"></div>
+        <div class="easter__map">
+			<canvas id="EasterLines"></canvas>
+		</div>
         <div class="easter__counters">
-            <span class="easter__counters__route">Przebyta droga: <em>0</em></span>
-            <span class="easter__counters__limit">Limit odległości: <em>X</em></span>
+            <span class="easter__counters__route">Przebyta droga: <em>0</em> m</span>
+            <span class="easter__counters__limit">Limit odległości: <em>X</em> m</span>
             <span class="easter__counters__highscore">Rekord: <em>0</em></span>
             <span class="easter__counters__monuments">Odwiedzone zabytki: <em>0</em></span>
         </div>
-    
+		<div id="EasterWelcome" class="easter__gameover"><h3>Zasady gry</h3><p>Połącz jak najwięcej ikon zabytków klikając na nie lewym przyciskiem myszki. Nie możesz przekroczyć limitu długości trasy.</br><a>&raquo;&raquo;&raquo; START &laquo;&laquo;&laquo;</a></p></div>
 	</div>
     <div class="overlay"></div>
-
-    <!--Wstawianie punków w eastergg-->
-
-    
-
-
-
 
     <!--NAGLÓWEK-->
     <header class="header" id="nasz_header">
@@ -112,7 +107,7 @@
             <h2>   NIEPOWTARZALNE FUNKCJONALNOŚCI</h2>
             <div class="row">
                 <div class="feature">
-                    <img class="feature__img">
+                    <div class="feature__img"></div>
                     <h3 class="feature__title  animated fadeInDown">Mapa z odległościami</h3>
                     <p class="feature__descr">Mapa pokazująca lokalizację zabytków oraz obliczająca odległości do nich.</p>
                 </div>
