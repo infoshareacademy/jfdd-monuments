@@ -24,6 +24,7 @@ $(document).ready(function () {
             doc_top >= menu_contact ||
             (window.innerHeight + window.scrollY) >= document.body.offsetHeight
         ) {
+            $('menu_div_feat').removeClass('hover_js');
             $('.menu_div_contact').addClass('hover_js');
         } else {
             $('.menu_div_contact').removeClass('hover_js');

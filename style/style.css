@@ -108,20 +108,18 @@ body {
 }
 
 /* MENU Hover*/
-.hover_js {
-    border-bottom: 5px solid orange;
-}
 
-.hover_orange {
+.hover_orange a{
     text-decoration: none;
     color: white;
 }
 
-/*.hover_orange:visited {*/
-    /*color: green;*/
-/*}*/
+.hover_orange a:hover {
+    color: orange;
+    border-bottom: 2px orange solid;
+}
 
-.hover_orange:hover {
+.hover_js a {
     color: sandybrown;
 }
 
