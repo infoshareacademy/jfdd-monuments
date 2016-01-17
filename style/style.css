@@ -77,34 +77,36 @@ body {
 
 .menu_gl {
     top: 0px;
-    width: 30%;
     right: 0px;
     position: fixed;
     padding-top: 10px;
+    padding-bottom: 12px;
     background-color: #000000;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
     z-index: 102;
+    opacity: 0.8;
     border-left: white 2px solid;
     border-bottom: white 2px solid;
-    opacity: 0.8;
-    padding-bottom: 12px;
+    box-shadow: 10px 5px 5px 1px #000;
+
 
 }
 
 .menu_div {
     display: inline;
     font-size: 25px;
+    padding: 10px;
 }
 
 .menu_div_header {
-    padding: 5px 35px 5px 5px;
+    padding-left: 25px;
 }
 
 .menu_div_contact {
-    padding: 5px 5px 5px 35px;
+    padding-right: 25px;
 }
 
 /* MENU Hover*/
