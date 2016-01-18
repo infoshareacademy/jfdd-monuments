@@ -85,6 +85,7 @@ $(document).ready(function() {
 						$('.easter__map').append('<div class="easter__gameover">WYGRAŁEŚ - GRATULUJEMY!<br>Odkryłeś wszystkie zabytki! </div>');
 						$('.symbol-zabytku').off('click');
 
+
 						//jezeli zamieniona na liczbe zawartość elementu: licznik zabytków jest wieksza od dotychczasowego rekordu to podmieniamy dotychczasowy rekord na wlasnie uzyskany.
 						if (parseInt($('.easter__counters__monuments em').text() )> parseInt($('.easter__counters__highscore em').text() )) {
 							$('.easter__counters__highscore em').text($('.easter__counters__monuments em').text());
