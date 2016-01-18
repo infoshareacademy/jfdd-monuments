@@ -8,7 +8,6 @@ body {
 .header {
     position: relative;
     background: url(../images/mainPicture.jpg) no-repeat;
-    /*backround-repeat:no-repeat;*/
     background-position: 0 -400px;
     height: 670px;
 }
@@ -248,14 +247,13 @@ body {
     font-size: 18px;
 }
 
-
-
+/* Pojemnik w ktorym znajdują się slajdy */
 .galeriaMusea{
 
     position: relative;
     height: 600px;
 }
-
+/* Galeria slajdów */
 .galeriaMusea div {
     position: absolute;
     left: 0;
@@ -272,7 +270,7 @@ body {
 .galeriaMusea div:first-child {
     display: block;
 }
-
+/* style dla opisów przypisanych slajdom */
 .galeriaMusea p {
     color: #ffffff;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -290,10 +288,8 @@ body {
 .additionalFeatures{
 
     background-color: #e7e7e7;
+    padding:3% 5% 3% 15%;
 
-    padding:3% 5%  3% 15%;
-
-    /*height: 700px;*/ /* nie moze byc ustawiona wysokosc na sztywno */
 
 }
 
@@ -408,9 +404,7 @@ body {
     margin: 3% auto;
     max-width: 1000px;
     height: 535px;
-    /*background: rgba(255, 255, 255, 0.7);*/
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-    /*margin-bottom: 8px;*/
 
 }
 
@@ -426,7 +420,6 @@ body {
     position: relative;
     margin-left: -260px;
     -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
     padding-right: 35px;
     -webkit-border-radius: 10px;
 }
@@ -455,51 +448,6 @@ body {
 }
 
 
-
-
-
-
-/*.cta {*/
-/*float: right;*/
-/*padding: 20px;*/
-/*opacity: 0.65;*/
-/*color: #ffffff;*/
-/*text-transform: uppercase;*/
-/*font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;*/
-/*font-weight: 700;*/
-/*text-decoration: none;*/
-/*position: absolute;*/
-/*left: 955px;*/
-/*top: 40px;*/
-/*}*/
-
-/*.cta:hover {*/
-/*background-color: burlywood ;*/
-/*}*/
-
-/*.half {*/
-/*width: 40%;*/
-/*margin: 0 3%;*/
-/*float: left;*/
-/*}*/
-
-/*.login-register input:not([type="submit"]) {*/
-/*background-color: gainsboro;*/
-/*float: right;*/
-/*}*/
-
-
-
-
-/*FOOTER */
-
-/*footer {*/
-    /*position: fixed;*/
-    /*z-index: -1;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-
-/*}*/
 
 .stopka {
     height: 26px;

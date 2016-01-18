@@ -2,7 +2,10 @@ $(document).ready(function() {
     $('.easter__close').click(function() {
         $('.easter').fadeOut(500);
         $('.overlay').fadeOut(500);
+		// Dla wszystkich elementów em wewnątrz spanów wszystkich poza rekordem, wewnątrz okna gry - wstawiamy wartość ..
+		// zero, w celu resetu licznika
         $('.easter span:not(.easter__counters__highscore) em').text('0');
+		//Usuniecie symboli-ikonek zabytków na mapie oraz okienka gameover
 		$('.easter__map .symbol-zabytku, .easter__gameover').remove();
 		
     });
