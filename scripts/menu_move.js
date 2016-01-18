@@ -34,8 +34,7 @@ $(document).ready(function () {
             doc_top >= menu_contact ||
             (window.innerHeight + window.scrollY) >= document.body.offsetHeight
         ) {
-            //$('menu_div_add_feat').removeClass('hover_js');
-            $('menu_div_feat').removeClass('hover_js');
+            $('.menu_div_add_feat').removeClass('hover_js');
             $('.menu_div_contact').addClass('hover_js');
         } else {
             $('.menu_div_contact').removeClass('hover_js');
@@ -43,3 +42,16 @@ $(document).ready(function () {
     });
 });
 
+//$(document).ready(function() {
+//    $('.menu_div_header','.menu_div_feat','.menu_div_add_feat','.menu_div_contact').click(function({
+//
+//    var body = $('html, body');
+//    body.stop().animate({scrollTop:0}, '500', 'swing', function() {
+//
+//        )}
+//    });
+
+
+
+
+//});
