@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('.easter').fadeIn(500);
         $('.overlay').fadeIn(500);
 
-		//odczyt ciasteczka z dotychczasowym rekordem
+		//odczyt ciasteczka z dotychczasowym rekordem (cyfry 0-9, powtorzone przynajniej raz (wyrazenia regularne)
 		var ciastko = document.cookie.match('rekordWGrze\=([0-9]+)');
 		if(ciastko) {
 			$('.easter__counters__highscore em').text(ciastko[1]);
