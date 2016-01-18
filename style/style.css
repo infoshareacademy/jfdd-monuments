@@ -287,49 +287,32 @@ body {
 /*ADDITIONAL FEATURES */
 
 .additionalFeatures{
-
     background-color: #e7e7e7;
     padding:3% 5% 3% 15%;
 
 
 }
 
-
-/**/
 .additionalFeaturesTitle {
 
     font-weight: bolder;
-
     color: #71706B;
-
     font-size: 37px;
-
     text-transform: uppercase;
-
     padding-bottom: 25px;
-
     padding-top: 3%;
-
     margin-bottom: 30px;
-
     text-align: center;
 
 }
 
 .additionalFeaturesBox {
-
     width: 250px;
-
     height: 250px;
-
     background-color: white;
-
     border-radius: 65%;
-
     float: left;
-
     text-align: center;
-
     margin: 86px;
 
 }
@@ -337,9 +320,7 @@ body {
 .additionalFeatures div p{
 
     font-size: 22px;
-
     font-weight: lighter;
-
     color:#71706B;
 
 }
@@ -352,15 +333,10 @@ body {
     padding-bottom: 20px;
     width: 150px;
     height:150px;
-
     -moz-transition: all 0.4s ease;
-
     -webkit-transition: all 0.4s ease;
-
     -ms-transition: all 0.4s ease;
-
     -o-transition: all 0.4s ease;
-
     transition: all 0.4s ease;
 
 }
@@ -368,15 +344,10 @@ body {
 .LogoFeatures:hover  {
 
     -moz-transform: scale(1.15);
-
     -webkit-transform: scale(1.15);
-
     -o-transform: scale(1.15);
-
     -ms-transform: scale(1.15);
-
     transform: scale(1.15);
-
     z-index: 2;
 
 }
@@ -462,7 +433,6 @@ body {
     padding: 20px 20px 10px 20px;
     text-align: center;
     text-shadow: black 0 2px 0;
-    /*position: fixed;*/
 }
 
 .partnerzy {

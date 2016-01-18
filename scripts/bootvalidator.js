@@ -8,31 +8,20 @@ $(function() {
     var scroll = false;
     var keyDown = false;
     $(window).scroll(function(){
-
         scroll=true;
-
     });
     $(window).keydown(function(){
-
         keyDown=true;
-
     });
     $(window).click(function(){
-
        mouseClick=true;
-
     });
-
     $(".contact form").submit(function(event){
-
         if (mouseClick || scroll || keyDown){
-
         } else{
             return false;
         }
-
     });
-
 });
 
 
