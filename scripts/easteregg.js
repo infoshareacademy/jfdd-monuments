@@ -9,7 +9,7 @@ $(document).ready(function() {
 		$('.easter__map .symbol-zabytku, .easter__gameover').remove();
 		
     });
-	/* obsługa wyłączenia okienka eastern__welcome;*/
+	/* obsługa wyłączenia okienka easter__welcome;*/
 	$('#EasterWelcome a').click(function() {
 		$('#EasterWelcome').remove();
 	});
