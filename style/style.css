@@ -96,6 +96,28 @@ body {
     color: sandybrown;
 }
 
+/*MENU Button */
+
+.menu_div_button {
+    display: inline;
+    font-size: 25px;
+    background-color: white;
+    padding: 8px;
+
+}
+
+.hover_button a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.hover_button a:hover {
+    border-bottom: 2px orange solid;
+    color: orange;
+}
+
+
 /* KONIEC MENU */
 
 
