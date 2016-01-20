@@ -23,13 +23,13 @@
 
 .zaloguj {
     position: fixed;
-    left: 15vw;
-    right: 15vw;
-    top: 10vh;
+    left: 30vw;
+    right: 30vw;
+    top: 20vh;
     z-index: 1000;
     display: none;
-    padding: 10px;
-    background-color: black;
+    padding: 70px;
+    background-color: pink;
     border-radius: 10px;
     color: white;
 }
