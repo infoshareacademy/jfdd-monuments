@@ -1,13 +1,14 @@
-
-.zaloguj__wywolanie {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 415px;
-    left: 185px;
-    z-index: 102;
-    cursor: alias;
-    background-color: pink;
+.zaloguj {
+    position: fixed;
+    left: 30vw;
+    right: 30vw;
+    top: 20vh;
+    z-index: 1000;
+    display: none;
+    padding: 70px;
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
 }
 
 .zaloguj__background {
@@ -19,19 +20,6 @@
     right:0;
     z-index: 666;
     display: none;
-}
-
-.zaloguj {
-    position: fixed;
-    left: 30vw;
-    right: 30vw;
-    top: 20vh;
-    z-index: 1000;
-    display: none;
-    padding: 70px;
-    background-color: pink;
-    border-radius: 10px;
-    color: white;
 }
 
 .zaloguj__close {
