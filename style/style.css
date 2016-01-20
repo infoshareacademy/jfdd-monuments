@@ -61,8 +61,8 @@ body {
     text-align: center;
     z-index: 102;
     opacity: 0.8;
-    border-left: white 2px solid;
-    border-bottom: white 2px solid;
+    border-left: orange 2px solid;
+    border-bottom: orange 2px solid;
     box-shadow: 10px 5px 5px 1px #000;
 }
 
@@ -101,8 +101,9 @@ body {
 .menu_div_button {
     display: inline;
     font-size: 25px;
-    background-color: white;
+    background-color: orange;
     padding: 8px;
+    opacity: 1;
 
 }
 
@@ -113,8 +114,8 @@ body {
 }
 
 .hover_button a:hover {
-    border-bottom: 2px orange solid;
-    color: orange;
+    border-bottom: white 2px solid;
+    color: white;
 }
 
 
