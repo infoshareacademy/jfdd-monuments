@@ -1,0 +1,54 @@
+
+.zaloguj__wywolanie {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 415px;
+    left: 185px;
+    z-index: 102;
+    cursor: alias;
+    background-color: pink;
+}
+
+.zaloguj__background {
+    position: fixed;
+    background-color: rgba(0,0,0,0.55);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 666;
+    display: none;
+}
+
+.zaloguj {
+    position: fixed;
+    left: 15vw;
+    right: 15vw;
+    top: 10vh;
+    z-index: 1000;
+    display: none;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+.zaloguj__close {
+    background: gray;
+    padding: 0px 10px 16px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 0.5em;
+    z-index: 1;
+}
+
+.zaloguj__close:hover {
+    color: yellow;
+}
