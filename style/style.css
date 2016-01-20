@@ -5,6 +5,7 @@ body {
     background-color: #f9f9f9;
 }
 
+
 .header {
     position: relative;
     background: url(../images/mainPicture.jpg) no-repeat;
@@ -117,7 +118,6 @@ body {
     border-bottom: white 2px solid;
     color: white;
 }
-
 
 /* KONIEC MENU */
 
