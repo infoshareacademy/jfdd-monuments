@@ -16,13 +16,6 @@ $(document).ready(function() {
 });
 
 
-
-<<<<<<< HEAD
-});
-
-
-
-
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -100,5 +93,4 @@ function testAPI() {
             'Thanks for logging in, ' + response.name + '!';
     });
 }
-=======
->>>>>>> origin/develop
+
