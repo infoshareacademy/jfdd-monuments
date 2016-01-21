@@ -16,6 +16,10 @@
     <link type="text/css" rel="stylesheet" href="style/style.css">
     <link type="text/css" rel="stylesheet" href="style/easteregg.css">
     <link type="text/css" rel="stylesheet" href="style/zaloguj.css">
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="87338626659-8migmvn64560h5vjr9itm7c3bbq2591k.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 
@@ -87,32 +91,48 @@
         TO JEST ZALOGOWANIE
         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt9_y7Ey5mheSdwcVqw6MgqaiKg88-BLPUf3mSenE3ZCg8LXheQA">
 
-
-
-
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
         <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                    appId      : '783774278432705',
-                    xfbml      : true,
-                    version    : 'v2.5'
-                });
-            };
+            function onSignIn(googleUser) {
+                // Useful data for your client-side scripts:
+                var profile = googleUser.getBasicProfile();
+                console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                console.log("Name: " + profile.getName());
+                console.log("Image URL: " + profile.getImageUrl());
+                console.log("Email: " + profile.getEmail());
 
-            (function(d, s, id){
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) {return;}
-                js = d.createElement(s); js.id = 783774278432705;
-                js.src = "//connect.facebook.net/en_US/sdk.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+                // The ID token you need to pass to your backend:
+                var id_token = googleUser.getAuthResponse().id_token;
+                console.log("ID Token: " + id_token);
+            };
         </script>
 
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
 
-        <div id="status">
-        </div>
+    <!-- LOGOWANIE FACEBOOKIEM -->
+        <!--<script>-->
+            <!--window.fbAsyncInit = function() {-->
+                <!--FB.init({-->
+                    <!--appId      : '783774278432705',-->
+                    <!--xfbml      : true,-->
+                    <!--version    : 'v2.5'-->
+                <!--});-->
+            <!--};-->
+
+            <!--(function(d, s, id){-->
+                <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                <!--if (d.getElementById(id)) {return;}-->
+                <!--js = d.createElement(s); js.id = 783774278432705;-->
+                <!--js.src = "//connect.facebook.net/en_US/sdk.js";-->
+                <!--fjs.parentNode.insertBefore(js, fjs);-->
+            <!--}(document, 'script', 'facebook-jssdk'));-->
+        <!--</script>-->
+
+        <!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">-->
+        <!--</fb:login-button>-->
+
+        <!--<div id="status">-->
+        <!--</div>-->
+    <!-- KONIEC LOGOWANIA PO FACEBOOKU -->
 
     </div>
 
