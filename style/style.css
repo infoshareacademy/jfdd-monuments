@@ -5,6 +5,7 @@ body {
     background-color: #f9f9f9;
 }
 
+
 .header {
     position: relative;
     background: url(../images/mainPicture.jpg) no-repeat;
@@ -61,8 +62,8 @@ body {
     text-align: center;
     z-index: 102;
     opacity: 0.8;
-    border-left: white 2px solid;
-    border-bottom: white 2px solid;
+    border-left: orange 2px solid;
+    border-bottom: orange 2px solid;
     box-shadow: 10px 5px 5px 1px #000;
 }
 
@@ -80,6 +81,30 @@ body {
     padding-right: 25px;
 }
 
+@media screen and (max-width: 550px) {
+	.menu_div {
+		display: none;
+		font-size: 20px;
+		padding: 6px !important;
+	}
+		
+	.menu_gl {
+		left: 0;
+	}	
+	.menu_gl:hover .menu_div {
+		display: block;
+	}	
+	.menu_gl:before {
+		float: left;
+		color: white;
+		padding-left: 20px;
+		content: 'menu';
+	}
+	.menu_gl:hover::before {
+		content: none;
+	}
+}
+
 /* MENU Hover*/
 
 .hover_orange a{
@@ -94,6 +119,28 @@ body {
 
 .hover_js a {
     color: sandybrown;
+}
+
+/*MENU Button */
+
+.menu_div_button {
+    display: inline;
+    font-size: 25px;
+    background-color: orange;
+    padding: 8px;
+    opacity: 1;
+
+}
+
+.hover_button a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.hover_button a:hover {
+    border-bottom: white 2px solid;
+    color: white;
 }
 
 /* KONIEC MENU */
@@ -205,6 +252,12 @@ body {
     background: rgba(255, 255, 255, 0.7);
 }
 
+@media screen and (max-width: 1000px) {
+	.row {
+		padding: 0;
+	}
+}
+	
 .feature {
     float: left;
     margin: 15px 3%;
@@ -212,13 +265,32 @@ body {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 1000px) {
+	.feature {
+		width: 90%;
+	}
+}
+		
+
+
 .feature__img {
     float: left;
     margin: 0 15px 15px 0;
     height: 200px;
     width: 58%;
     background-image: url("../images/FunkcjonalnosciRycina7.jpg");
+}
 
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+	.feature__img {
+		width: 40%;
+	}
+}	
+
+@media screen and (max-width: 549px) {
+	.feature__img {
+		display: none;
+	}
 }
 
 .feature__img:hover{

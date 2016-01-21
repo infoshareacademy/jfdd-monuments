@@ -15,6 +15,7 @@
     <link type="text/css" rel="stylesheet" href="style/animate.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
     <link type="text/css" rel="stylesheet" href="style/easteregg.css">
+    <link type="text/css" rel="stylesheet" href="style/zaloguj.css">
 </head>
 
 
@@ -41,7 +42,7 @@
 
         <div class="wywolanie__easteregg"></div>
 
-        <img id="logo2" src="\jfdd-monuments\images\obraz_1196.jpg">
+        <img id="logo2" src="images\obraz_1196.jpg">
 
         <!--MOTTO GDANSK-->
         <h1 class="motto">
@@ -76,8 +77,52 @@
                 <a href="#contact_id">Kontakt</a>
             </div>
 
+            <div class="menu_div_button hover_button zaloguj__wywolanie">
+                <a href="#button">Zaloguj</a>
+            </div>
+
         </div>
     </nav>
+
+    <!-- *****************    akcja po zalogowaniu     **************** -->
+    <div class="zaloguj__background"></div>
+    <div class="zaloguj">
+        <a class="zaloguj__close">×</a>
+        TO JEST ZALOGOWANIE
+
+
+
+
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '783774278432705',
+                    xfbml      : true,
+                    version    : 'v2.5'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = 783774278432705;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+
+        <div id="status">
+        </div>
+
+
+
+    </div>
+
+
+
 
     <!-- SOCIAL MEDIA-->
     <aside class="social-media animated fadeInRight">
@@ -267,6 +312,8 @@
     <script src="scripts/bootvalidator.js"></script>
     <script src="scripts/easteregg.js"></script>
     <script src="scripts/menu_move.js"></script>
+    <script src="scripts/zaloguj.js"></script>
+
 
 </body>
 </html>
