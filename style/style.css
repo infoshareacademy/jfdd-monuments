@@ -91,22 +91,28 @@ body {
     position: fixed;
     padding-top: 10px;
     padding-bottom: 12px;
-    background-color: #000000;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     z-index: 102;
-    opacity: 0.8;
+    box-shadow: 10px 5px 5px 1px #000;
     border-left: orange 2px solid;
     border-bottom: orange 2px solid;
-    box-shadow: 10px 5px 5px 1px #000;
+
+
 }
+
+
+
 
 .menu_div {
     display: inline;
     font-size: 25px;
-    padding: 10px;
+    padding: 8px;
+    opacity: 0.8;
+    background-color: #000;
+
 }
 
 .menu_div_header {
@@ -116,6 +122,11 @@ body {
 .menu_div_contact {
     padding-right: 25px;
 }
+
+.menu_div:last-child {
+    opacity:1;
+}
+
 
 @media screen and (max-width: 550px) {
 	.menu_div {
@@ -162,15 +173,14 @@ body {
 /*MENU Button */
 
 .menu_div_button {
-    display: inline;
-    font-size: 25px;
     background-color: orange;
     padding: 8px;
-    opacity: 1;
 
 }
 
-.hover_button a{
+
+
+.hover_button a {
     text-decoration: none;
     color: black;
 
