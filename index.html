@@ -58,9 +58,8 @@
 
 
     <!--MENU-->
-    <nav>
-        <div class="menu_gl">
-
+    <nav class="menu_gl">
+        <div>
 
             <div class="menu_div_header menu_div hover_orange">
                 <a href="#nasz_header">Główna</a>
@@ -82,7 +81,6 @@
                 <a href="#button">Zaloguj</a>
             </div>
 
-
         </div>
     </nav>
 
@@ -92,8 +90,38 @@
         <a class="zaloguj__close">×</a>
         TO JEST ZALOGOWANIE
         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt9_y7Ey5mheSdwcVqw6MgqaiKg88-BLPUf3mSenE3ZCg8LXheQA">
+
+
+
+
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '783774278432705',
+                    xfbml      : true,
+                    version    : 'v2.5'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = 783774278432705;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+
+        <div id="status">
+        </div>
+
+
+
     </div>
-    <div class="zaloguj__background"></div>
+
 
 
 
