@@ -13,6 +13,13 @@ body {
     height: 670px;
 }
 
+@media screen and (max-width: 550px) {
+    .header {
+        height: 335px;
+    }
+}
+
+
 #logo2 {
     opacity: 0.65;
     position: absolute;
@@ -20,8 +27,17 @@ body {
     bottom: 61px;
     width: 210px;
     height: 330px;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: black 4px 0 5px;
+}
+
+@media screen and (max-width: 550px) {
+    #logo2 {
+        left: 60px;
+        bottom: 61px;
+        width: 125px;
+        height: 195px;
+    }
 }
 
 .motto {
@@ -37,14 +53,34 @@ body {
     z-index: 101;
 }
 
+@media screen and (max-width: 550px) {
+    .motto {
+        font-size: 30px;
+    }
+}
+
 .motto__gdansk, .motto__miasto {
     display: block;
+
 }
+@media screen and (max-width: 550px) {
+    .motto__gdansk {
+       margin-left: -86px;
+    }
+}
+
 
 .motto__miasto {
     font-size: 50px;
     margin-top: 15px;
-    margin-left: 80px;
+
+}
+
+@media screen and (max-width: 550px) {
+    .motto__miasto {
+        font-size: 30px;
+        margin-left: -86px;
+    }
 }
 
 /*MENU*/
@@ -282,7 +318,7 @@ body {
 		width: 90%;
 	}
 }
-		
+
 
 
 .feature__img {
@@ -333,11 +369,19 @@ body {
 }
 
 /* Pojemnik w ktorym znajdują się slajdy */
-.galeriaMusea{
+.galeriaMusea {
 
     position: relative;
     height: 600px;
 }
+
+@media screen and (max-width: 549px) {
+    .galeriaMusea {
+        height: 300px;
+    }
+}
+
+
 /* Galeria slajdów */
 .galeriaMusea div {
     position: absolute;
@@ -367,6 +411,12 @@ body {
     margin-right: 90px;
     font-style: italic;
 }
+@media screen and (max-width: 549px) {
+    .galeriaMusea p {
+        margin-top: 250px;
+    }
+}
+
 
 /*ADDITIONAL FEATURES */
 
@@ -398,7 +448,7 @@ body {
 @media screen and (max-width: 549px) {
     .additionalFeaturesTitle {
         font-size: 25px;
-        padding-top: 10px;
+        padding-top: 25px;
     }
 }
 
@@ -417,11 +467,9 @@ body {
     .additionalFeaturesBox {
         width: 100px;
         height: 100px;
-        margin: 10px;
+        margin: 10px 10px 25px;
     }
 }
-
-
 
 
 .additionalFeatures div p{
@@ -457,8 +505,7 @@ body {
         width: 70px;
         height:68px;
         padding-top: 15px;
-        padding-bottom: 17px;
-
+        padding-bottom: 24px;
     }
 }
 
@@ -505,8 +552,14 @@ body {
     max-width: 1000px;
     height: 535px;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-
 }
+
+@media screen and (max-width: 549px) {
+    .contact {
+        height: 460px;
+    }
+}
+
 
 .contact_form {
     float: left;
