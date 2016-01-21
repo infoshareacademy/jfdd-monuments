@@ -18,7 +18,7 @@
     <link type="text/css" rel="stylesheet" href="style/zaloguj.css">
 
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="1080387467900-qavsu4gmj7dci16ktqa6of019f1aioaa.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="87338626659-8migmvn64560h5vjr9itm7c3bbq2591k.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
@@ -94,37 +94,6 @@
         <a class="zaloguj__close">×</a>
         TO JEST ZALOGOWANIE
 
-
-        <!-- GOOGLE 1 -->
-        <div id="my-signin2"></div>
-        <script>
-            function onSuccess(googleUser) {
-                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-            }
-            function onFailure(error) {
-                console.log(error);
-            }
-            function renderButton() {
-                gapi.signin2.render('my-signin2', {
-                    'scope': 'https://www.googleapis.com/auth/plus.login',
-                    'width': 200,
-                    'height': 50,
-                    'longtitle': true,
-                    'theme': 'dark',
-                    'onsuccess': onSuccess,
-                    'onfailure': onFailure
-                });
-            }
-        </script>
-
-        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-       <!-- KONIEC GOOGLE 1 -->
-
-
-
-
-
-        <!-- LOGOWANIE GOOGLE PLUSEM -->
         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
         <script>
             function onSignIn(googleUser) {
@@ -140,7 +109,6 @@
                 console.log("ID Token: " + id_token);
             };
         </script>
-        <!-- KONIEC LOGOWANIE GOOGLE PLUSEM -->
 
 
     <!-- LOGOWANIE FACEBOOKIEM -->
