@@ -13,6 +13,13 @@ body {
     height: 670px;
 }
 
+@media screen and (max-width: 550px) {
+    .header {
+        height: 335px;
+    }
+}
+
+
 #logo2 {
     opacity: 0.65;
     position: absolute;
@@ -20,8 +27,17 @@ body {
     bottom: 61px;
     width: 210px;
     height: 330px;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: black 4px 0 5px;
+}
+
+@media screen and (max-width: 550px) {
+    #logo2 {
+        left: 60px;
+        bottom: 61px;
+        width: 125px;
+        height: 195px;
+    }
 }
 
 .motto {
@@ -37,14 +53,34 @@ body {
     z-index: 101;
 }
 
+@media screen and (max-width: 550px) {
+    .motto {
+        font-size: 30px;
+    }
+}
+
 .motto__gdansk, .motto__miasto {
     display: block;
+
 }
+@media screen and (max-width: 550px) {
+    .motto__gdansk {
+       margin-left: -86px;
+    }
+}
+
 
 .motto__miasto {
     font-size: 50px;
     margin-top: 15px;
-    margin-left: 80px;
+
+}
+
+@media screen and (max-width: 550px) {
+    .motto__miasto {
+        font-size: 30px;
+        margin-left: -86px;
+    }
 }
 
 /*MENU*/
@@ -97,7 +133,7 @@ body {
 @media screen and (max-width: 550px) {
 	.menu_div {
 		display: none;
-		font-size: 20px;
+		font-size: 15px;
 		padding: 6px !important;
 	}
 		
@@ -111,10 +147,12 @@ body {
 		float: left;
 		color: white;
 		padding-left: 20px;
+        padding-top: 2px;
 		content: 'menu';
 	}
 	.menu_gl:hover::before {
 		content: none;
+
 	}
 }
 
@@ -227,6 +265,12 @@ body {
     margin: 0.5em 0;
 }
 
+@media screen and (max-width: 549px) {
+    .zacheta p {
+        font-size: 18px;
+    }
+}
+
 .zacheta p:first-of-type {
     font-weight: 700;
 }
@@ -255,7 +299,11 @@ body {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
-
+@media screen and (max-width: 549px) {
+    .features h2 {
+        font-size: 25px;
+    }
+}
 .row {
     overflow: hidden;
     max-width: 1000px;
@@ -277,12 +325,12 @@ body {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 	.feature {
 		width: 90%;
 	}
 }
-		
+
 
 
 .feature__img {
@@ -293,7 +341,7 @@ body {
     background-image: url("../images/FunkcjonalnosciRycina7.jpg");
 }
 
-@media screen and (min-width: 550px) and (max-width: 1000px) {
+@media screen and (min-width: 550px) and (max-width: 1024px) {
 	.feature__img {
 		width: 40%;
 	}
@@ -301,7 +349,7 @@ body {
 
 @media screen and (max-width: 549px) {
 	.feature__img {
-		display: none;
+		display: none ;
 	}
 }
 
@@ -333,11 +381,19 @@ body {
 }
 
 /* Pojemnik w ktorym znajdują się slajdy */
-.galeriaMusea{
+.galeriaMusea {
 
     position: relative;
     height: 600px;
 }
+
+@media screen and (max-width: 549px) {
+    .galeriaMusea {
+        height: 300px;
+    }
+}
+
+
 /* Galeria slajdów */
 .galeriaMusea div {
     position: absolute;
@@ -367,15 +423,26 @@ body {
     margin-right: 90px;
     font-style: italic;
 }
+@media screen and (max-width: 549px) {
+    .galeriaMusea p {
+        margin-top: 250px;
+    }
+}
+
 
 /*ADDITIONAL FEATURES */
 
 .additionalFeatures{
     background-color: #e7e7e7;
     padding:3% 5% 3% 15%;
-
-
 }
+
+@media screen and (max-width: 549px) {
+    .additionalFeatures {
+        padding-bottom:20%
+    }
+}
+
 
 .additionalFeaturesTitle {
 
@@ -390,6 +457,14 @@ body {
 
 }
 
+@media screen and (max-width: 549px) {
+    .additionalFeaturesTitle {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+}
+
+
 .additionalFeaturesBox {
     width: 250px;
     height: 250px;
@@ -398,21 +473,34 @@ body {
     float: left;
     text-align: center;
     margin: 86px;
-
 }
+
+@media screen and (max-width: 549px) {
+    .additionalFeaturesBox {
+        width: 100px;
+        height: 100px;
+        margin: 10px 10px 25px;
+    }
+}
+
 
 .additionalFeatures div p{
 
     font-size: 22px;
     font-weight: lighter;
     color:#71706B;
-
 }
 
-.LogoFeatures
+@media screen and (max-width: 549px) {
+    .additionalFeatures div p{
+        font-size: 18px;
 
-{
+    }
+}
 
+
+
+.LogoFeatures {
     padding-top: 35px;
     padding-bottom: 20px;
     width: 150px;
@@ -422,8 +510,17 @@ body {
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-
 }
+
+@media screen and (max-width: 549px) {
+    .LogoFeatures {
+        width: 70px;
+        height:68px;
+        padding-top: 15px;
+        padding-bottom: 24px;
+    }
+}
+
 
 .LogoFeatures:hover  {
 
@@ -455,17 +552,28 @@ body {
     line-height: 130%;
 }
 
+@media screen and (max-width: 549px) {
+    .contact_title {
+        font-size: 19px;
+        padding: 12px 0;
+    }
+}
 
 .contact {
     margin: 3% auto;
     max-width: 1000px;
     height: 535px;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
-
 }
 
-.contact_form
-{
+@media screen and (max-width: 549px) {
+    .contact {
+        height: 460px;
+    }
+}
+
+
+.contact_form {
     float: left;
     background-color: rgba(72,72,72,0.2);
     padding-left: 35px;
@@ -480,6 +588,13 @@ body {
     -webkit-border-radius: 10px;
 }
 
+@media screen and (max-width: 549px) {
+    .contact_form  {
+        height: 280px
+    }
+}
+
+
 .contact_form input {
     width: 440px;
     height: 35px;
@@ -487,8 +602,15 @@ body {
     margin-bottom:22px;
     border: none;
     -webkit-border-radius: 5px;
-
 }
+
+@media screen and (max-width: 549px) {
+    .contact_form input {
+        height: 28px;
+        margin-bottom:11px;
+    }
+}
+
 
 
 .contact_form input:last-of-type{

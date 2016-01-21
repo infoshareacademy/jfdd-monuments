@@ -9,7 +9,7 @@ $(document).ready(function() {
 		$('.easter__map .symbol-zabytku, .easter__gameover').remove();
 		
     });
-	/* obsługa wyłączenia okienka eastern__welcome;*/
+	/* obsługa wyłączenia okienka easter__welcome;*/
 	$('#EasterWelcome a').click(function() {
 		$('#EasterWelcome').remove();
 	});
@@ -84,6 +84,7 @@ $(document).ready(function() {
 					if($('.symbol-zabytku:not([data-klikniety-jako])').length == 0) {
 						$('.easter__map').append('<div class="easter__gameover">WYGRAŁEŚ - GRATULUJEMY!<br>Odkryłeś wszystkie zabytki! </div>');
 						$('.symbol-zabytku').off('click');
+
 
 						//jezeli zamieniona na liczbe zawartość elementu: licznik zabytków jest wieksza od dotychczasowego rekordu to podmieniamy dotychczasowy rekord na wlasnie uzyskany.
 						if (parseInt($('.easter__counters__monuments em').text() )> parseInt($('.easter__counters__highscore em').text() )) {
