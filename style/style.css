@@ -96,7 +96,7 @@ body {
     color: #fff;
     text-align: center;
     z-index: 102;
-    border-left: orange 2px solid;
+
 }
 
 
@@ -119,6 +119,10 @@ body {
 
 .menu_div_contact {
     padding-right: 25px;
+}
+
+.menu_div:first-child {
+    border-left: orange 2px solid;
 }
 
 .menu_div:last-child {
