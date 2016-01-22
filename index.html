@@ -89,40 +89,26 @@
     <div class="zaloguj">
         <a class="zaloguj__close">×</a>
 
+
         <!-- LOGOWANIE GOOGLE PLUS -->
         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
 
+
         <!-- LOGOWANIE FACEBOOKIEM -->
-        <!--<script>-->
-            <!--window.fbAsyncInit = function() {-->
-                <!--FB.init({-->
-                    <!--appId      : '783774278432705',-->
-                    <!--xfbml      : true,-->
-                    <!--version    : 'v2.5'-->
-                <!--});-->
-            <!--};-->
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
 
-            <!--(function(d, s, id){-->
-                <!--var js, fjs = d.getElementsByTagName(s)[0];-->
-                <!--if (d.getElementById(id)) {return;}-->
-                <!--js = d.createElement(s); js.id = 783774278432705;-->
-                <!--js.src = "//connect.facebook.net/en_US/sdk.js";-->
-                <!--fjs.parentNode.insertBefore(js, fjs);-->
-            <!--}(document, 'script', 'facebook-jssdk'));-->
-        <!--</script>-->
+        <div id="status">
+        </div>
+        <!-- KONIEC LOGOWANIA PO FACEBOOKU -->
 
-        <!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">-->
-        <!--</fb:login-button>-->
 
-        <!--<div id="status">-->
-        <!--</div>-->
-    <!-- KONIEC LOGOWANIA PO FACEBOOKU -->
     </div>
 
     <div class="zaloguj__background"></div>
 
 
-    
+
 
     <!-- SOCIAL MEDIA-->
     <aside class="social-media animated fadeInRight">
