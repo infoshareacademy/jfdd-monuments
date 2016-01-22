@@ -88,27 +88,11 @@
 
     <div class="zaloguj">
         <a class="zaloguj__close">×</a>
-        TO JEST ZALOGOWANIE
-        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt9_y7Ey5mheSdwcVqw6MgqaiKg88-BLPUf3mSenE3ZCg8LXheQA">
 
+        <!-- LOGOWANIE GOOGLE PLUS -->
         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-        <script>
-            function onSignIn(googleUser) {
-                // Useful data for your client-side scripts:
-                var profile = googleUser.getBasicProfile();
-                console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-                console.log("Name: " + profile.getName());
-                console.log("Image URL: " + profile.getImageUrl());
-                console.log("Email: " + profile.getEmail());
 
-                // The ID token you need to pass to your backend:
-                var id_token = googleUser.getAuthResponse().id_token;
-                console.log("ID Token: " + id_token);
-            };
-        </script>
-
-
-    <!-- LOGOWANIE FACEBOOKIEM -->
+        <!-- LOGOWANIE FACEBOOKIEM -->
         <!--<script>-->
             <!--window.fbAsyncInit = function() {-->
                 <!--FB.init({-->
@@ -133,12 +117,12 @@
         <!--<div id="status">-->
         <!--</div>-->
     <!-- KONIEC LOGOWANIA PO FACEBOOKU -->
-
     </div>
 
     <div class="zaloguj__background"></div>
 
 
+    
 
     <!-- SOCIAL MEDIA-->
     <aside class="social-media animated fadeInRight">
