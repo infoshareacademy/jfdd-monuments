@@ -53,11 +53,24 @@
     display: inline-block;
 }
 
+.abcRioButton {
+    margin: auto;
+    display: block;
+}
+
 .fb-login-button {
     transform: scale(0.98);
 }
 
 .zaloguj__text {
+    background-color: orange;
     padding: 10px;
     text-align: center;
+    font-size: 1.1em;
+    width: 20em;
+    margin: auto;
+}
+
+.zaloguj__text2 {
+    padding: 10px;
 }
