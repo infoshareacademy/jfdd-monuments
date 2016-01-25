@@ -98,6 +98,7 @@ body {
 		float: left;
 		color: white;
 		padding-left: 20px;
+        padding-top: 5px;
 		content: 'menu';
 	}
 	.menu_gl:hover::before {
@@ -494,7 +495,7 @@ body {
 
 
 .stopka {
-    height: 26px;
+
     color: white;
     text-transform: uppercase;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -502,7 +503,7 @@ body {
     font-size: 18px;
     background: url(../images/naglowek_gdansk1.jpg);
     /* padding zamiast height na sztywno ponieważ tak się wysokość dostosuje do zawartości gdyby zawartość miała się zmienić */
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
     text-align: center;
     text-shadow: black 0 2px 0;
 }
