@@ -16,6 +16,17 @@
     <link type="text/css" rel="stylesheet" href="style/style.css">
     <link type="text/css" rel="stylesheet" href="style/easteregg.css">
     <link type="text/css" rel="stylesheet" href="style/zaloguj.css">
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="87338626659-8migmvn64560h5vjr9itm7c3bbq2591k.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--<script type="text/javascript" src="//platform.linkedin.com/in.js">-->
+        <!--api_key:   [77g9l3bk9lmo17]-->
+        <!--onLoad:    [ONLOAD]-->
+        <!--authorize: [AUTHORIZE]-->
+        <!--lang:      [LANG_LOCALE]-->
+    <!--</script>-->
 </head>
 
 
@@ -84,39 +95,76 @@
 
     <div class="zaloguj">
         <a class="zaloguj__close">×</a>
-        TO JEST ZALOGOWANIE
-        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt9_y7Ey5mheSdwcVqw6MgqaiKg88-BLPUf3mSenE3ZCg8LXheQA">
 
+        <div class="zaloguj__text">Zaloguj się używając swojej sieci społecznościowej.</div>
 
-
-
-        <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                    appId      : '783774278432705',
-                    xfbml      : true,
-                    version    : 'v2.5'
-                });
-            };
-
-            (function(d, s, id){
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) {return;}
-                js = d.createElement(s); js.id = 783774278432705;
-                js.src = "//connect.facebook.net/en_US/sdk.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
-
-        <div id="status">
+        <div class="zaloguj__box">
+            <!-- LOGOWANIE GOOGLE PLUS -->
+            <div class="zaloguj__text2">Google Plus</div>
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
         </div>
+
+
+        <!-- LOGOWANIE FACEBOOKIEM -->
+        <div class="zaloguj__box fb-login-button">
+
+            <div class="zaloguj__text2">Facebook</div>
+
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+
+
+
+
+
+            <!--<script type="in/Login"></script>-->
+            <!--<script type="text/javascript" src="//platform.linkedin.com/in.js">-->
+                <!--api_key: 77g9l3bk9lmo17-->
+                <!--authorize: true-->
+                <!--onLoad: onLinkedInLoad-->
+            <!--</script>-->
+
+            <!--<script type="text/javascript">-->
+
+                <!--// Setup an event listener to make an API call once auth is complete-->
+                <!--function onLinkedInLoad() {-->
+                    <!--IN.Event.on(IN, "auth", getProfileData);-->
+                <!--}-->
+
+                <!--// Handle the successful return from the API call-->
+                <!--function onSuccess(data) {-->
+                    <!--console.log(data);-->
+                <!--}-->
+
+                <!--// Handle an error response from the API call-->
+                <!--function onError(error) {-->
+                    <!--console.log(error);-->
+                <!--}-->
+
+                <!--// Use the API call wrapper to request the member's basic profile data-->
+                <!--function getProfileData() {-->
+                    <!--IN.API.Raw("/people/~").result(onSuccess).error(onError);-->
+                <!--}-->
+
+            <!--</script>-->
+
+
+        </div>
+    </div>
+
 
     </div>
 
     <div class="zaloguj__background"></div>
+
 
 
 
