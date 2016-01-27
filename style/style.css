@@ -96,6 +96,8 @@ body {
     color: #fff;
     text-align: center;
     z-index: 102;
+    box-shadow: 10px 15px 12px 1px #000;
+
 
 }
 
@@ -108,8 +110,9 @@ body {
     padding: 8px;
     opacity: 0.8;
     background-color: #000;
-    box-shadow: 10px 5px 5px 1px #000;
     border-bottom: orange 2px solid;
+
+
 
 }
 
@@ -123,6 +126,7 @@ body {
 
 .menu_div:first-child {
     border-left: orange 2px solid;
+
 }
 
 .menu_div:last-child {

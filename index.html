@@ -20,6 +20,13 @@
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="87338626659-8migmvn64560h5vjr9itm7c3bbq2591k.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--<script type="text/javascript" src="//platform.linkedin.com/in.js">-->
+        <!--api_key:   [77g9l3bk9lmo17]-->
+        <!--onLoad:    [ONLOAD]-->
+        <!--authorize: [AUTHORIZE]-->
+        <!--lang:      [LANG_LOCALE]-->
+    <!--</script>-->
 </head>
 
 
@@ -89,18 +96,69 @@
     <div class="zaloguj">
         <a class="zaloguj__close">×</a>
 
+        <div class="zaloguj__text">Zaloguj się używając swojej sieci społecznościowej.</div>
 
-        <!-- LOGOWANIE GOOGLE PLUS -->
-        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        <div class="zaloguj__box">
+            <!-- LOGOWANIE GOOGLE PLUS -->
+            <div class="zaloguj__text2">Google Plus</div>
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        </div>
 
 
         <!-- LOGOWANIE FACEBOOKIEM -->
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
+        <div class="zaloguj__box fb-login-button">
 
-        <div id="status">
+            <div class="zaloguj__text2">Facebook</div>
+
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+
+
+
+
+
+            <!--<script type="in/Login"></script>-->
+            <!--<script type="text/javascript" src="//platform.linkedin.com/in.js">-->
+                <!--api_key: 77g9l3bk9lmo17-->
+                <!--authorize: true-->
+                <!--onLoad: onLinkedInLoad-->
+            <!--</script>-->
+
+            <!--<script type="text/javascript">-->
+
+                <!--// Setup an event listener to make an API call once auth is complete-->
+                <!--function onLinkedInLoad() {-->
+                    <!--IN.Event.on(IN, "auth", getProfileData);-->
+                <!--}-->
+
+                <!--// Handle the successful return from the API call-->
+                <!--function onSuccess(data) {-->
+                    <!--console.log(data);-->
+                <!--}-->
+
+                <!--// Handle an error response from the API call-->
+                <!--function onError(error) {-->
+                    <!--console.log(error);-->
+                <!--}-->
+
+                <!--// Use the API call wrapper to request the member's basic profile data-->
+                <!--function getProfileData() {-->
+                    <!--IN.API.Raw("/people/~").result(onSuccess).error(onError);-->
+                <!--}-->
+
+            <!--</script>-->
+
+
         </div>
-        <!-- KONIEC LOGOWANIA PO FACEBOOKU -->
+    </div>
 
 
     </div>
