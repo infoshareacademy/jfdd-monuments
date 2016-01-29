@@ -50,7 +50,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .abcRioButton {
@@ -58,18 +58,18 @@
     display: block;
 }
 
-.fb-login-button {
-    transform: scale(0.98);
-}
+/*.fb-login-button {*/
+    /*transform: scale(0.98);*/
+/*}*/
 
-.zaloguj__text {
-    background-color: orange;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.1em;
-    width: 20em;
-    margin: auto;
-}
+/*.zaloguj__text {*/
+    /*background-color: orange;*/
+    /*padding: 10px;*/
+    /*text-align: center;*/
+    /*font-size: 1.1em;*/
+    /*width: 20em;*/
+    /*margin: auto;*/
+/*}*/
 
 .zaloguj__text2 {
     padding: 10px;
