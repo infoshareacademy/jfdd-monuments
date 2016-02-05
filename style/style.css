@@ -13,6 +13,13 @@ body {
     height: 670px;
 }
 
+@media screen and (max-width: 550px) {
+    .header {
+        height: 335px;
+    }
+}
+
+
 #logo2 {
     opacity: 0.65;
     position: absolute;
@@ -20,8 +27,17 @@ body {
     bottom: 61px;
     width: 210px;
     height: 330px;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: black 4px 0 5px;
+}
+
+@media screen and (max-width: 550px) {
+    #logo2 {
+        left: 60px;
+        bottom: 61px;
+        width: 125px;
+        height: 195px;
+    }
 }
 
 .motto {
@@ -37,14 +53,34 @@ body {
     z-index: 101;
 }
 
+@media screen and (max-width: 550px) {
+    .motto {
+        font-size: 30px;
+    }
+}
+
 .motto__gdansk, .motto__miasto {
     display: block;
+
 }
+@media screen and (max-width: 550px) {
+    .motto__gdansk {
+       margin-left: -86px;
+    }
+}
+
 
 .motto__miasto {
     font-size: 50px;
     margin-top: 15px;
-    margin-left: 80px;
+
+}
+
+@media screen and (max-width: 550px) {
+    .motto__miasto {
+        font-size: 30px;
+        margin-left: -86px;
+    }
 }
 
 /*MENU*/
@@ -55,22 +91,29 @@ body {
     position: fixed;
     padding-top: 10px;
     padding-bottom: 12px;
-    background-color: #000000;
     font-family: "Oswald", Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     z-index: 102;
-    opacity: 0.8;
-    border-left: orange 2px solid;
-    border-bottom: orange 2px solid;
-    box-shadow: 10px 5px 5px 1px #000;
+    box-shadow: 10px 15px 12px 1px #000;
+
+
 }
+
+
+
 
 .menu_div {
     display: inline;
     font-size: 25px;
-    padding: 10px;
+    padding: 8px;
+    opacity: 0.8;
+    background-color: #000;
+    border-bottom: orange 2px solid;
+
+
+
 }
 
 .menu_div_header {
@@ -81,10 +124,20 @@ body {
     padding-right: 25px;
 }
 
+.menu_div:first-child {
+    border-left: orange 2px solid;
+
+}
+
+.menu_div:last-child {
+    opacity:1;
+}
+
+
 @media screen and (max-width: 550px) {
 	.menu_div {
 		display: none;
-		font-size: 20px;
+		font-size: 15px;
 		padding: 6px !important;
 	}
 		
@@ -98,6 +151,7 @@ body {
 		float: left;
 		color: white;
 		padding-left: 20px;
+        padding-top: 2px;
 		content: 'menu';
 	}
 	.menu_gl:hover::before {

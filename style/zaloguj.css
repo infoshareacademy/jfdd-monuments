@@ -1,11 +1,11 @@
 .zaloguj {
     position: fixed;
-    left: 30vw;
-    right: 30vw;
-    top: 20vh;
+    left: 25vw;
+    right: 25vw;
+    top: 30vh;
     z-index: 1000;
     display: none;
-    padding: 70px;
+    padding: 50px;
     background-color: orange;
     border-radius: 10px;
     color: white;
@@ -13,7 +13,8 @@
 
 .zaloguj__background {
     position: fixed;
-    background-color: rgba(0,0,0,0.55);
+    background-color: black;
+    opacity: 0.55;
     top:0;
     bottom:0;
     left:0;
@@ -39,4 +40,37 @@
 
 .zaloguj__close:hover {
     color: yellow;
+}
+
+.zaloguj__box {
+    background-color: orange;
+    width: 18.5vw;
+    /*float: left;*/
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*display: inline-block;*/
+}
+
+.abcRioButton {
+    margin: auto;
+    display: block;
+}
+
+/*.fb-login-button {*/
+    /*transform: scale(0.98);*/
+/*}*/
+
+/*.zaloguj__text {*/
+    /*background-color: orange;*/
+    /*padding: 10px;*/
+    /*text-align: center;*/
+    /*font-size: 1.1em;*/
+    /*width: 20em;*/
+    /*margin: auto;*/
+/*}*/
+
+.zaloguj__text2 {
+    padding: 10px;
 }
