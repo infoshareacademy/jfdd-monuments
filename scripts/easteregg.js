@@ -9,9 +9,82 @@ $(document).ready(function() {
 		$('.easter__map .symbol-zabytku, .easter__gameover').remove();
 		
     });
-	/* obsługa wyłączenia okienka easter__welcome;*/
+
+	function klikNaZabytku() {
+		//klikniecie symbol-zabytku, przyjmujemy odleglosc zero dla przypadku 1szego klikniecia oraz obliczamy odleglosc miedzy poprzednio a aktualnie
+		//kliknietym obiektem
+		var mapWidth = $('.easter__map').width();
+		var mapHeight = $('.easter__map').height();
+		var c = document.getElementById("EasterLines");
+		var ctx = c.getContext("2d");
+
+		if (!$(this).hasClass('klikniety')) {
+			var monumentsCounter = $('.easter__counters__monuments em');
+			var odlegloscXY = 0;
+			var poprzednioKlikniety = $('.symbol-zabytku[data-klikniety-jako="' + monumentsCounter.text() + '"]');
+
+			if(poprzednioKlikniety.length) {
+				var odlegloscNaOsiX = Math.abs($(this).attr('data-x') - poprzednioKlikniety.attr('data-x')) * mapWidth / 100;
+				var odlegloscNaOsiY = Math.abs($(this).attr('data-y') - poprzednioKlikniety.attr('data-y')) * mapHeight / 100;
+				odlegloscXY = Math.sqrt(odlegloscNaOsiX * odlegloscNaOsiX + odlegloscNaOsiY * odlegloscNaOsiY);
+			}
+
+			//aktualną odległość wstawiamy do licznika przebytej drogi
+			var nowaOdleglosc = Math.round(parseInt($('.easter__counters__route em').text()) + odlegloscXY);
+			var limitOdleglosci = parseInt($('.easter__counters__limit em').text());
+
+			//porownujemy przebytą drogę do limitu odległości, przy spełnieniu warunku zwiekszamy licznik odwiedzonych zabytków
+			if(nowaOdleglosc <= limitOdleglosci) {
+				$('.easter__counters__route em').text(nowaOdleglosc);
+				monumentsCounter.text(parseInt(monumentsCounter.text()) + 1);
+				$(this).addClass('klikniety').attr('data-klikniety-jako', monumentsCounter.text());
+
+				//pobieramy dane odn lokalizacj zabytków: poprzedniego i aktualnie klikniętego i łączymy zabytki linią
+				//przeliczamy x,y z procentów na piksele, okreslamy grubość linii(4) i rysujemy(stroke)
+				ctx.beginPath();
+				ctx.moveTo(poprzednioKlikniety.attr('data-x') * mapWidth / 100, poprzednioKlikniety.attr('data-y') * mapHeight / 100);
+				ctx.lineTo($(this).attr('data-x') * mapWidth / 100, $(this).attr('data-y') * mapHeight / 100);
+				ctx.lineWidth = 4;
+				ctx.strokeStyle = '#cc2222';
+				ctx.stroke();
+
+				// Wybieramy wszystkie symbole zabytków które nie mają jeszcze atrybutu "klikniety jako"...
+				if($('.symbol-zabytku:not([data-klikniety-jako])').length == 0) {
+					$('.easter__map').append('<div class="easter__gameover">WYGRAŁEŚ - GRATULUJEMY!<br>Odkryłeś wszystkie zabytki! </div>');
+					$('.symbol-zabytku').off('click');
+
+					//jezeli zamieniona na liczbe zawartość elementu: licznik zabytków jest wieksza od dotychczasowego rekordu to podmieniamy dotychczasowy rekord na wlasnie uzyskany.
+					if (parseInt($('.easter__counters__monuments em').text() )> parseInt($('.easter__counters__highscore em').text() )) {
+						$('.easter__counters__highscore em').text($('.easter__counters__monuments em').text());
+
+						// cookie odn.ustanowienia rekordu
+						document.cookie = 'rekordWGrze=' + $('.easter__counters__highscore em').text();
+					}
+				}
+
+
+			} else {
+				// game over
+				$('.easter__map').append('<div class="easter__gameover">KONIEC GRY<br>Wyczerpałeś swój limit! </div>');
+				$('.symbol-zabytku').off('click');
+
+				//jezeli zamieniona na liczbe zawartość elementu: licznik zabytków jest wieksza od dotychczasowego rekordu to podmieniamy dotychczasowy rekord na wlasnie uzyskany.
+				if (parseInt($('.easter__counters__monuments em').text() )> parseInt($('.easter__counters__highscore em').text() )) {
+					$('.easter__counters__highscore em').text($('.easter__counters__monuments em').text());
+
+					// cookie odn.ustanowienia rekordu
+					document.cookie = 'rekordWGrze=' + $('.easter__counters__highscore em').text();
+
+				}
+			}
+		}
+	}
+
+	/* obsługa wyłączenia okienka eastern__welcome;*/
 	$('#EasterWelcome a').click(function() {
 		$('#EasterWelcome').remove();
+
+		$('.symbol-zabytku').click(klikNaZabytku);
 	});
 	
 	//wywołanie eastera
@@ -46,73 +119,10 @@ $(document).ready(function() {
 			y = Math.round(Math.random() * 90) + 5;
 			$('.easter__map').append('<div class="symbol-zabytku" data-x="' + x + '" data-y="' + y + '" data-number="' + i + '" style="left:' + x + '%; top:' + y + '%;"></div>');
 		}
-		
-		//klikniecie symbol-zabytku, przyjmujemy odleglosc zero dla przypadku 1szego klikniecia oraz obliczamy odleglosc miedzy poprzednio a aktualnie
-		//kliknietym obiektem
-		$('.symbol-zabytku').click(function() {
-			if (!$(this).hasClass('klikniety')) {
-				var monumentsCounter = $('.easter__counters__monuments em');				
-				var odlegloscXY = 0;
-				var poprzednioKlikniety = $('.symbol-zabytku[data-klikniety-jako="' + monumentsCounter.text() + '"]');
-				
-				if(poprzednioKlikniety.length) {
-					var odlegloscNaOsiX = Math.abs($(this).attr('data-x') - poprzednioKlikniety.attr('data-x')) * mapWidth / 100;
-					var odlegloscNaOsiY = Math.abs($(this).attr('data-y') - poprzednioKlikniety.attr('data-y')) * mapHeight / 100;	
-					odlegloscXY = Math.sqrt(odlegloscNaOsiX * odlegloscNaOsiX + odlegloscNaOsiY * odlegloscNaOsiY);
-				}
 
-				//aktualną odległość wstawiamy do licznika przebytej drogi
-				var nowaOdleglosc = Math.round(parseInt($('.easter__counters__route em').text()) + odlegloscXY);
-				var limitOdleglosci = parseInt($('.easter__counters__limit em').text());
-
-				//porownujemy przebytą drogę do limitu odległości, przy spełnieniu warunku zwiekszamy licznik odwiedzonych zabytków
-				if(nowaOdleglosc <= limitOdleglosci) {
-					$('.easter__counters__route em').text(nowaOdleglosc); 										
-					monumentsCounter.text(parseInt(monumentsCounter.text()) + 1);
-					$(this).addClass('klikniety').attr('data-klikniety-jako', monumentsCounter.text());
-
-					//pobieramy dane odn lokalizacj zabytków: poprzedniego i aktualnie klikniętego i łączymy zabytki linią
-					//przeliczamy x,y z procentów na piksele, okreslamy grubość linii(4) i rysujemy(stroke)
-					ctx.beginPath();
-					ctx.moveTo(poprzednioKlikniety.attr('data-x') * mapWidth / 100, poprzednioKlikniety.attr('data-y') * mapHeight / 100);
-					ctx.lineTo($(this).attr('data-x') * mapWidth / 100, $(this).attr('data-y') * mapHeight / 100);
-					ctx.lineWidth = 4;
-					ctx.strokeStyle = '#cc2222';
-					ctx.stroke();
-
-					// Wybieramy wszystkie symbole zabytków które nie mają jeszcze atrybutu "klikniety jako"...
-					if($('.symbol-zabytku:not([data-klikniety-jako])').length == 0) {
-						$('.easter__map').append('<div class="easter__gameover">WYGRAŁEŚ - GRATULUJEMY!<br>Odkryłeś wszystkie zabytki! </div>');
-						$('.symbol-zabytku').off('click');
-
-
-						//jezeli zamieniona na liczbe zawartość elementu: licznik zabytków jest wieksza od dotychczasowego rekordu to podmieniamy dotychczasowy rekord na wlasnie uzyskany.
-						if (parseInt($('.easter__counters__monuments em').text() )> parseInt($('.easter__counters__highscore em').text() )) {
-							$('.easter__counters__highscore em').text($('.easter__counters__monuments em').text());
-
-							// cookie odn.ustanowienia rekordu
-							document.cookie = 'rekordWGrze=' + $('.easter__counters__highscore em').text();
-						}
-					}
-
-					
-				} else {
-					// game over
-					$('.easter__map').append('<div class="easter__gameover">KONIEC GRY<br>Wyczerpałeś swój limit! </div>');
-					$('.symbol-zabytku').off('click');
-
-					//jezeli zamieniona na liczbe zawartość elementu: licznik zabytków jest wieksza od dotychczasowego rekordu to podmieniamy dotychczasowy rekord na wlasnie uzyskany.
-					if (parseInt($('.easter__counters__monuments em').text() )> parseInt($('.easter__counters__highscore em').text() )) {
-						$('.easter__counters__highscore em').text($('.easter__counters__monuments em').text());
-						
-						// cookie odn.ustanowienia rekordu
-						document.cookie = 'rekordWGrze=' + $('.easter__counters__highscore em').text();
-
-        			}
-				}
-			}
-		});
-			
+		if ($('#EasterWelcome').length === 0) {
+			$('.symbol-zabytku').click(klikNaZabytku);
+		}
 	});
 
 	//resizing mapy "na bieżąco", przeliczanie limitu odległości, przebytej dotychczas drogi
